@@ -41,7 +41,6 @@
 >
   <div class="{{ st.container }}{% if st.container == 'w-full' %} px-4 xl:px-[30px]{% endif %}">
     <div class="sf__collection-container {% if st.show_filter %}sidebar__{{ st.sidebar }}{% endif %}">
-      This is a Test Github
       {%- render 'collection-sidebar', show_filter: show_filter -%}
       <div id="CollectionProductGrid" class="flex-1 w-full {% unless st.sidebar == 'fixed' or st.show_filter == false %}xl:w-3/4 2xl:w-4/5{% endunless %}">
         {%- paginate collection.products by st.pagination_limit -%}
