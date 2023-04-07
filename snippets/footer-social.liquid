@@ -1,0 +1,65 @@
+{%- if settings.social_facebook_link != blank or settings.social_twitter_link != blank or settings.social_pinterest_link != blank or settings.social_instagram_link != blank or settings.social_youtube_link != blank or settings.social_tiktok_link != blank or settings.social_snapchat_link != blank or settings.social_tumblr_link != blank or settings.social_rss_link != blank -%}
+  <div class="social-sharing-wrapper">
+    {%- if settings.social_facebook_link != blank -%}
+      <a class="social-sharing-icon facebook" rel="noopener" href = "{{settings.social_facebook_link }}" title="{{ 'footer.socials.title' | t: social: 'Facebook', shop_name: shop.name }}" target="_blank">
+        {% comment %}{%- render 'icon-facebook' -%} {% endcomment %}
+         <img src="https://cdn.shopify.com/s/files/1/0694/8860/7531/files/custom-facebook.png?v=1674097707" alt="facebook icon" data-gtm-vis-first-on-screen-55406173_82="2193" data-gtm-vis-total-visible-time-55406173_82="500" data-gtm-vis-has-fired-55406173_82="1">
+      </a>
+    {%- endif -%}
+
+    {%- if settings.social_twitter_link != blank -%}
+      <a class="social-sharing-icon twitter" rel="noopener" href = "{{ settings.social_twitter_link }}" title="{{ 'footer.socials.title' | t: social: 'Twitter', shop_name: shop.name }}">
+        {%- render 'icon-twitter' -%}
+      </a>
+    {%- endif -%}
+
+    {%- if settings.social_pinterest_link != blank -%}
+      <a class="social-sharing-icon pinterest" rel="noopener" href = "{{settings.social_pinterest_link }}" title="{{ 'footer.socials.title' | t: social: 'Pinterest', shop_name: shop.name }}" target="_blank">
+      {% comment %} {%- render 'icon-pinterest' -%}{% endcomment %}
+       <img src="https://cdn.shopify.com/s/files/1/0694/8860/7531/files/custom-pinterest.png?v=1674097707" alt="pinterest icon" data-gtm-vis-first-on-screen-55406173_82="2194" data-gtm-vis-total-visible-time-55406173_82="500" data-gtm-vis-has-fired-55406173_82="1">
+      </a>
+    {%- endif -%}
+
+    {%- if settings.social_instagram_link != blank -%}
+      <a class="social-sharing-icon instagram" rel="noopener" href = "{{ settings.social_instagram_link }}" title="{{ 'footer.socials.title' | t: social: 'Instagram', shop_name: shop.name }}" target="_blank">
+      {% comment %}  {%- render 'icon-instagram' -%}{% endcomment %}
+      <img src="https://cdn.shopify.com/s/files/1/0694/8860/7531/files/custom-instagram.png?v=1674097708" alt="instagram icon" data-gtm-vis-first-on-screen-55406173_82="2194" data-gtm-vis-total-visible-time-55406173_82="500" data-gtm-vis-has-fired-55406173_82="1">
+      </a>
+    {%- endif -%}
+
+    {%- if settings.social_tumblr_link != blank -%}
+    <a class="social-sharing-icon tumblr" rel="noopener" href = "{{ settings.social_tumblr_link }}" title="{{ 'footer.socials.title' | t: social: 'Tumblr', shop_name: shop.name }}">
+      {%- render 'icon-tumblr' -%}
+    </a>
+    {%- endif -%}
+
+    {%- if settings.social_youtube_link != blank -%}
+      <a class="social-sharing-icon youtube" rel="noopener" href = "{{ settings.social_youtube_link }}" title="{{ 'footer.socials.title' | t: social: 'Youtube', shop_name: shop.name }}" target="_blank">
+      {% comment %}  {%- render 'icon-youtube' -%}{% endcomment %}
+      <img src="https://cdn.shopify.com/s/files/1/0694/8860/7531/files/custom-youtube.png?v=1674097708" alt="youtube icon" data-gtm-vis-first-on-screen-55406173_82="2193" data-gtm-vis-total-visible-time-55406173_82="500" data-gtm-vis-has-fired-55406173_82="1">
+      </a>
+    {%- endif -%}
+
+    {%- if settings.social_tiktok_link != blank -%}
+      <a class="social-sharing-icon tiktok" rel="noopener" href = "{{ settings.social_tiktok_link }}" title="{{ 'footer.socials.title' | t: social: 'Tiktok', shop_name: shop.name }}">
+        {%- render 'icon-tiktok' -%}
+      </a>
+    {%- endif -%}
+
+    {%- if settings.social_snapchat_link != blank -%}
+      <a class="social-sharing-icon snapchat" rel="noopener" href = "{{ settings.social_snapchat_link }}" title="{{ 'footer.socials.title' | t: social: 'Snapchat', shop_name: shop.name }}">
+        {%- render 'icon-snapchat' -%}
+      </a>
+    {%- endif -%}
+
+    {%- if settings.social_rss_link != blank -%}
+      <a class="social-sharing-icon rss" rel="noopener" href = "{{ settings.social_rss_link }}" title="{{ 'footer.socials.rss' | t }}">
+        {%- render 'icon-rss-feed' -%}
+      </a>
+    {%- endif -%}
+
+    <a class="social-sharing-icon rss" target="_blank" itemprop="sameAs" href="https://www.google.com/search?q=fancy+that+costumes+sydney&amp;oq=Fancy+&amp;aqs=chrome.1.69i57j69i59j35i39j0i67l3j0i67i131i433l2j0i67i433j46i20i263i433i512.2610j0j15&amp;sourceid=chrome&amp;ie=UTF-8#lrd=0x6b12aee8ffc02111:0x99b0b81d3e0bf596,1,,," target="_blank" title="fancythat on Pinterest" rel="noopener">
+    <img style="max-width: 60% !important;padding-top: 10px;" src="https://cdn.shopify.com/s/files/1/0694/8860/7531/files/map_pin.png?v=1674097714" alt="map pin" data-gtm-vis-first-on-screen-55406173_82="2194" data-gtm-vis-total-visible-time-55406173_82="500" data-gtm-vis-has-fired-55406173_82="1">
+    </a>
+  </div>
+{%- endif -%}

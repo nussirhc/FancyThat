@@ -1,0 +1,294 @@
+{%- comment -%} Accordions section {%- endcomment -%}
+
+{%- liquid
+  assign animations_enabled = settings.animations_enabled
+  assign animation_anchor = '#Accordions--' | append: section.id
+  assign highlights_heading = section.settings.highlights_title
+  assign highlights_subheading = section.settings.highlights_subheading
+  assign highlights_text = section.settings.highlights_text
+  
+  assign faqs_heading = section.settings.faqs_title
+  assign faqs_ subheading = section.settings.faqs_subheading
+  assign faqs_text = section.settings.faqs_text
+  assign text_color = section.settings.text_color
+  assign bg_color = section.settings.bg_color
+  assign tabs_bg_color = section.settings.tabs_bg_color
+  assign padded = true
+  if bg_color == tabs_bg_color or tabs_bg_color == '' or tabs_bg_color == 'rgba(0,0,0,0)'
+    assign padded = false
+  endif
+-%}
+{%- style -%}
+  {%- if bg_color != 'rgba(0,0,0,0)' and bg_color != '' -%}
+    #Accordions--{{ section.id }} { --bg: {{ bg_color }}; }
+  {%- endif -%}
+
+  {%- if tabs_bg_color != 'rgba(0,0,0,0)' and tabs_bg_color != '' -%}
+    #Accordions--{{ section.id }} .accordion__item { --bg: {{ tabs_bg_color }}; }
+  {%- endif -%}
+{%- endstyle -%}
+
+<section data-section-id="{{ section.id }}" id="Accordions--{{ section.id }}" data-section-type="accordions" class="wrapper prd-desc-accordions accordions-section {{ text_color }}">
+  <div class="prd-desc-accordions-item">
+    
+    {%- comment -%} Highlights {%- endcomment -%}
+    
+  {%- unless highlights_heading == blank and highlights_subheading == blank and highlights_text == blank -%}
+    <div class="accordion__header">
+      <div class="wrapper">
+        {%- if highlights_heading != blank -%}
+          <h2 class="accordion__heading prd_accordion__heading ">{{ highlights_heading }}</h2>
+
+          {%- if settings.show_spacer_lines -%}
+            <hr>
+          {%- endif -%}
+        {%- endif -%}
+
+        {%- if highlights_subheading != blank -%}
+          <h4 class="accordion__subheading subheading-text">{{ highlights_subheading }}</h4>
+        {%- endif -%}
+
+        {%- if highlights_text != blank -%}
+          <div class="rte">{{ highlights_text }}</div>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endunless -%}
+
+  {%- if section.blocks.size > 0 -%}
+    <div class="accordion__content">
+      <div class="wrapper">
+        <ul class="accordion__list">
+          {%- assign animation_delay = 250 -%}
+          {%- for block in section.blocks -%}
+            {%- assign title = block.settings.title -%}
+            {%- assign text = pages[block.settings.raw_content].content | default: block.settings.text -%}
+
+            {%- unless title == blank -%}
+              <li class="accordion__item prd_accortdion__item{% if forloop.index == 1 %} accordion__item--first{% endif %}{% if padded %} accordion__item--padded{% endif %}"
+                aria-haspopup="true"
+                {% if animations_enabled %}
+                  data-aos="fade-up"
+                  data-aos-anchor="{{ animation_anchor }}"
+                  data-aos-delay="{{ animation_delay }}"
+                {% endif %}
+                {{ block.shopify_attributes }}>
+                {%- assign animation_delay = animation_delay | plus: 250 -%}
+                <button class="accordion__item__title h3" aria-controls="Accordions-item--{{ forloop.index0 }}-{{ section.id }}" data-collapsible-trigger>
+                  <span class="accordion__item__title__text prd-accordion__title__text">{{ title }}</span>
+                  {%- render 'icon-toggle-plus' -%}
+                  {%- render 'icon-toggle-minus' -%}
+                </button>
+
+                <div class="accordion__item__text-wrapper" id="Accordions-item--{{ forloop.index0 }}-{{ section.id }}" aria-hidden="true" data-collapsible-container>
+                  <div class="accordion__item__text rte" data-collapsible-content>
+                    {{- text -}}
+                  </div>
+                </div>
+              </li>
+            {%- endunless -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+  {%- else -%}
+    {%- render 'no-blocks' -%}
+  {%- endif -%}
+  </div>
+ <div class="prd-desc-accordions-item">
+{%- comment -%} Frequently Asked Questions {%- endcomment -%}
+
+ {%- unless  faqs_heading == blank and  faqs_subheading == blank and  faqs_text == blank -%}
+<div class="accordion__header">
+ <div class="wrapper">
+   {%- if  faqs_heading != blank -%}
+     <h2 class="accordion__heading prd_accordion__heading ">{{  faqs_heading }}</h2>
+
+     {%- if settings.show_spacer_lines -%}
+       <hr>
+     {%- endif -%}
+   {%- endif -%}
+
+   {%- if  faqs_subheading != blank -%}
+     <h4 class="accordion__subheading subheading-text">{{  faqs_subheading }}</h4>
+   {%- endif -%}
+
+   {%- if  faqs_text != blank -%}
+     <div class="rte">{{  faqs_text }}</div>
+   {%- endif -%}
+ </div>
+</div>
+{%- endunless -%}
+
+{%- if section.blocks.size > 0 -%}
+<div class="accordion__content">
+ <div class="wrapper">
+   <ul class="accordion__list">
+     {%- assign animation_delay = 250 -%}
+     {%- for block in section.blocks -%}
+       {%- assign faqs_title = block.settings.faqs_title -%}
+       {%- assign faqs_text = pages[block.settings.raw_content].content | default: block.settings.faqs_text -%}
+
+       {%- unless faqs_title == blank -%}
+         <li class="accordion__item prd_accortdion__item{% if forloop.index == 1 %} accordion__item--first{% endif %}{% if padded %} accordion__item--padded{% endif %}"
+           aria-haspopup="true"
+           {% if animations_enabled %}
+             data-aos="fade-up"
+             data-aos-anchor="{{ animation_anchor }}"
+             data-aos-delay="{{ animation_delay }}"
+           {% endif %}
+           {{ block.shopify_attributes }}>
+           {%- assign animation_delay = animation_delay | plus: 250 -%}
+           <button class="accordion__item__title h3" aria-controls="Accordions-item--{{ forloop.index0 }}-{{ section.id }}" data-collapsible-trigger>
+             <span class="accordion__item__title__text prd-accordion__title__text">{{ faqs_title }}</span>
+             {%- render 'icon-toggle-plus' -%}
+             {%- render 'icon-toggle-minus' -%}
+           </button>
+
+           <div class="accordion__item__text-wrapper" id="Accordions-item--{{ forloop.index0 }}-{{ section.id }}" aria-hidden="true" data-collapsible-container>
+             <div class="accordion__item__text rte" data-collapsible-content>
+               {{- faqs_text -}}
+             </div>
+           </div>
+         </li>
+       {%- endunless -%}
+     {%- endfor -%}
+   </ul>
+ </div>
+</div>
+{%- else -%}
+{%- render 'no-blocks' -%}
+{%- endif -%}
+</div>
+</section>
+
+{% schema %}
+{
+  "name": "Tabs",
+  "settings": [
+    {
+        "type": "header",
+        "content": "Highlights"
+    },
+    {
+      "type": "text",
+      "id": "highlights_title",
+      "label": "Heading",
+      "default": "Highlights"
+    },
+    {
+      "type": "text",
+      "id": "highlights_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "highlights_text",
+      "label": "Text"
+    },
+      {
+        "type": "header",
+        "content": "Frequently Asked Questions"
+    },
+    {
+      "type": "text",
+      "id": "faqs_title",
+      "label": "Heading",
+      "default": "Frequently Asked Questions"
+    },
+    {
+      "type": "text",
+      "id": "faqs_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "faqs_text",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "tabs_bg_color",
+      "label": "Tabs"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background"
+    },
+    {
+      "type": "select",
+      "id": "text_color",
+      "label": "Text",
+      "default": "text-dark",
+      "options": [
+        { "value": "text-light", "label": "Light"},
+        { "value": "text-dark", "label": "Dark"}
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "name": "FAQ Item",
+      "type": "faqs",
+      "settings": [
+        {
+          "type": "text",
+          "id": "faqs_title",
+          "label": "Heading",
+          "default": "FAQs Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "faqs_text",
+          "label": "Text",
+          "default": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Highlights Item",
+      "type": "highlights",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Highlights Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Use this text block to discuss some commonly asked questions like shipping and returns, sizing, warranties, or product and company details.</p>"
+        }
+      ]
+    },
+    {
+      "name": "Page",
+      "type": "page",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Page",
+          "info": "Example: Size chart"
+        },
+        {
+          "type": "page",
+          "id": "raw_content",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+ "presets": [
+		{ "name": "FAQ Block" }
+	]
+}
+{% endschema %}
