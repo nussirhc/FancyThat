@@ -32,6 +32,17 @@
             "open_filtergroup": true
           }
         },
+        "e04b2b2e-7357-4b70-8265-97437595f865": {
+          "type": "filter",
+          "settings": {
+            "design_filtergroup": "default",
+            "title": "Hire vs Buy",
+            "filtergroup": "hire,buy",
+            "show_label": false,
+            "use_accordion": true,
+            "open_filtergroup": true
+          }
+        },
         "26ef6509-772d-4c44-bd90-efc089bd9355": {
           "type": "filter",
           "settings": {
@@ -131,22 +142,11 @@
             "use_accordion": true,
             "open_filtergroup": true
           }
-        },
-        "e04b2b2e-7357-4b70-8265-97437595f865": {
-          "type": "filter",
-          "disabled": true,
-          "settings": {
-            "design_filtergroup": "default",
-            "title": "Tags",
-            "filtergroup": "Vintage,tops,shirts",
-            "show_label": false,
-            "use_accordion": true,
-            "open_filtergroup": true
-          }
         }
       },
       "block_order": [
         "dd3f2181-d1fd-4e0c-9593-3ca8131e0c6a",
+        "e04b2b2e-7357-4b70-8265-97437595f865",
         "26ef6509-772d-4c44-bd90-efc089bd9355",
         "4903963a-90f0-4fe1-be23-ee4f8749e483",
         "091f039f-7883-4cee-8909-2bfd9e6262c4",
@@ -155,8 +155,7 @@
         "fa31a837-9c99-4c92-8cfe-0527ffbe7b15",
         "e12de6da-eab8-4abe-967c-06d0d959a18a",
         "7ff03c02-3678-41fb-b9e1-dd0f3e774da2",
-        "00b3badd-1613-4230-85d8-f87f04306aaa",
-        "e04b2b2e-7357-4b70-8265-97437595f865"
+        "00b3badd-1613-4230-85d8-f87f04306aaa"
       ],
       "settings": {
         "container": "container-fluid",
