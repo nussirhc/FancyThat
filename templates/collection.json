@@ -170,7 +170,7 @@
         "filters_type": "tags_filter",
         "sidebar": "leftColumn",
         "sidebar_title": "Filter Products",
-        "limit_height_widget": false,
+        "limit_height_widget": true,
         "limit_height": 300,
         "change_product_variant_on_fitlering": true,
         "show_product_count": true,
