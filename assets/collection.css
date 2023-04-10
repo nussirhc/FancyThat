@@ -192,6 +192,7 @@ ul.sf__options-swatch.sf__button-rounded li.active a {
 }
 .sf__filter-wrapper .sf__accordion-item {
   margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
 }
 .sf__filter-wrapper .sf__accordion-item .sf__accordion-button {
   font-size: var(--font-base-size);
