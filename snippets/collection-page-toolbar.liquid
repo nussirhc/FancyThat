@@ -11,6 +11,7 @@
 -%}
 <div class="sf__collection-toolbar">
   <div class="sf__toolbar-wrapper">
+   <span class="flex flex-1 items-center justify-between filters-toolbar__product-count">{{ 'collections.general.items_with_count' | t: count: collection.products_count }}</span>
 
     <div class="sf__toggle-filter flex {% unless st.sidebar == 'fixed' %}xl:hidden{% endunless %}">
       {%- if st.show_filter -%}
@@ -19,7 +20,6 @@
             {% render 'icon', name: 'chevron-down', size: 'extra-small' %}
         </button>
       {%- endif -%}
-      <span class="flex flex-1 items-center justify-between filters-toolbar__product-count">{{ 'collections.general.items_with_count' | t: count: collection.products_count }}</span>
       {% if st.show_sorting %}
         <button class="sf__sortmb-icon md:hidden flex items-center font-medium">
           <span data-sortby-option>{{ sort_by_name }}</span>
