@@ -44,7 +44,7 @@
       {%- render 'collection-sidebar', show_filter: show_filter -%}
       <div id="CollectionProductGrid" class="flex-1 w-full {% unless st.sidebar == 'fixed' or st.show_filter == false %}xl:w-3/4 2xl:w-4/5{% endunless %}">
         {%- paginate collection.products by st.pagination_limit -%}
-          {%- render 'collection-page-toolbar', section: section, results: collection -%}
+         {%- render 'collection-page-toolbar', section: section, results: collection -%}
          {%- liquid 
             if st.show_filter
               if st.filters_type == 'storefront_filters'
@@ -53,7 +53,7 @@
                 render 'selected-tags-filter'
               endif
             endif
-        -%}
+         -%}
           {%- if collection.products.size == 0 -%}
             <div class="empty-collection py-24 flex flex-col w-full items-center">
               <span>{%- render 'icon', name: 'empty-collection', fill: '#9a9a9a' -%}</span>

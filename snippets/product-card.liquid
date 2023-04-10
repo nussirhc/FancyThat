@@ -479,7 +479,7 @@
             {%- endif -%}
             {% if show_title == true %}
               <h3 class="block text-base">
-                <a href="{{ product.url }}" class="block mb-[5px] leading-normal sf__pcard-name font-medium truncate-lines hover:text-color-secondary{% if settings.uppercase_prd_name %} uppercase{% endif %}">
+                <a href="{{ product.url }}" class="product-grid-item__title block mb-[5px] leading-normal sf__pcard-name font-medium truncate-lines hover:text-color-secondary{% if settings.uppercase_prd_name %} uppercase{% endif %}">
                   {{ product.title }}
                 </a>
               </h3>
@@ -491,7 +491,7 @@
             {% endif %}
           </div>
         
-          <div class="sf__pcard-price leading-normal">
+          <div class="product-grid-item__price sf__pcard-price leading-normal">
             {% render 'product-prices', product: product, is_product_card: true %}
           </div>
           {% if settings.show_swatch_option %}
