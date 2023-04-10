@@ -1,6 +1,11 @@
 {%- assign st = section.settings -%}
 
 {%- liquid 
+
+     if collection.products
+  assign count_label = 'collections.general.items_with_count'
+  endif
+  
   assign sort_by = results.sort_by | default: results.default_sort_by
   for option in results.sort_options
     if option.value == sort_by
