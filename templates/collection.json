@@ -81,7 +81,7 @@
           "settings": {
             "design_filtergroup": "default",
             "title": "Gender",
-            "filtergroup": "Women, Men, Girls, Boys",
+            "filtergroup": "Womens, Mens, Women, Men, Girls, Boys, Girl, Boy",
             "show_label": false,
             "use_accordion": true,
             "open_filtergroup": true
