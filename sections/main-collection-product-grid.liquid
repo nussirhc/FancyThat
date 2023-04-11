@@ -55,6 +55,20 @@
               endif
             endif
          -%}
+        {% if paginate.pages > 1 %}
+              <div class="text-center mt-10">
+                {%- if st.paginate_type == 'paginate' -%}
+                  {%- render 'pagination', paginate: paginate, anchor: '' -%}
+                {%- else -%}
+                  <button class="sf__btn sf__btn-primary" data-load-more>
+                    <span>
+                      {%- render 'new-locale', key: 'collections.paginate.load_more' -%}
+                    </span>
+                    {%- render 'icon', name: 'spinner', size: 'medium' -%}
+                  </button>
+                {%- endif -%}
+              </div>
+            {% endif %}
           {%- if collection.products.size == 0 -%}
             <div class="empty-collection py-24 flex flex-col w-full items-center">
               <span>{%- render 'icon', name: 'empty-collection', fill: '#9a9a9a' -%}</span>
