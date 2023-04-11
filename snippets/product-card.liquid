@@ -497,6 +497,10 @@
           {% if settings.show_swatch_option %}
             {% render 'product-card-option', product: product %}
           {% endif %}
+
+           <div id="product-price-selector" >
+             {%- render 'afterpay' -%}
+           </div>
         </div>
     
         {%- if sold_out == false and settings.show_cart_button and card_style == '4' -%}
