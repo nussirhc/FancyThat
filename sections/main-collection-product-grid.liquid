@@ -6,9 +6,7 @@
 
 <style></style>
 
-
-{%- liquid 
-
+{%- liquid
   assign st = section.settings
 
   assign initial_column = st.grid_columns
@@ -22,9 +20,8 @@
   endif
   if st.filters_type == 'tags_filter' and section.blocks.size == 0
     assign show_filter = false
-  endif 
+  endif
 -%}
-
 
 <section
   class="facest-filters-section"
@@ -40,17 +37,29 @@
   data-initial-column="{{ initial_column }}"
   data-view="{{ template.name }}"
 >
-  
   <div class="{{ st.container }}{% if st.container == 'w-full' %} px-4 xl:px-[30px]{% endif %}">
-   
-  
-    
+    {% comment %} Simple dropdown {% endcomment %}
+    {%- for link in link.links -%}
+      {%- assign link_title = link.title | strip_html | escape -%}
+      {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
+      <a
+        href="{{ link.url }}"
+        data-stagger
+        class="2 navlink navlink--child{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
+      >
+        <span class="navtext">{{ link_title }}</span>
+      </a>
+    {%- endfor -%}
+
     <div class="sf__collection-container {% if st.show_filter %}sidebar__{{ st.sidebar }}{% endif %}">
       {%- render 'collection-sidebar', show_filter: show_filter -%}
-      <div id="CollectionProductGrid" class="flex-1 w-full {% unless st.sidebar == 'fixed' or st.show_filter == false %}xl:w-3/4 2xl:w-4/5{% endunless %}">
+      <div
+        id="CollectionProductGrid"
+        class="flex-1 w-full {% unless st.sidebar == 'fixed' or st.show_filter == false %}xl:w-3/4 2xl:w-4/5{% endunless %}"
+      >
         {%- paginate collection.products by st.pagination_limit -%}
-         {%- render 'collection-page-toolbar', section: section, results: collection -%}
-         {%- liquid 
+          {%- render 'collection-page-toolbar', section: section, results: collection -%}
+          {%- liquid
             if st.show_filter
               if st.filters_type == 'storefront_filters'
                 render 'collection-filters-facets', results: collection
@@ -58,21 +67,21 @@
                 render 'selected-tags-filter'
               endif
             endif
-         -%}
-        {% if paginate.pages > 1 %}
-              <div class="text-center mt-10">
-                {%- if st.paginate_type == 'paginate' -%}
-                  {%- render 'pagination', paginate: paginate, anchor: '' -%}
-                {%- else -%}
-                  <button class="sf__btn sf__btn-primary" data-load-more>
-                    <span>
-                      {%- render 'new-locale', key: 'collections.paginate.load_more' -%}
-                    </span>
-                    {%- render 'icon', name: 'spinner', size: 'medium' -%}
-                  </button>
-                {%- endif -%}
-              </div>
-            {% endif %}
+          -%}
+          {% if paginate.pages > 1 %}
+            <div class="text-center mt-10">
+              {%- if st.paginate_type == 'paginate' -%}
+                {%- render 'pagination', paginate: paginate, anchor: '' -%}
+              {%- else -%}
+                <button class="sf__btn sf__btn-primary" data-load-more>
+                  <span>
+                    {%- render 'new-locale', key: 'collections.paginate.load_more' -%}
+                  </span>
+                  {%- render 'icon', name: 'spinner', size: 'medium' -%}
+                </button>
+              {%- endif -%}
+            </div>
+          {% endif %}
           {%- if collection.products.size == 0 -%}
             <div class="empty-collection py-24 flex flex-col w-full items-center">
               <span>{%- render 'icon', name: 'empty-collection', fill: '#9a9a9a' -%}</span>
@@ -82,7 +91,8 @@
             <div
               class="sf__product-listing sf__col-{{ initial_column }}"
               data-total-pages="{{ paginate.pages }}"
-              data-product-container>
+              data-product-container
+            >
               <div class="mt-6 flex flex-wrap -mx-2 xl:-mx-3">
                 {%- for product in collection.products -%}
                   <div class="sf__col-item w-6/12 md:w-4/12 px-2 xl:px-3">
