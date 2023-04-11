@@ -27,7 +27,7 @@
     </div>
     {%- if st.show_sorting or st.show_columns_switcher -%}
       <div class="flex flex-1 items-center justify-between">
-        <span class="flex flex-1 items-right justify-between filters-toolbar__product-count">{{ 'collections.general.items_with_count' | t: count: collection.products_count }}</span>
+        <span class="filters-toolbar__product-count">{{ 'collections.general.items_with_count' | t: count: collection.products_count }}</span>
           <div class="flex-1"></div>
           <div class="sf__gridColumn-view flex pl-4 md:pl-7">
            {% if st.show_sorting %}
