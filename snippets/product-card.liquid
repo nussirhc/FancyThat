@@ -494,9 +494,6 @@
           <div class="product-grid-item__price sf__pcard-price leading-normal">
             {% render 'product-prices', product: product, is_product_card: true %}
           </div>
-          <div id="product-price-selector" >
-             {%- render 'afterpay' -%}
-           </div>
           {% if settings.show_swatch_option %}
             {% render 'product-card-option', product: product %}
           {% endif %}
