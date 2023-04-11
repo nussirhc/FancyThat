@@ -42,8 +42,11 @@
       assign link_title = link.title | strip_html | escape
       assign link_title_lowercase = link.title | downcase | strip_html | escape
     -%}
-    {%- for link in linklists['collection-menu'].links -%}
-      <div
+    
+    
+  
+      
+      <ul
         class="{{ classes }}"
         data-nav-item
         {% if expands %}
@@ -53,6 +56,8 @@
           aria-controls="dropdown-{{ key }}"
         {% endif %}
       >
+        {%- for link in linklists['collection-menu'].links -%}
+        <li>
         <a
           href="{{ link.url }}"
           data-top-link
@@ -60,6 +65,7 @@
         >
           <span class="1 navtext">{{ link_title }}</span>
         </a>
+        <li>
         {%- if expands -%}
           <div class="header__dropdown" data-hover-disclosure id="dropdown-{{ key }}">
             <div class="header__dropdown__wrapper">
@@ -80,8 +86,9 @@
             </div>
           </div>
         {%- endif -%}
-      </div>
-    {%- endfor -%}
+        {%- endfor -%}
+      </ul>
+ 
 
     <div class="sf__collection-container {% if st.show_filter %}sidebar__{{ st.sidebar }}{% endif %}">
       {%- render 'collection-sidebar', show_filter: show_filter -%}
