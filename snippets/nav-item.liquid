@@ -20,7 +20,7 @@
     endif
   endif
 
-  assign index = index | append: ""
+  assign index = index | append: ''
   for block in section.blocks
     if block.settings.position == index
       assign grandparent = true
@@ -38,7 +38,7 @@
   endif
 
   if image_count and child_count == 0
-    assign images_only = " grandparent--all-images"
+    assign images_only = ' grandparent--all-images'
   endif
 
   capture classes
@@ -66,108 +66,116 @@
   endcapture
 -%}
 
-<div class="{{ classes }}"
+<div
+  class="{{ classes }}"
   data-nav-item
   {% if expands %}
     aria-haspopup="true"
     aria-expanded="false"
     data-hover-disclosure-toggle="dropdown-{{ key }}"
     aria-controls="dropdown-{{ key }}"
-  {% endif %}>
-  <a href="{{ link.url }}" data-top-link class="navlink navlink--toplevel{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}">
+  {% endif %}
+>
+  <a
+    href="{{ link.url }}"
+    data-top-link
+    class="navlink navlink--toplevel{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
+  >
     <span class="navtext">{{ link_title }}</span>
   </a>
   {%- if expands -%}
     <div class="header__dropdown" data-hover-disclosure id="dropdown-{{ key }}">
-    
       <div class="header__dropdown__wrapper">
-        
-          <div class="header__dropdown__inner">
-          
+        <div class="header__dropdown__inner">
           {%- if grandparent -%}
             {%- unless images_only -%}
-              
-              
               <ul class="cd-dropdown-content">
-                
-              
-              {%- if link.levels == 2 -%}
+                {%- if link.levels == 2 -%}
                   {%- for link in link.links -%}
                     {%- liquid
-                  comment
-                    Show product and collection images in mega menu
-                  endcomment
-                
-                  if section.settings.show_images
-                    assign link_image = ''
-                    assign link_image_markup = ''
-                    if link.type == 'collection_link' or link.type == 'product_link'
-                      assign link_image = link.object.featured_image
-                
-                      if link_image != blank
-                        capture link_image_markup
-                          render 'image-fill', img_object: link_image, aspect_ratio: section.settings.image_aspect_ratio
-                        endcapture
-                      endif
-                    endif
-                  endif
-                -%}
+                      comment
+                        Show product and collection images in mega menu
+                      endcomment
 
-                      <li class="1 has-children">
-                      
-                        <!-- Main Menu -->
-                      
-                        {%- assign link_title = link.title | strip_html | escape -%}
-                        {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
-                        <a href="{{ link.url }}" data-stagger-first class="1 {% if link_image_markup != blank %} navlink--image{% endif %}{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}">
-                          {{- link_image_markup -}}
-                          <span class="navtext">{{ link_title }}</span>
-                        </a>
-  
-                        <!-- Sub Menu -->
+                      if section.settings.show_images
+                        assign link_image = ''
+                        assign link_image_markup = ''
+                        if link.type == 'collection_link' or link.type == 'product_link'
+                          assign link_image = link.object.featured_image
+
+                          if link_image != blank
+                            capture link_image_markup
+                              render 'image-fill', img_object: link_image, aspect_ratio: section.settings.image_aspect_ratio
+                            endcapture
+                          endif
+                        endif
+                      endif
+                    -%}
+
+                    <li class="1 has-children">
+                      <!-- Main Menu -->
+
+                      {%- assign link_title = link.title | strip_html | escape -%}
+                      {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
+                      <a
+                        href="{{ link.url }}"
+                        data-stagger-first
+                        class="1 {% if link_image_markup != blank %} navlink--image{% endif %}{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
+                      >
+                        {{- link_image_markup -}}
+                        <span class="navtext">{{ link_title }}</span>
+                      </a>
+
+                      <!-- Sub Menu -->
                       <ul class="cd-dropdown-icons is-hidden">
                         {%- for link in link.links -%}
                           {%- assign link_title = link.title | strip_html | escape -%}
                           {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
-                          
-                           <li>
-                           <a href="{{ link.url }}" data-stagger-second class="cd-dropdown-item {% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}">
+
+                          <li>
+                            <a
+                              href="{{ link.url }}"
+                              data-stagger-second
+                              class="cd-dropdown-item {% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
+                            >
                               <span class="navtext">{{ link_title }}</span>
                             </a>
                           </li>
-
-                          {%- endfor -%}
-                          </ul>
-                      </li>
-                    
+                        {%- endfor -%}
+                      </ul>
+                    </li>
                   {%- endfor -%}
-                  
+
                 {%- elsif link.levels == 1 -%}
                   <div class="2 dropdown__family">
                     {%- for link in link.links -%}
                       {%- liquid
-                    comment
-                      Show product and collection images in mega menu
-                    endcomment
-                  
-                    if section.settings.show_images
-                      assign link_image = ''
-                      assign link_image_markup = ''
-                      if link.type == 'collection_link' or link.type == 'product_link'
-                        assign link_image = link.object.featured_image
-                  
-                        if link_image != blank
-                          capture link_image_markup
-                            render 'image-fill', img_object: link_image, aspect_ratio: section.settings.image_aspect_ratio
-                          endcapture
+                        comment
+                          Show product and collection images in mega menu
+                        endcomment
+
+                        if section.settings.show_images
+                          assign link_image = ''
+                          assign link_image_markup = ''
+                          if link.type == 'collection_link' or link.type == 'product_link'
+                            assign link_image = link.object.featured_image
+
+                            if link_image != blank
+                              capture link_image_markup
+                                render 'image-fill', img_object: link_image, aspect_ratio: section.settings.image_aspect_ratio
+                              endcapture
+                            endif
+                          endif
                         endif
-                      endif
-                    endif
-                  -%}
+                      -%}
 
                       {%- assign link_title = link.title | strip_html | escape -%}
                       {%- assign link_title_lowercase = link.title | downcas | strip_html | escape -%}
-                      <a href="{{ link.url }}" data-stagger class="3 navlink navlink--grandchild{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}">
+                      <a
+                        href="{{ link.url }}"
+                        data-stagger
+                        class="3 navlink navlink--grandchild{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
+                      >
                         <span class="navtext">{{ link_title }}</span>
                       </a>
                     {%- endfor %}
@@ -188,7 +196,11 @@
             {%- for link in link.links -%}
               {%- assign link_title = link.title | strip_html | escape -%}
               {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
-              <a href="{{ link.url }}" data-stagger class="2 navlink navlink--child{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}">
+              <a
+                href="{{ link.url }}"
+                data-stagger
+                class="2 navlink navlink--child{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
+              >
                 <span class="navtext">{{ link_title }}</span>
               </a>
             {%- endfor -%}
