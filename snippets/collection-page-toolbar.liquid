@@ -48,20 +48,7 @@
         {% endif %}
           <div class="flex-1"></div>
           <div class="sf__gridColumn-view flex pl-4 md:pl-7">
-            {% if paginate.pages > 1 %}
-              <div class="text-center mt-10">
-                {%- if st.paginate_type == 'paginate' -%}
-                  {%- render 'pagination', paginate: paginate, anchor: '' -%}
-                {%- else -%}
-                  <button class="sf__btn sf__btn-primary" data-load-more>
-                    <span>
-                      {%- render 'new-locale', key: 'collections.paginate.load_more' -%}
-                    </span>
-                    {%- render 'icon', name: 'spinner', size: 'medium' -%}
-                  </button>
-                {%- endif -%}
-              </div>
-            {% endif %}
+            
           </div>
       </div>
     {%- endif -%}
