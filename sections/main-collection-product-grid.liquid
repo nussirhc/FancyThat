@@ -44,41 +44,89 @@
   <div class="{{ st.container }}{% if st.container == 'w-full' %} px-4 xl:px-[30px]{% endif %}">
     {{ collection.title }}
     
-    <nav role="navigation">
-  <ul>
-    {%- for link in linklists.collection-menu.links -%}
-      <li>
-        <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
-          {{ link.title }}
-        </a>
-
-        {%- if link.links != blank -%}
-          <ul>
-            {%- for child_link in link.links -%}
-              <li>
-                <a href="{{ child_link.url }}" {% if child_link.active %}aria-current="page"{% endif %}>
-                  {{ child_link.title }}
-                </a>
-
-                {%- if child_link.links != blank -%}
-                  <ul>
-                    {%- for grandchild_link in child_link.links -%}
-                      <li>
-                        <a href="{{ grandchild_link.url }}" {% if grandchild_link.active %}aria-current="page"{% endif %}>
-                          {{ grandchild_link.title }}
-                        </a>
+    <nav>
+  <ul class="site-nav" id="AccessibleNav">
+    {% for link in site-nav.links %}
+      {% if link.links != blank %}
+      {% assign parent_index = forloop.index %}
+        <li 
+          class="site-nav--has-dropdown {% if link.active %}site-nav--active{% endif %}"
+          aria-haspopup="true">
+          <a
+            href="{{ link.url }}"
+            class="site-nav__link"
+            data-meganav-type="parent"
+            aria-controls="MenuParent-{{ parent_index }}"
+            aria-expanded="false"
+            {% unless template.name == 'index' %}{% if link.active %}aria-current="page"{% endif %}{% endunless%}>
+              {{ link.title | escape }}
+              <span class="icon icon-arrow-down" aria-hidden="true"></span>
+          </a>
+          <ul
+            id="MenuParent-{{ parent_index }}"
+            class="site-nav__dropdown {% if link.levels == 2 %}site-nav--has-grandchildren{% endif %}"
+            data-meganav-dropdown>
+            {% for childlink in link.links %}
+              {% if childlink.links != blank %}
+              {% assign child_index = forloop.index %}
+                <li
+                  class="site-nav--has-dropdown site-nav--has-dropdown-grandchild {% if childlink.active %}site-nav--active{% endif %}"
+                  aria-haspopup="true">
+                  <a
+                    href="{{ childlink.url }}"
+                    class="site-nav__link"
+                    aria-controls="MenuChildren-{{ parent_index }}-{{ child_index }}"
+                    data-meganav-type="parent"
+                    {% unless template.name == 'index' %}{% if childlink.active %}aria-current="page"{% endif %}{% endunless%}
+                    tabindex="-1">
+                      {{ childlink.title | escape }}
+                      <span class="icon icon-arrow-down" aria-hidden="true"></span>
+                  </a>
+                  <ul
+                    id="MenuChildren-{{ parent_index }}-{{ child_index }}"
+                    class="site-nav__dropdown-grandchild"
+                    data-meganav-dropdown>
+                    {% for grandchildlink in childlink.links %}
+                      <li{% if grandchildlink.active %} class="site-nav--active"{% endif %}>
+                        <a 
+                          href="{{ grandchildlink.url }}"
+                          class="site-nav__link"
+                          data-meganav-type="child"
+                          {% unless template.name == 'index' %}{% if grandchildlink.active %}aria-current="page"{% endif %}{% endunless %}
+                          tabindex="-1">
+                            {{ grandchildlink.title | escape }}
+                          </a>
                       </li>
-                    {%- endfor -%}
+                    {% endfor %}
                   </ul>
-                {%- endif -%}
-
-              </li>
-            {%- endfor -%}
+                </li>
+              {% else %}
+                <li{% if childlink.active %} class="site-nav--active"{% endif %}>
+                  <a
+                    href="{{ childlink.url }}"
+                    class="site-nav__link"
+                    data-meganav-type="child"
+                    {% if childlink.active %}aria-current="page"{% endif %}
+                    tabindex="-1">
+                      {{ childlink.title | escape }}
+                  </a>
+                </li>
+              {% endif %}
+            {% endfor %}
           </ul>
-        {%- endif -%}
-
-      </li>
-    {%- endfor -%}
+        </li>
+      {% else %}
+        <li{% if link.active %} class="site-nav--active"{% endif %}>
+          <a
+            href="{{ link.url }}"
+            class="site-nav__link"
+            data-meganav-type="child"
+            {% unless template.name == 'index' %}{% if link.active %}aria-current="page"{% endif %}{% endunless%}>
+              {{ link.title | escape }}
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
   </ul>
 </nav>
     
