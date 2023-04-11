@@ -53,7 +53,8 @@
         aria-controls="dropdown-{{ key }}"
       {% endif %}
     >
-      <a
+      {%- for link in linklists.collection-menu.links -%}
+         <a
         href="{{ link.url }}"
         data-top-link
         class="navlink navlink--toplevel{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
@@ -82,6 +83,8 @@
       {%- endif -%}
     </div>
 
+      {%- endfor -%}
+     
     <div class="sf__collection-container {% if st.show_filter %}sidebar__{{ st.sidebar }}{% endif %}">
       {%- render 'collection-sidebar', show_filter: show_filter -%}
       <div
