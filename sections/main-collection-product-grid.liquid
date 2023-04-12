@@ -53,9 +53,7 @@
         {% endif %}
       >
         {%- for link in linklists['collection-menu'].links -%}
-           <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
-              {{ link.title }}
-              </a>
+
         <li>
         <a href="{{ link.url }}" data-top-link class="navlink navlink--toplevel{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}">
           {{ link_title }}
