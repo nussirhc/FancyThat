@@ -71,6 +71,9 @@
                     class="2 navlink navlink--child{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}">
                     <span class="2 navtext"> {{link_title}}</span>
                   </a>
+                  <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
+                    {{ link.title }}
+                  </a>
                 {%- endfor -%}
               </div>
             </div>
