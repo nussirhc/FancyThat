@@ -11,13 +11,6 @@
         "banner_bg_color": "#fafafa"
       }
     },
-    "1ece6bb8-ad00-4c23-a353-a22b1c80581d": {
-      "type": "section-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "SubCollection \n\n{%- for link in linklists[section.settings.main-menu].links -%}\n    {%- render 'nav-item', link: link, section: section, index: forloop.index, highlight_item: highlight_item -%}\n  {%- endfor -%}"
-      }
-    },
     "main": {
       "type": "main-collection-product-grid",
       "blocks": {
@@ -196,7 +189,6 @@
   },
   "order": [
     "hero",
-    "1ece6bb8-ad00-4c23-a353-a22b1c80581d",
     "main",
     "cd13dfcb-f99f-4fe4-a14b-80490bfb0f02"
   ]
