@@ -1,0 +1,36 @@
+<!-- /snippets/subcollections.liquid -->
+
+
+
+{%- if subcollections != blank -%}
+  {%- style -%}
+    {%- if bg_color != 'rgba(0,0,0,0)' and bg_color != '' -%}
+      #Subcollection--{{ section.id }} {
+        background-color: {{ bg_color }};
+      }
+    {%- endif -%}
+
+    #Subcollection--{{ section.id }} { --overlay-opacity: {{ overlay_opacity }}; }
+    #Subcollection--{{ section.id }} .subcollection__item {
+      --text: {{ text_color }};
+      --collection-image-padding-top: {{ section.settings.image_aspect_ratio | times: 100 | append: '%' }};
+    }
+  {%- endstyle -%}
+
+  <div
+    id="Subcollection--{{ section.id }}"
+    class="subcollections"
+    data-section-type="subcollections"
+    data-section-id="{{ section.id }}"
+    data-columns="{{ columns }}"
+    data-subcollections>
+    <div class="wrapper wrapper--full">
+      <div class="{% if carousel %}carousel__container{% else %}grid__container{% endif %}">
+        <div class="{% if carousel %}carousel{% else %}grid{% endif %} carousel--mobile"{% if carousel %} data-slider data-slider-id="slider--{{ section.id }}"{% endif %}>
+          {{- subcollections -}}
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
