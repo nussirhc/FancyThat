@@ -61,6 +61,9 @@
       {%- endfor -%}
     </ul>
    -->
+    
+{%- render 'subcollections'-%}
+    
     <div class="sf__collection-container {% if st.show_filter %}sidebar__{{ st.sidebar }}{% endif %}">
       {%- render 'collection-sidebar', show_filter: show_filter -%}
       <div
