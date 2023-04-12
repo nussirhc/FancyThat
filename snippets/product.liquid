@@ -1834,11 +1834,59 @@
 </div>
 
 
-<div class="product_sidebar">
-<h4> Collection </h4>
-<p></p>
-{% for product in collections.collection.products %}
-  <p>{{ product.title }}</p>
+<div class="product_sidebar collection__filters">
+<div class="card-header">
+    <h3 class="h4 mb-0 sidebar-filters-title">
+    <a class="d-block" href="" aria-controls="">Buy Accessories</a>
+    </h3>
+</div>  
+
+{% for product in collections.buy-accessories.products %}
+  <div class="sidebar_product_item"> 
+    {% for image in product.images %}
+      <p><img src="{{ image.src | product_img_url: "large" }}"></p>
+    {% endfor %}
+  
+      {% comment %} Title {% endcomment %}
+      <a class="product-grid-item__title" href="{{ product.url | within: collection }}" aria-label="{{ product.title | strip_html | escape }}">
+        {{- product.title | strip_html | escape -}}
+      </a>
+  
+      {% comment %} Price {% endcomment %}
+      <a class="product-grid-item__price price" href="{{ product.url | within: collection }}">
+        {%- if product.price == 0 and product.price_varies == false -%}
+          {%- assign product_price = 'products.product.free' | t -%}
+          {%- assign product_price_min = 'products.product.free' | t -%}
+        {%- else -%}
+          {%- assign product_price = product.price | money -%}
+          {%- assign product_price_min = product.price_min | money -%}
+        {%- endif -%}
+
+        {%- if product.price_varies -%}
+          {{- 'products.general.from_text_html' | t: price: product_price_min -}}
+        {%- else -%}
+          {%- if on_sale -%}
+            {{ product_price }}
+
+            <s>{{ product.compare_at_price | money }}</s>
+          {%- else -%}
+            {{ product_price }}
+          {%- endif -%}
+        {%- endif -%}
+
+        {%- if current_variant.unit_price_measurement -%}
+          <span class="product__unit-price">
+            {{ current_variant.unit_price | money }}
+            {%- if current_variant.unit_price_measurement.reference_value != 1 -%}
+              {{- current_variant.unit_price_measurement.reference_value -}}
+            {%- endif -%}
+            {{ current_variant.unit_price_measurement.reference_unit }}
+          </span>
+        {%- endif -%}
+      </a>
+    
+  </div>
+
 {% endfor %}
 </div>
 
