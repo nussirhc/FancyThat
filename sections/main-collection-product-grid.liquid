@@ -46,7 +46,7 @@
   assign link_title_lowercase = link.title | downcase | strip_html | escape
  
   assign child_count = 0
-  assign image_count = 0
+
   if grandparent
     assign child_count = link.links.size
     if child_count > 10
