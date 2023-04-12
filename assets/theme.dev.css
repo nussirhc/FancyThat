@@ -19673,3 +19673,25 @@ span.afterpay-logo-link button#logo-link:after {
     height: 30px!important;
     margin-top: 9px !important;
 }
+
+.product_container .product-single__wrapper{
+    width: 80%;
+    float: left;
+}
+.product_container .product_sidebar{
+    width: 20%;
+    float: right;
+    margin-right: 0;
+    padding-left: 45px;
+}
+
+.sidebar_product_item{
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 30px;  
+}
+
+.sidebar_product_item img {
+    width: 60%;
+}
