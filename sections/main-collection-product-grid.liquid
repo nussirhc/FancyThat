@@ -69,7 +69,7 @@
                   {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
                   <a href="{{ link.url }}" data-stagger
                     class="2 navlink navlink--child{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}">
-                    <span class="2 navtext"> {{ link.title }}</span>
+                    <span class="2 navtext"> {{link_title}}</span>
                   </a>
                 {%- endfor -%}
               </div>
