@@ -19695,3 +19695,18 @@ span.afterpay-logo-link button#logo-link:after {
 .sidebar_product_item img {
     width: 60%;
 }
+
+@media only screen and (max-width: 1023px) {
+
+  .product_container .product_sidebar{
+      position: relative;
+      max-height: none;
+      width: 100%;
+      z-index: 999;
+      visibility: visible;
+      opacity: 1;
+      padding-left: 0;
+      height: auto;
+  }
+
+}
