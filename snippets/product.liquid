@@ -61,6 +61,8 @@
   endunless
 -%}
 
+<div class="product_container">
+
 <div class="product-single__wrapper{% if image_size %} product__wrapper--{{ image_size }}{% endif %}" data-section-id="{{ unique }}" data-product>
   {%- comment -%} Product media {%- endcomment -%}
   {%- unless product == blank -%}
@@ -1829,5 +1831,15 @@
   <script type="application/json" id="ProductJson-{{ unique }}" data-product-json>{{ product | json }}</script>
   <script type="application/json" id="ModelJson-{{ unique }}">{{ product.media | where: 'media_type', 'model' | json }}</script>
 
+</div>
+
+
+<div class="product_sidebar">
+<h4> Collection </h4>
+<p></p>
+{% for product in collections.collection.products %}
+  <p>{{ product.title }}</p>
+{% endfor %}
+</div>
 
 </div>
