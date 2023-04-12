@@ -56,8 +56,11 @@
            <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
               {{ link.title }}
               </a>
-        <li>
         <a href="{{ link.url }}" class="navlink navlink--toplevel">
+          <span class="1 navtext">{{ link_title }}</span>
+        </a>
+        <li>
+          <a href="{{ link.url }}" class="navlink navlink--toplevel">
           <span class="1 navtext">{{ link_title }}</span>
         </a>
         <li>
