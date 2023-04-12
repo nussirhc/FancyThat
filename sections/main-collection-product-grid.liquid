@@ -39,7 +39,6 @@
 >
   <div class="{{ st.container }}{% if st.container == 'w-full' %} px-4 xl:px-[30px]{% endif %}">
     {%- liquid
-      assign highlight_item = section.settings.highlight_item | downcase | strip_html | escape
       assign link_title = link.title | strip_html | escape
       assign link_title_lowercase = link.title | downcase | strip_html | escape
       assign parent = false
@@ -60,7 +59,7 @@
         
         {%- for link in linklists['collection-menu'].links -%}
           <li>
-            <a href="{{ link.url }}" data-top-link class="navlink navlink--toplevel{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}">
+            <a href="{{ link.url }}" data-top-link class="navlink navlink--toplevel navlink--highlight">
                <span class="1 navtext"> {{ link_title }} </span>
             </a>
           <li>
