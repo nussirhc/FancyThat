@@ -41,7 +41,7 @@
       <ul>
     {%- for link in linklists.collection-menu.links -%}
       <li>
-        <a href="{{ link.url }}" {% if link.active %}aria-current="page"{% endif %}>
+        <a href="{{ link.url }}" class="navlink navlink--toplevel" {% if link.active %}aria-current="page"{% endif %}>
           {{ link.title }}
         </a>
 
@@ -60,59 +60,7 @@
       </li>
     {%- endfor -%}
   </ul>
-    
-    {%- liquid
-      assign link_title = link.title | strip_html | escape
-      assign link_title_lowercase = link.title | downcase | strip_html | escape
-      assign parent = false
-      assign grandparent = false
-      if link.levels == 1
-        assign parent = true
-      endif
-      if link.levels == 2
-        assign grandparent = true
-      endif
-
-      if parent or grandparent
-        assign expands = true
-        assign key = link.url | append: link.title | append: link.levels | md5
-      endif
-     -%}   
-      <ul class="{{ classes }}" data-nav-item {% if expands %} aria-haspopup="true" aria-expanded="false"data-hover-disclosure-toggle="dropdown-{{ key }}"aria-controls="dropdown-{{ key }}" {% endif %}>
-        
-        {%- for link in linklists['collection-menu'].links -%}
-          <li>
-            <a href="{{ link.url }}" data-top-link class="navlink navlink--toplevel navlink--highlight">
-               <span class="1 navtext"> {{ link_title }} </span>
-            </a>
-          <li>
-          {%- if expands -%}
-            <div class="header__dropdown" data-hover-disclosure id="dropdown-{{ key }}">
-        <div class="header__dropdown__wrapper">
-          <div class="header__dropdown__inner">
-            {%- if grandparent -%}
-              {% comment %} Simple dropdown {% endcomment %}
-              {%- for link in link.links -%}
-                {%- assign link_title = link.title | strip_html | escape -%}
-                {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
-                <a
-                  href="{{ link.url }}"
-                  data-stagger
-                  class="2 navlink navlink--child{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
-                >
-                  <span class="navtext">{{ link.title }}</span>
-                </a>
-              {%- endfor -%}
-            {%- endif -%}
-          </div>
-        </div>
-      </div>
-          {%- endif -%}
-        {%- endfor -%}
-        
-      </ul>
- 
-
+  
     <div class="sf__collection-container {% if st.show_filter %}sidebar__{{ st.sidebar }}{% endif %}">
       {%- render 'collection-sidebar', show_filter: show_filter -%}
       <div
