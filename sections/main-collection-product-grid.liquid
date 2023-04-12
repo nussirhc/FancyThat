@@ -38,9 +38,7 @@
   data-view="{{ template.name }}"
 >
   <div class="{{ st.container }}{% if st.container == 'w-full' %} px-4 xl:px-[30px]{% endif %}">
-      {%- for link in linklists[section.settings.collection-menu].links -%}
-    {%- render 'nav-item', link: link, section: section, index: forloop.index, highlight_item: highlight_item -%}
-  {%- endfor -%}
+     
     {%- liquid
   assign highlight_item = section.settings.highlight_item | downcase | strip_html | escape
     
