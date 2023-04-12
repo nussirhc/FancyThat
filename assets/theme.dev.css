@@ -19707,6 +19707,9 @@ span.afterpay-logo-link button#logo-link:after {
       opacity: 1;
       padding-left: 0;
       height: auto;
+      max-width: 300px;
+      margin: 0px auto;
+      float: none;
   }
 
 }
