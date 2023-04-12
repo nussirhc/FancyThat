@@ -1843,7 +1843,7 @@
 
 {% for product in collections.buy-accessories.products %}
   <div class="sidebar_product_item"> 
-    {% for image in product.images %}
+    {% for image in product.images limit: 2 %}
       <p><img src="{{ image.src | product_img_url: "large" }}"></p>
     {% endfor %}
   
