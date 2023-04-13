@@ -1,21 +1,8 @@
 <!-- /snippets/subcollections.liquid -->
 
- <ul class=”sub-menu”>
-    {% for link in linklists[section.settings.collection-menu].links %}
-      <li class=”{% if link.links != blank %}submenu2-hover {{ link.handle }} {% endif %} {% if link.active %}active{% endif %}” ><a href=”{{ link.url }}”>{{ link.title }}</a>
-      {% if link.links != blank %}
-         <ul class=”sub-menu2 sub-menu2-{{ link.handle }}”>
-         {% for childlink in link.links %}
-          <li class=”{% if link.active %}active{% endif %}”><a href=”{{ childlink.url }}”>{{ childlink.title }}</a></li>
-        {% endfor %}
-        </ul>
-      {% endif %}
-       </li>
-    {% endfor %}
-    </ul>
-<!--
+
 {%- liquid
-  assign link_title = link.title | strip_html | escape
+  assign link_title = link.ttle | strip_html | escape
   assign link_title_lowercase = link.title | downcase | strip_html | escape
   assign parent = false
   assign grandparent = false
@@ -59,6 +46,7 @@
   
 -%}
 
+
  <div
   class="{{ classes }}"
   data-nav-item
@@ -69,6 +57,7 @@
     aria-controls="dropdown-{{ key }}"
   {% endif %}
 >
+   {% for link in linklists.main-menu.links %}
   <a
     href="{{ link.url }}"
     data-top-link
@@ -96,5 +85,5 @@
       </div>
     </div>
   {%- endif -%}
+  {% endfor %}
 </div>
- -->
