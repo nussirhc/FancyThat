@@ -1,7 +1,7 @@
 <!-- /snippets/subcollections.liquid -->
 
  <ul class=”sub-menu”>
-    {% for link in linklists[section.settings.main_menu].links %}
+    {% for link in linklists[section.settings.collection-menu].links %}
       <li class=”{% if link.links != blank %}submenu2-hover {{ link.handle }} {% endif %} {% if link.active %}active{% endif %}” ><a href=”{{ link.url }}”>{{ link.title }}</a>
       {% if link.links != blank %}
          <ul class=”sub-menu2 sub-menu2-{{ link.handle }}”>
