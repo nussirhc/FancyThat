@@ -42,29 +42,7 @@
     assign images_only = ' grandparent--all-images'
   endif
 
-  capture classes
-    echo 'menu__item'
-
-    if grandparent
-      echo ' grandparent kids-' | append: child_count
-
-      if image_count > 0
-        echo ' images-' | append: image_count
-      else
-        echo ' no-images'
-      endif
-
-      echo images_only
-    elsif parent
-      echo ' parent'
-    else
-      echo ' child'
-    endif
-
-    if link.active
-      echo ' menu-item--active'
-    endif
-  endcapture
+  
 -%}
 
 <div
