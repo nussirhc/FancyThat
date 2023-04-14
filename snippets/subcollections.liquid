@@ -1,89 +1,41 @@
 <!-- /snippets/subcollections.liquid -->
 
-
+{% comment %}
+  Generate a list of collection tiles if the main menu item is
+  active and its children are also collection links
+{% endcomment %}
 {%- liquid
-  assign link_title = link.ttle | strip_html | escape
-  assign link_title_lowercase = link.title | downcase | strip_html | escape
-  assign parent = false
-  assign grandparent = false
-  if link.levels == 1
-    assign parent = true
-  endif
-  if link.levels == 2
-    assign grandparent = true
-  endif
+  unless current_tags
+    assign current_items = ''
 
-  assign child_count = 0
-  assign image_count = 0
-  if grandparent
-    assign child_count = link.links.size
-    if child_count > 10
-      assign child_count = 10
-    endif
-  endif
-
-  assign index = index | append: ''
-  for block in section.blocks
-    if block.settings.position == index
-      assign grandparent = true
-      assign image_count = image_count | plus: 1
-    endif
-  endfor
-
-  if parent or grandparent
-    assign expands = true
-    assign key = link.url | append: link.title | append: link.levels | md5
-  endif
-
-  if parent and link.levels == 1
-    assign child_count = child_count | plus: 1
-  endif
-
-  if image_count and child_count == 0
-    assign images_only = ' grandparent--all-images'
-  endif
-
-  
+    for link in linklists.main-menu.links
+      if link.active and link.levels > 0 and link.child_active == false
+        unless current_items contains link.title
+          render 'sub-collections', per_row: per_row, sub_collection_links: link.links
+          assign current_items = current_items | append: link.title
+        endunless
+      endif
+      for sub_link in link.links
+        if sub_link.active and sub_link.levels > 0 and sub_link.child_active == false
+          unless current_items contains sub_link.title
+            render 'sub-collections', per_row: per_row, sub_collection_links: sub_link.links
+            assign current_items = current_items | append: sub_link.title
+          endunless
+        endif
+        for sub_sub_link in sub_link.links
+          if sub_sub_link.active and sub_sub_link.url == sub_link.url
+            unless current_items contains sub_sub_link.title
+              render 'sub-collections', per_row: per_row, parent_url: sub_link.url, sub_collection_links: sub_link.links
+              assign current_items = current_items | append: sub_sub_link.title
+            endunless
+          elsif sub_sub_link.active and sub_sub_link.levels > 0
+            unless current_items contains sub_sub_link.title
+              render 'sub-collections', per_row: per_row, sub_collection_links: sub_sub_link.links
+              assign current_items = current_items | append: sub_sub_link.title
+            endunless
+          endif
+        endfor
+      endfor
+    endfor
+  endunless
 -%}
-
-
- <div
-  class="{{ classes }}"
-  data-nav-item
-  {% if expands %}
-    aria-haspopup="true"
-    aria-expanded="false"
-    data-hover-disclosure-toggle="dropdown-{{ key }}"
-    aria-controls="dropdown-{{ key }}"
-  {% endif %}
->
-   {% for link in linklists.collection-menu.links %}
-  <a
-    href="{{ link.url }}"
-    data-top-link
-    class="navlink navlink--toplevel"
-  >
-    <span class="1 navtext">{{ link.title }}</span>
-  </a>
-  {%- if expands -%}
-    <div class="header__dropdown" data-hover-disclosure id="dropdown-{{ key }}">
-      <div class="header__dropdown__wrapper">
-        <div class="header__dropdown__inner">
-            {% comment %} Simple dropdown {% endcomment %}
-            {%- for link in link.links -%}
-              {%- assign link_title = link.title | strip_html | escape -%}
-              {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
-              <a
-                href="{{ link.url }}"
-                data-stagger
-                class="2 navlink navlink--child{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
-              >
-                <span class="2 navtext">{{ link.title }}</span>
-              </a>
-            {%- endfor -%}
-        </div>
-      </div>
-    </div>
-  {%- endif -%}
-  {% endfor %}
-</div>
