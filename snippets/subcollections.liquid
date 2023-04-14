@@ -8,7 +8,7 @@
   unless current_tags
     assign current_items = ''
 
-    for link in linklists.main-menu.links
+    for link in linklists.collection-menu.links
       if link.active and link.levels > 0 and link.child_active == false
         unless current_items contains link.title
           render 'sub-collections', per_row: per_row, sub_collection_links: link.links
