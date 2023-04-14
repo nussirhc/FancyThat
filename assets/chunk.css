@@ -1350,7 +1350,7 @@ body.cart-empty
   width: 20px;
 }
 
-.sf__accordion-item.open .sf__accordion-button:after {
+.sf__accordion-item.is-open .sf__accordion-button:after {
     transform: rotateX(180deg);
 }
 
