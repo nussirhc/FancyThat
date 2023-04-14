@@ -1,1 +1,596 @@
-{"current":{"color_body_bg":"#ffffff","color_headings":"#545454","color_body_text":"#545454","color_accent":"#eedfd7","color_borders_and_lines":"#d3d3d3","color_custom_badge":"#1990c6","color_button_primary":"#e20d66","color_button_secondary":"#ffffff","type_heading_font":"montserrat_n4","type_base_font":"montserrat_n4","type_nav_font":"heading","nav_size":100,"nav_caps":false,"button_size":75,"show_spacer_lines":false,"show_rounded_corners":true,"show_text_shadow":false,"enable_infinity_scroll":true,"animations_enabled":true,"button_style":"pill","show_scroll_to_top":false,"products_per_row_on_desktop":4,"enable_color_swatches_collection":true,"product_grid_hover_swatches":true,"show_rating":true,"quick_button":"view","show_labels":true,"show_quantity":true,"show_payment_button":true,"variants_style":"boxes","cart_type":"drawer","enable_additional_buttons":false,"empty_cart_buttons":"collection-menu","free_shipping_limit":"70","cart_custom_message_text":"<p>Please select the correct shipping for your address as we are unable to send your rural order if you select standard.<\/p>","enable_accept_terms":false,"social_facebook_link":"https:\/\/www.facebook.com\/fancythatcostumes","social_twitter_link":"","social_pinterest_link":"https:\/\/www.pinterest.com\/moreplay\/","social_instagram_link":"https:\/\/www.instagram.com\/fancythatcostumes\/","social_youtube_link":"https:\/\/www.youtube.com\/user\/FancyThatCostumesTV","favicon":"shopify:\/\/shop_images\/favicon.png","checkout_header_image":"","checkout_logo_image":"","checkout_logo_position":"left","checkout_logo_size":"medium","checkout_body_background_image":"","checkout_body_background_color":"#ffffff","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#fafafa","checkout_heading_font":"Helvetica Neue","checkout_body_font":"Helvetica Neue","checkout_accent_color":"#1990c6","checkout_button_color":"#1990c6","checkout_error_color":"#ff6d6d","type_body_font":"chivo_n4","enable_color_swatches":true,"show_popup_newsletter":true,"popup_delay":"3000","popup_reappear_time":"7","logo_max_width":"30","show_shop_name":true,"sections":{"header":{"type":"header","settings":{"sticky_header":true,"logo_not_home":"shopify:\/\/shop_images\/website_logo.png","logo_max_width":250,"main-menu":"collection-menu","show_images":false,"image_aspect_ratio":0.6,"menu_alignment":"right","highlight_item":"Sale","highlight_item_color":"#d02e2e","show_search":true,"menu_searches_list":"","show_search_links":true,"header_transparent":false,"header_text_color":"white"}},"footer":{"type":"footer","blocks":{"9843dcf6-62cf-40ea-a71c-c1c9fae8c009":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/website_logo.png","logo_width":250,"show_shop_name":false,"title":"Contact Details","footer_text":"<ul>\n<li>\n<i class=\"fa-solid fa-phone-volume\"><\/i>\n<a class=\"footer-contact-link\" href=\"tel:0299066135\">02 9906 6135<\/a>\n<\/li>\n<li>\n<i class=\"fa-regular fa-envelope\"><\/i>\n<a class=\"footer-contact-link\" href=\"mailto:play@fancythatcostumes.com.au\" title=\"mailto:play@fancythatcostumes.com.au\">Email Us<\/a>\n<\/li>\n<\/ul>"}},"fee709f3-c311-4d92-96ab-d5a2106151ed":{"type":"link","settings":{"title":"Customer Service","menu":"customer-service","second_heading":"Second Link list","second_menu":"company"}},"ba117da1-c832-42e9-87d4-7fd52eaa2b1d":{"type":"text","settings":{"title":"Trading Hours","footer_text":"<ul>\n    <li><strong>MON\/TUE - returns only.<\/strong><\/li>\n    <li><strong>Monday – Wednesday<\/strong><\/li>\n    <li>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0694\/8860\/7531\/files\/alarm.png?v=1674093537\"> 11:00 am – 7:00 pm<\/li>\n    <li><strong>Thursday<\/strong><\/li>\n    <li>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0694\/8860\/7531\/files\/alarm.png?v=1674093537\"> 11:00 am – 8:00 pm<\/li>\n    <li><strong>Friday<\/strong><\/li>\n    <li>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0694\/8860\/7531\/files\/alarm.png?v=1674093537\"> 11:00 am – 6:00 pm<\/li>\n    <li><strong>Saturday<\/strong><\/li>\n    <li>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0694\/8860\/7531\/files\/alarm.png?v=1674093537\"> 10:00 am – 4:00 pm<\/li>\n    <li><strong>Sunday:  Open by appt. only for balloon jobs over $250<\/strong><\/li>\n<\/ul>","secondary_title":"","secondary_footer_text":""}},"ccd4c14f-f103-4153-b9f4-e923232a74b5":{"type":"text","settings":{"title":"Visit our Store","footer_text":"<ul>\n    <li>\n<i class=\"fas fa-location-dot\"><\/i> <a href=\"https:\/\/goo.gl\/maps\/RB1nbNcDyuxcArKv7\" target=\"_blank\">388 Pacific Hwy CROWS NEST NSW 2065 AU<\/a>\n<\/li>\n    <li>\n<i class=\"fas fa-diamond-turn-right\"><\/i><a href=\"https:\/\/www.fancythatcostumes.com.au\/faqs\" target=\"_blank\">Click for directions & parking<\/a>\n<\/li>\n    <li><strong>Hiring a costume? HIRE FLOOR CLOSED<\/strong><\/li>\n<\/ul>","secondary_title":"","secondary_footer_text":""}}},"block_order":["9843dcf6-62cf-40ea-a71c-c1c9fae8c009","fee709f3-c311-4d92-96ab-d5a2106151ed","ba117da1-c832-42e9-87d4-7fd52eaa2b1d","ccd4c14f-f103-4153-b9f4-e923232a74b5"],"settings":{"show_footer_wave":false,"color_wave":"rgba(0,0,0,0)","show_social_links":true,"show_payment_icons":true,"bottom_menu":"","color_text":"#545454","color_bg":"rgba(0,0,0,0)","color_border":"#e20d66","show_locale_selector":true,"show_currency_selector":true,"currency_type":"currency"}},"popup":{"type":"popup","blocks":{"popup-0":{"type":"popup","disabled":true,"settings":{"title":"Sign up for 10% off","text":"<p>Let’s keep in touch. We promise we won’t bug you too much - just promotions and new releases.<\/p>","show_newsletter_form":true,"extra_fields":"","button_text":"","trigger":"always","target_url_enabled":false,"target_url":"","target_referrer_enabled":false,"target_referrer":"","target_device_enabled":false,"target_device":"mobile","text_color":"text-dark","bg_color":"#ffffff"}}},"block_order":["popup-0"],"settings":{}},"announcement-bar":{"type":"announcement-bar","blocks":{"announcement-0":{"type":"text","settings":{"text":"<p><strong>VISIT OUR CROWS NEST, SYDNEY STORE <br\/><\/strong>(Hiring a costume? Hire floor closed Mon\/Tue - returns only)<\/p>","icon_name":"none","icon_color":"#e20d66","icon_width":15,"target_url_enabled":false,"target_url":"","target_referrer_enabled":false,"target_referrer":"","target_device_enabled":false,"target_device":"mobile"}}},"block_order":["announcement-0"],"settings":{"bg_color":"#e20d66","color":"#ffffff","layout":"slider","padding":10,"slider_speed":7,"marquee_speed":100,"text_size":100,"message_spacing":25}},"section-icons-row":{"type":"section-icons-row","blocks":{"a6c35b07-15f2-43b3-9b80-ca06a393737b":{"type":"text","settings":{"icon_name":"truck","title":"","text":"<p><a href=\"\/pages\/costume-purchase-faq\" title=\"Costume Purchase FAQ\">Free Delivery* <\/a><\/p>"}},"2e656f9e-15f6-445b-a4d9-41e6f8a8a6df":{"type":"text","settings":{"icon_name":"clipboard","title":"","text":"<p><a href=\"\/pages\/costume-purchase-faq\" title=\"Costume Purchase FAQ\">Easy Returns <\/a><\/p>"}},"094ada09-83ff-4e44-9851-07d9b099f3d4":{"type":"text","settings":{"icon_name":"clock","icon_image":"shopify:\/\/shop_images\/afterpay.webp","title":"","text":"<p>Available for online purchases<\/p>"}},"2ad8c9b5-a141-4bb0-9b05-397e48a462eb":{"type":"text","settings":{"icon_name":"","title":"","text":"<p>Buy Australia-Wide<\/p>"}},"61715c93-3582-4dad-84f6-233fdae291f5":{"type":"text","settings":{"icon_name":"","title":"","text":"<p>Hire Sydney Only<\/p>"}},"03555882-838c-40d1-a590-837459889f71":{"type":"text","settings":{"icon_name":"","title":"","text":"<p>Balloons Sydney Only<\/p>"}}},"block_order":["a6c35b07-15f2-43b3-9b80-ca06a393737b","2e656f9e-15f6-445b-a4d9-41e6f8a8a6df","094ada09-83ff-4e44-9851-07d9b099f3d4","2ad8c9b5-a141-4bb0-9b05-397e48a462eb","61715c93-3582-4dad-84f6-233fdae291f5","03555882-838c-40d1-a590-837459889f71"],"custom_css":[],"settings":{"alignment":"left","columns":6,"icons_width":25,"bg_color":"#fafafa","box_color":"","text_color":"#333333"}}},"content_for_index":[],"blocks":{"3824936769257688723":{"type":"shopify:\/\/apps\/sami-product-labels-badges\/blocks\/app-embed-block\/b9b44663-5d51-4be1-8104-faedd68da8c5","disabled":false,"settings":{}},"319724205969189013":{"type":"shopify:\/\/apps\/hulk-form-builder\/blocks\/app-embed\/b6b8dd14-356b-4725-a4ed-77232212b3c3","disabled":false,"settings":{}}}},"presets":{"Palo Alto":{"favicon":"","color_body_bg":"#ffffff","color_headings":"#000","color_body_text":"#000","color_accent":"#004AC7","color_borders_and_lines":"#d3d3d3","color_button_primary":"#004AC7","color_button_secondary":"#ffffff","type_heading_font":"harmonia_sans_n6","type_body_font":"chivo_n4","nav_size":"90","button_style":"square","show_spacer_lines":false,"quick_button":"view","enable_color_swatches":true,"show_payment_button":true,"cart_type":"drawer","social_facebook_link":"","social_twitter_link":"","social_pinterest_link":"","social_instagram_link":"","checkout_header_image":"","checkout_logo_image":"","checkout_logo_position":"left","checkout_logo_size":"medium","checkout_body_background_image":"","checkout_body_background_color":"#ffffff","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#fafafa","checkout_heading_font":"Helvetica Neue","checkout_body_font":"Helvetica Neue","checkout_accent_color":"#1990c6","checkout_button_color":"#1990c6","checkout_error_color":"#ff6d6d","show_popup_newsletter":true,"popup_delay":"3000","popup_reappear_time":"7","logo_max_width":"30","show_shop_name":true,"sections":{"header":{"type":"header","settings":{"logo_not_home":"","logo_max_width":100,"main-menu":"main-menu","menu_alignment":"right","highlight_item_color":"#D02E2E","show_search":true,"menu_searches_list":"","show_search_links":true,"logo":""}},"footer":{"type":"footer","blocks":{"footer-block-0":{"type":"link","settings":{"menu":"footer","show_title":true}},"footer-block-1":{"type":"text","settings":{"title":"About us","footer_text":"<p>Leave your customers with a final message about your brand in this rich text block.<\/p>"}},"footer-block-2":{"type":"newsletter","settings":{"title":"Newsletter"}}},"block_order":["footer-block-0","footer-block-1","footer-block-2"],"settings":{"color_wave":"#000","show_social_links":true,"show_payment_icons":true,"color_text":"#fff","color_bg":"#000","color_border":"#fff","show_locale_selector":false,"show_currency_selector":false}},"popup":{"type":"popup","blocks":{"popup-0":{"type":"popup","disabled":true,"settings":{"bg_color":"#fff"}}},"block_order":["popup-0"],"settings":{}},"announcement-bar":{"type":"announcement-bar","blocks":{"announcement-0":{"type":"text","disabled":true,"settings":{}},"announcement-1":{"type":"text","disabled":true,"settings":{"text":"<p>New collections just released - <a href=\"\/collections\" title=\"All collections\">Shop now<\/a><\/p>"}},"announcement-2":{"type":"text","disabled":true,"settings":{"text":"<p>Use code <strong>TENOFF<\/strong> for 10% off first purchase<\/p>"}}},"block_order":["announcement-0","announcement-1","announcement-2"],"settings":{"bg_color":"#f7f7f7","color":"#545454"}}}},"Stanford":{"color_body_bg":"#f5f1eb","color_headings":"#222222","color_body_text":"#222222","color_accent":"#6c7c6c","color_borders_and_lines":"#222222","color_custom_badge":"#222222","color_saving_badge":"#D02E2E","color_button_primary":"#222222","color_button_secondary":"#f5f1eb","type_heading_font":"harmonia_sans_n4","heading_size":90,"type_base_font":"harmonia_sans_n4","text_size":90,"nav_font_weight":"normal","nav_size":90,"nav_caps":false,"button_size":80,"button_letter_spacing":125,"button_caps":true,"subheading_caps":false,"quick_button":"view","enable_color_swatches":true,"show_payment_button":true,"cart_type":"drawer","show_popup_newsletter":true,"popup_delay":"3000","popup_reappear_time":"7","logo_max_width":"30","show_shop_name":true,"sections":{"header":{"type":"header","settings":{"logo_not_home":"","logo_max_width":50,"main-menu":"main-menu","menu_alignment":"right","highlight_item_color":"#D02E2E","show_search":true,"menu_searches_list":"","show_search_links":true,"logo":""}},"footer":{"type":"footer","blocks":{"footer-block-0":{"type":"link","settings":{"menu":"footer","show_title":true}},"footer-block-1":{"type":"text","settings":{"title":"About us","footer_text":"<p>Leave your customers with a final message about your brand in this rich text block.<\/p>"}},"footer-block-2":{"type":"newsletter","settings":{"title":"Newsletter"}}},"block_order":["footer-block-0","footer-block-1","footer-block-2"],"settings":{"color_wave":"#000","show_social_links":true,"show_payment_icons":true,"color_text":"#fff","color_bg":"#000","color_border":"#fff","show_locale_selector":false,"show_currency_selector":false}},"popup":{"type":"popup","blocks":{"popup-0":{"type":"popup","disabled":true,"settings":{"bg_color":"#fff"}}},"block_order":["popup-0"],"settings":{}},"announcement-bar":{"type":"announcement-bar","blocks":{"announcement-0":{"type":"message","settings":{}}},"block_order":["announcement-0"],"settings":{"bg_color":"#f7f7f7","color":"#545454"}}}}},"platform_customizations":{"custom_css":[".template-product .icons-row .icons-row__item {display: inline-block;}",".template-product h3.icons-row__title {display: inline-block;}",".template-product .icons-row__text {padding-left: 38px;}",".template-product .icons-row__item:nth-child(3) .icons-row__icon {width: 30px !important;}"]}}
+{
+  "current": {
+    "color_body_bg": "#ffffff",
+    "color_headings": "#545454",
+    "color_body_text": "#545454",
+    "color_accent": "#eedfd7",
+    "color_borders_and_lines": "#d3d3d3",
+    "color_custom_badge": "#1990c6",
+    "color_button_primary": "#e20d66",
+    "color_button_secondary": "#ffffff",
+    "type_heading_font": "montserrat_n4",
+    "type_base_font": "montserrat_n4",
+    "type_nav_font": "heading",
+    "nav_size": 100,
+    "nav_caps": false,
+    "button_size": 75,
+    "show_spacer_lines": false,
+    "show_rounded_corners": true,
+    "show_text_shadow": false,
+    "enable_infinity_scroll": true,
+    "animations_enabled": true,
+    "button_style": "pill",
+    "show_scroll_to_top": false,
+    "products_per_row_on_desktop": 4,
+    "enable_color_swatches_collection": true,
+    "product_grid_hover_swatches": true,
+    "show_rating": true,
+    "quick_button": "view",
+    "show_labels": true,
+    "show_quantity": true,
+    "show_payment_button": true,
+    "variants_style": "boxes",
+    "cart_type": "drawer",
+    "enable_additional_buttons": false,
+    "empty_cart_buttons": "collection-menu",
+    "free_shipping_limit": "70",
+    "cart_custom_message_text": "<p>Please select the correct shipping for your address as we are unable to send your rural order if you select standard.<\/p>",
+    "enable_accept_terms": false,
+    "social_facebook_link": "https:\/\/www.facebook.com\/fancythatcostumes",
+    "social_twitter_link": "",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/moreplay\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/fancythatcostumes\/",
+    "social_youtube_link": "https:\/\/www.youtube.com\/user\/FancyThatCostumesTV",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#1990c6",
+    "checkout_error_color": "#ff6d6d",
+    "type_body_font": "chivo_n4",
+    "enable_color_swatches": true,
+    "show_popup_newsletter": true,
+    "popup_delay": "3000",
+    "popup_reappear_time": "7",
+    "logo_max_width": "30",
+    "show_shop_name": true,
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "sticky_header": true,
+          "logo_not_home": "shopify:\/\/shop_images\/website_logo.png",
+          "logo_max_width": 250,
+          "main-menu": "collection-menu",
+          "show_images": false,
+          "image_aspect_ratio": 0.6,
+          "menu_alignment": "right",
+          "highlight_item": "Sale",
+          "highlight_item_color": "#d02e2e",
+          "show_search": true,
+          "menu_searches_list": "",
+          "show_search_links": true,
+          "header_transparent": false,
+          "header_text_color": "white"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "9843dcf6-62cf-40ea-a71c-c1c9fae8c009": {
+            "type": "logo",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/website_logo.png",
+              "logo_width": 250,
+              "show_shop_name": false,
+              "title": "Contact Details",
+              "footer_text": "<ul>\n<li>\n<i class=\"fa-solid fa-phone-volume\"><\/i>\n<a class=\"footer-contact-link\" href=\"tel:0299066135\">02 9906 6135<\/a>\n<\/li>\n<li>\n<i class=\"fa-regular fa-envelope\"><\/i>\n<a class=\"footer-contact-link\" href=\"mailto:play@fancythatcostumes.com.au\" title=\"mailto:play@fancythatcostumes.com.au\">Email Us<\/a>\n<\/li>\n<\/ul>"
+            }
+          },
+          "fee709f3-c311-4d92-96ab-d5a2106151ed": {
+            "type": "link",
+            "settings": {
+              "title": "Customer Service",
+              "menu": "customer-service",
+              "second_heading": "Second Link list",
+              "second_menu": "company"
+            }
+          },
+          "ba117da1-c832-42e9-87d4-7fd52eaa2b1d": {
+            "type": "text",
+            "settings": {
+              "title": "Trading Hours",
+              "footer_text": "<ul>\n    <li><strong>MON\/TUE - returns only.<\/strong><\/li>\n    <li><strong>Monday – Wednesday<\/strong><\/li>\n    <li>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0694\/8860\/7531\/files\/alarm.png?v=1674093537\"> 11:00 am – 7:00 pm<\/li>\n    <li><strong>Thursday<\/strong><\/li>\n    <li>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0694\/8860\/7531\/files\/alarm.png?v=1674093537\"> 11:00 am – 8:00 pm<\/li>\n    <li><strong>Friday<\/strong><\/li>\n    <li>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0694\/8860\/7531\/files\/alarm.png?v=1674093537\"> 11:00 am – 6:00 pm<\/li>\n    <li><strong>Saturday<\/strong><\/li>\n    <li>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0694\/8860\/7531\/files\/alarm.png?v=1674093537\"> 10:00 am – 4:00 pm<\/li>\n    <li><strong>Sunday:  Open by appt. only for balloon jobs over $250<\/strong><\/li>\n<\/ul>",
+              "secondary_title": "",
+              "secondary_footer_text": ""
+            }
+          },
+          "ccd4c14f-f103-4153-b9f4-e923232a74b5": {
+            "type": "text",
+            "settings": {
+              "title": "Visit our Store",
+              "footer_text": "<ul>\n    <li>\n<i class=\"fas fa-location-dot\"><\/i> <a href=\"https:\/\/goo.gl\/maps\/RB1nbNcDyuxcArKv7\" target=\"_blank\">388 Pacific Hwy CROWS NEST NSW 2065 AU<\/a>\n<\/li>\n    <li>\n<i class=\"fas fa-diamond-turn-right\"><\/i><a href=\"https:\/\/www.fancythatcostumes.com.au\/faqs\" target=\"_blank\">Click for directions & parking<\/a>\n<\/li>\n    <li><strong>Hiring a costume? HIRE FLOOR CLOSED<\/strong><\/li>\n<\/ul>",
+              "secondary_title": "",
+              "secondary_footer_text": ""
+            }
+          }
+        },
+        "block_order": [
+          "9843dcf6-62cf-40ea-a71c-c1c9fae8c009",
+          "fee709f3-c311-4d92-96ab-d5a2106151ed",
+          "ba117da1-c832-42e9-87d4-7fd52eaa2b1d",
+          "ccd4c14f-f103-4153-b9f4-e923232a74b5"
+        ],
+        "settings": {
+          "show_footer_wave": false,
+          "color_wave": "rgba(0,0,0,0)",
+          "show_social_links": true,
+          "show_payment_icons": true,
+          "bottom_menu": "",
+          "color_text": "#545454",
+          "color_bg": "rgba(0,0,0,0)",
+          "color_border": "#e20d66",
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "currency_type": "currency"
+        }
+      },
+      "popup": {
+        "type": "popup",
+        "blocks": {
+          "popup-0": {
+            "type": "popup",
+            "disabled": true,
+            "settings": {
+              "title": "Sign up for 10% off",
+              "text": "<p>Let’s keep in touch. We promise we won’t bug you too much - just promotions and new releases.<\/p>",
+              "show_newsletter_form": true,
+              "extra_fields": "",
+              "button_text": "",
+              "trigger": "always",
+              "target_url_enabled": false,
+              "target_url": "",
+              "target_referrer_enabled": false,
+              "target_referrer": "",
+              "target_device_enabled": false,
+              "target_device": "mobile",
+              "text_color": "text-dark",
+              "bg_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "popup-0"
+        ],
+        "settings": {
+        }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-0": {
+            "type": "text",
+            "settings": {
+              "text": "<p><strong>VISIT OUR CROWS NEST, SYDNEY STORE <br\/><\/strong>(Hiring a costume? Hire floor closed Mon\/Tue - returns only)<\/p>",
+              "icon_name": "none",
+              "icon_color": "#e20d66",
+              "icon_width": 15,
+              "target_url_enabled": false,
+              "target_url": "",
+              "target_referrer_enabled": false,
+              "target_referrer": "",
+              "target_device_enabled": false,
+              "target_device": "mobile"
+            }
+          }
+        },
+        "block_order": [
+          "announcement-0"
+        ],
+        "settings": {
+          "bg_color": "#e20d66",
+          "color": "#ffffff",
+          "layout": "slider",
+          "padding": 10,
+          "slider_speed": 7,
+          "marquee_speed": 100,
+          "text_size": 100,
+          "message_spacing": 25
+        }
+      },
+      "section-icons-row": {
+        "type": "section-icons-row",
+        "blocks": {
+          "a6c35b07-15f2-43b3-9b80-ca06a393737b": {
+            "type": "text",
+            "settings": {
+              "icon_name": "truck",
+              "title": "",
+              "text": "<p><a href=\"\/pages\/costume-purchase-faq\" title=\"Costume Purchase FAQ\">Free Delivery* <\/a><\/p>",
+              "icon_popup_page": ""
+            }
+          },
+          "2e656f9e-15f6-445b-a4d9-41e6f8a8a6df": {
+            "type": "text",
+            "settings": {
+              "icon_name": "clipboard",
+              "title": "",
+              "text": "<p><a href=\"\/pages\/costume-purchase-faq\" title=\"Costume Purchase FAQ\">Easy Returns <\/a><\/p>",
+              "icon_popup_page": ""
+            }
+          },
+          "094ada09-83ff-4e44-9851-07d9b099f3d4": {
+            "type": "text",
+            "settings": {
+              "icon_name": "clock",
+              "icon_image": "shopify:\/\/shop_images\/afterpay.webp",
+              "title": "",
+              "text": "<p>Available for online purchases<\/p>",
+              "icon_popup_page": ""
+            }
+          },
+          "2ad8c9b5-a141-4bb0-9b05-397e48a462eb": {
+            "type": "text",
+            "settings": {
+              "icon_name": "",
+              "title": "",
+              "text": "<p>Buy Australia-Wide<\/p>",
+              "icon_popup_page": ""
+            }
+          },
+          "61715c93-3582-4dad-84f6-233fdae291f5": {
+            "type": "text",
+            "settings": {
+              "icon_name": "",
+              "title": "",
+              "text": "<p>Hire Sydney Only<\/p>",
+              "icon_popup_page": ""
+            }
+          },
+          "03555882-838c-40d1-a590-837459889f71": {
+            "type": "text",
+            "settings": {
+              "icon_name": "",
+              "title": "",
+              "text": "<p>Balloons Sydney Only<\/p>",
+              "icon_popup_page": ""
+            }
+          }
+        },
+        "block_order": [
+          "a6c35b07-15f2-43b3-9b80-ca06a393737b",
+          "2e656f9e-15f6-445b-a4d9-41e6f8a8a6df",
+          "094ada09-83ff-4e44-9851-07d9b099f3d4",
+          "2ad8c9b5-a141-4bb0-9b05-397e48a462eb",
+          "61715c93-3582-4dad-84f6-233fdae291f5",
+          "03555882-838c-40d1-a590-837459889f71"
+        ],
+        "custom_css": [
+
+        ],
+        "settings": {
+          "alignment": "left",
+          "columns": 6,
+          "icons_width": 25,
+          "bg_color": "#fafafa",
+          "box_color": "",
+          "text_color": "#333333"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "3824936769257688723": {
+        "type": "shopify:\/\/apps\/sami-product-labels-badges\/blocks\/app-embed-block\/b9b44663-5d51-4be1-8104-faedd68da8c5",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "319724205969189013": {
+        "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/app-embed\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "5803399549441092565": {
+        "type": "shopify:\/\/apps\/multi-location-inventory-info\/blocks\/app-embed\/982328e1-99f7-4a7e-8266-6aed71bf0021",
+        "disabled": false,
+        "settings": {
+          "syncLoad": true,
+          "collectionMapping": false,
+          "customerTagMapping": false,
+          "collectionPages": false
+        }
+      }
+    }
+  },
+  "presets": {
+    "Palo Alto": {
+      "favicon": "",
+      "color_body_bg": "#ffffff",
+      "color_headings": "#000",
+      "color_body_text": "#000",
+      "color_accent": "#004AC7",
+      "color_borders_and_lines": "#d3d3d3",
+      "color_button_primary": "#004AC7",
+      "color_button_secondary": "#ffffff",
+      "type_heading_font": "harmonia_sans_n6",
+      "type_body_font": "chivo_n4",
+      "nav_size": "90",
+      "button_style": "square",
+      "show_spacer_lines": false,
+      "quick_button": "view",
+      "enable_color_swatches": true,
+      "show_payment_button": true,
+      "cart_type": "drawer",
+      "social_facebook_link": "",
+      "social_twitter_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "Helvetica Neue",
+      "checkout_body_font": "Helvetica Neue",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#1990c6",
+      "checkout_error_color": "#ff6d6d",
+      "show_popup_newsletter": true,
+      "popup_delay": "3000",
+      "popup_reappear_time": "7",
+      "logo_max_width": "30",
+      "show_shop_name": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_not_home": "",
+            "logo_max_width": 100,
+            "main-menu": "main-menu",
+            "menu_alignment": "right",
+            "highlight_item_color": "#D02E2E",
+            "show_search": true,
+            "menu_searches_list": "",
+            "show_search_links": true,
+            "logo": ""
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-block-0": {
+              "type": "link",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-block-1": {
+              "type": "text",
+              "settings": {
+                "title": "About us",
+                "footer_text": "<p>Leave your customers with a final message about your brand in this rich text block.<\/p>"
+              }
+            },
+            "footer-block-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter"
+              }
+            }
+          },
+          "block_order": [
+            "footer-block-0",
+            "footer-block-1",
+            "footer-block-2"
+          ],
+          "settings": {
+            "color_wave": "#000",
+            "show_social_links": true,
+            "show_payment_icons": true,
+            "color_text": "#fff",
+            "color_bg": "#000",
+            "color_border": "#fff",
+            "show_locale_selector": false,
+            "show_currency_selector": false
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "blocks": {
+            "popup-0": {
+              "type": "popup",
+              "disabled": true,
+              "settings": {
+                "bg_color": "#fff"
+              }
+            }
+          },
+          "block_order": [
+            "popup-0"
+          ],
+          "settings": {
+          }
+        },
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-0": {
+              "type": "text",
+              "disabled": true,
+              "settings": {
+              }
+            },
+            "announcement-1": {
+              "type": "text",
+              "disabled": true,
+              "settings": {
+                "text": "<p>New collections just released - <a href=\"\/collections\" title=\"All collections\">Shop now<\/a><\/p>"
+              }
+            },
+            "announcement-2": {
+              "type": "text",
+              "disabled": true,
+              "settings": {
+                "text": "<p>Use code <strong>TENOFF<\/strong> for 10% off first purchase<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-0",
+            "announcement-1",
+            "announcement-2"
+          ],
+          "settings": {
+            "bg_color": "#f7f7f7",
+            "color": "#545454"
+          }
+        }
+      }
+    },
+    "Stanford": {
+      "color_body_bg": "#f5f1eb",
+      "color_headings": "#222222",
+      "color_body_text": "#222222",
+      "color_accent": "#6c7c6c",
+      "color_borders_and_lines": "#222222",
+      "color_custom_badge": "#222222",
+      "color_saving_badge": "#D02E2E",
+      "color_button_primary": "#222222",
+      "color_button_secondary": "#f5f1eb",
+      "type_heading_font": "harmonia_sans_n4",
+      "heading_size": 90,
+      "type_base_font": "harmonia_sans_n4",
+      "text_size": 90,
+      "nav_font_weight": "normal",
+      "nav_size": 90,
+      "nav_caps": false,
+      "button_size": 80,
+      "button_letter_spacing": 125,
+      "button_caps": true,
+      "subheading_caps": false,
+      "quick_button": "view",
+      "enable_color_swatches": true,
+      "show_payment_button": true,
+      "cart_type": "drawer",
+      "show_popup_newsletter": true,
+      "popup_delay": "3000",
+      "popup_reappear_time": "7",
+      "logo_max_width": "30",
+      "show_shop_name": true,
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "logo_not_home": "",
+            "logo_max_width": 50,
+            "main-menu": "main-menu",
+            "menu_alignment": "right",
+            "highlight_item_color": "#D02E2E",
+            "show_search": true,
+            "menu_searches_list": "",
+            "show_search_links": true,
+            "logo": ""
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-block-0": {
+              "type": "link",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-block-1": {
+              "type": "text",
+              "settings": {
+                "title": "About us",
+                "footer_text": "<p>Leave your customers with a final message about your brand in this rich text block.<\/p>"
+              }
+            },
+            "footer-block-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "Newsletter"
+              }
+            }
+          },
+          "block_order": [
+            "footer-block-0",
+            "footer-block-1",
+            "footer-block-2"
+          ],
+          "settings": {
+            "color_wave": "#000",
+            "show_social_links": true,
+            "show_payment_icons": true,
+            "color_text": "#fff",
+            "color_bg": "#000",
+            "color_border": "#fff",
+            "show_locale_selector": false,
+            "show_currency_selector": false
+          }
+        },
+        "popup": {
+          "type": "popup",
+          "blocks": {
+            "popup-0": {
+              "type": "popup",
+              "disabled": true,
+              "settings": {
+                "bg_color": "#fff"
+              }
+            }
+          },
+          "block_order": [
+            "popup-0"
+          ],
+          "settings": {
+          }
+        },
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-0": {
+              "type": "message",
+              "settings": {
+              }
+            }
+          },
+          "block_order": [
+            "announcement-0"
+          ],
+          "settings": {
+            "bg_color": "#f7f7f7",
+            "color": "#545454"
+          }
+        }
+      }
+    }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".template-product .icons-row .icons-row__item {display: inline-block;}",
+      ".template-product h3.icons-row__title {display: inline-block;}",
+      ".template-product .icons-row__text {padding-left: 38px;}",
+      ".template-product .icons-row__item:nth-child(3) .icons-row__icon {width: 30px !important;}"
+    ]
+  }
+}
