@@ -92,7 +92,7 @@
         "17dcc21e-0d23-4f26-ae77-2abc36df073d": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<span class=\"iia-location\">{{location-name}}<\/span> - <span class=\"iia-qty\">{{qty}}<\/span> available\n\n<div id=\"inventory-info-app\" class=\"iia-container\"><\/div>"
+            "custom_liquid": "<span class=\"iia-location\">{{location-name}}<\/span> - <span class=\"iia-qty\">{{qty}}<\/span> available\n\n<div  class=\"iia-list-item iia-id-{{location-id}}\">\n\n    <div class=\"iia-title-text\">{{titleText}}<\/div>\n\n    <div class=\"iia-address\">{{address1}} {{address2}} {{city}} {{zip}}<\/div>\n\n    <div class=\"iia-phone\">{{phone}}<\/div>\n\n    <div class=\"iia-info\">{{info}}<\/div>\n\n<\/div>"
           }
         }
       },
