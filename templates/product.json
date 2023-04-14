@@ -29,6 +29,7 @@
         },
         "inventory_countdown": {
           "type": "inventory_countdown",
+          "disabled": true,
           "settings": {
           }
         },
