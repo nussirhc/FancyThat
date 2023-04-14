@@ -1350,9 +1350,9 @@ body.cart-empty
   width: 20px;
 }
 
-.sf__accordion-item .sf__accordion-button.is-open:after {
+/* .sf__accordion-item .sf__accordion-button.is-open:after {
     transform: rotateX(180deg);
-}
+} */
 
 @media screen and (min-width: 1024px) {
   .sf__accordion-item .sf__accordion-button.sf__no-accordion:after {
