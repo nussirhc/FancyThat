@@ -4,6 +4,23 @@
   Generate a list of collection tiles if the main menu item is
   active and its children are also collection links
 {% endcomment %}
+
+<style>
+  a.collection-item {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    color: #ffffff;
+    background: #8a1d77;
+}
+
+  a.collection-item:hover {
+    background: #69135a;
+  }
+</style>
+
+
 {%- liquid
   unless current_tags
     assign current_items = ''
