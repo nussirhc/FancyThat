@@ -14,6 +14,16 @@
     "main": {
       "type": "main-collection-product-grid",
       "blocks": {
+        "cd6be9d9-6d1f-42d1-8877-726928a31340": {
+          "type": "collections",
+          "settings": {
+            "title": "Collections",
+            "menu": "main-menu",
+            "show_image": true,
+            "use_accordion": true,
+            "open_filtergroup": true
+          }
+        },
         "dd3f2181-d1fd-4e0c-9593-3ca8131e0c6a": {
           "type": "filter",
           "settings": {
@@ -138,6 +148,7 @@
         }
       },
       "block_order": [
+        "cd6be9d9-6d1f-42d1-8877-726928a31340",
         "dd3f2181-d1fd-4e0c-9593-3ca8131e0c6a",
         "e04b2b2e-7357-4b70-8265-97437595f865",
         "26ef6509-772d-4c44-bd90-efc089bd9355",
