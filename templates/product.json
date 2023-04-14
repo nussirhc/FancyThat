@@ -44,6 +44,11 @@
           "settings": {
           }
         },
+        "325b444b-c773-499d-9afa-ecf15df51a67": {
+          "type": "shopify:\/\/apps\/multi-location-inventory-info\/blocks\/location-inventory\/982328e1-99f7-4a7e-8266-6aed71bf0021",
+          "settings": {
+          }
+        },
         "b5975041-0f1b-47d6-a99d-d87b89bf4dff": {
           "type": "custom_content",
           "settings": {
@@ -96,6 +101,7 @@
         "inventory_countdown",
         "share-button",
         "2273c018-d3fb-4a8f-bef0-be596cbf439b",
+        "325b444b-c773-499d-9afa-ecf15df51a67",
         "b5975041-0f1b-47d6-a99d-d87b89bf4dff",
         "cb5b8a40-3188-40b6-a017-d4a98a55cafb",
         "17dcc21e-0d23-4f26-ae77-2abc36df073d"
