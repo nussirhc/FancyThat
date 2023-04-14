@@ -1349,6 +1349,11 @@ body.cart-empty
   transition: transform 0.3s ease;
   width: 20px;
 }
+
+.sf__accordion-item.open .sf__accordion-button:after {
+    transform: rotateX(180deg);
+}
+
 @media screen and (min-width: 1024px) {
   .sf__accordion-item .sf__accordion-button.sf__no-accordion:after {
     display: none;
