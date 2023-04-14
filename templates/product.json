@@ -82,6 +82,11 @@
             "text": "Read more",
             "popup_page": "size-guide"
           }
+        },
+        "24fe5b14-df91-4a25-b7cb-5857b23f60d3": {
+          "type": "shopify:\/\/apps\/multi-location-inventory-info\/blocks\/location-inventory\/982328e1-99f7-4a7e-8266-6aed71bf0021",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -92,7 +97,8 @@
         "share-button",
         "b5975041-0f1b-47d6-a99d-d87b89bf4dff",
         "cb5b8a40-3188-40b6-a017-d4a98a55cafb",
-        "7f61aed4-fb2f-4803-aee3-8c3c61ff5282"
+        "7f61aed4-fb2f-4803-aee3-8c3c61ff5282",
+        "24fe5b14-df91-4a25-b7cb-5857b23f60d3"
       ],
       "settings": {
         "wrapper": "normal",
