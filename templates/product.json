@@ -54,39 +54,6 @@
             "custom_btn_text_2": "Click Here for Balloon FAQ",
             "custom_btn_url_2": "shopify:\/\/pages\/balloon-faqs"
           }
-        },
-        "cb5b8a40-3188-40b6-a017-d4a98a55cafb": {
-          "type": "shopify:\/\/apps\/afterpay-on-site-messaging\/blocks\/payments-messaging\/f45a5524-d177-4475-bf59-281efd2215a8",
-          "disabled": true,
-          "settings": {
-            "text_align": "inherit",
-            "margin_top": 16,
-            "margin_bottom": 16,
-            "color": "",
-            "size": "md",
-            "intro_text": "or",
-            "show_interest_free": true,
-            "payment_amount_is_bold": true,
-            "show_with": true,
-            "logo_type": "badge",
-            "logo_theme": "black-on-mint",
-            "modal_link_style": "circled-info-icon",
-            "modal_theme": "mint",
-            "breakpoint": 749,
-            "text_align_mobile": "inherit",
-            "margin_top_mobile": 16,
-            "margin_bottom_mobile": 16,
-            "show_lower_limit": true,
-            "show_upper_limit": true,
-            "show_if_outside_limits": true
-          }
-        },
-        "17dcc21e-0d23-4f26-ae77-2abc36df073d": {
-          "type": "custom_liquid",
-          "disabled": true,
-          "settings": {
-            "custom_liquid": "<span class=\"iia-location\">{{location-name}}<\/span> - <span class=\"iia-qty\">{{qty}}<\/span> available"
-          }
         }
       },
       "block_order": [
@@ -96,9 +63,7 @@
         "inventory_countdown",
         "325b444b-c773-499d-9afa-ecf15df51a67",
         "share-button",
-        "b5975041-0f1b-47d6-a99d-d87b89bf4dff",
-        "cb5b8a40-3188-40b6-a017-d4a98a55cafb",
-        "17dcc21e-0d23-4f26-ae77-2abc36df073d"
+        "b5975041-0f1b-47d6-a99d-d87b89bf4dff"
       ],
       "settings": {
         "wrapper": "normal",
