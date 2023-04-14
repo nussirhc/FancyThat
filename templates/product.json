@@ -92,7 +92,12 @@
         "17dcc21e-0d23-4f26-ae77-2abc36df073d": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<span class=\"iia-location\">{{location-name}}<\/span> - <span class=\"iia-qty\">{{qty}}<\/span> available\n\n{{ store_availability}}"
+            "custom_liquid": "<span class=\"iia-location\">{{location-name}}<\/span> - <span class=\"iia-qty\">{{qty}}<\/span> available"
+          }
+        },
+        "b813a5ac-3d05-4d32-a333-4460584ca223": {
+          "type": "pickup",
+          "settings": {
           }
         }
       },
@@ -106,7 +111,8 @@
         "b5975041-0f1b-47d6-a99d-d87b89bf4dff",
         "cb5b8a40-3188-40b6-a017-d4a98a55cafb",
         "7f61aed4-fb2f-4803-aee3-8c3c61ff5282",
-        "17dcc21e-0d23-4f26-ae77-2abc36df073d"
+        "17dcc21e-0d23-4f26-ae77-2abc36df073d",
+        "b813a5ac-3d05-4d32-a333-4460584ca223"
       ],
       "settings": {
         "wrapper": "normal",
