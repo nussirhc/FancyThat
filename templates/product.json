@@ -38,15 +38,15 @@
           "settings": {
           }
         },
-        "2273c018-d3fb-4a8f-bef0-be596cbf439b": {
-          "type": "cbh_stock_location",
-          "settings": {
-          }
-        },
         "share-button": {
           "type": "share-button",
           "settings": {
             "text": "Share"
+          }
+        },
+        "2273c018-d3fb-4a8f-bef0-be596cbf439b": {
+          "type": "cbh_stock_location",
+          "settings": {
           }
         },
         "b5975041-0f1b-47d6-a99d-d87b89bf4dff": {
@@ -100,8 +100,8 @@
         "form",
         "inventory_countdown",
         "24fe5b14-df91-4a25-b7cb-5857b23f60d3",
-        "2273c018-d3fb-4a8f-bef0-be596cbf439b",
         "share-button",
+        "2273c018-d3fb-4a8f-bef0-be596cbf439b",
         "b5975041-0f1b-47d6-a99d-d87b89bf4dff",
         "cb5b8a40-3188-40b6-a017-d4a98a55cafb",
         "17dcc21e-0d23-4f26-ae77-2abc36df073d"
