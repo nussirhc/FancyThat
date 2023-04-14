@@ -44,11 +44,6 @@
             "text": "Share"
           }
         },
-        "2273c018-d3fb-4a8f-bef0-be596cbf439b": {
-          "type": "cbh_stock_location",
-          "settings": {
-          }
-        },
         "b5975041-0f1b-47d6-a99d-d87b89bf4dff": {
           "type": "custom_content",
           "settings": {
@@ -101,7 +96,6 @@
         "inventory_countdown",
         "325b444b-c773-499d-9afa-ecf15df51a67",
         "share-button",
-        "2273c018-d3fb-4a8f-bef0-be596cbf439b",
         "b5975041-0f1b-47d6-a99d-d87b89bf4dff",
         "cb5b8a40-3188-40b6-a017-d4a98a55cafb",
         "17dcc21e-0d23-4f26-ae77-2abc36df073d"
