@@ -16,6 +16,7 @@
       "blocks": {
         "cd6be9d9-6d1f-42d1-8877-726928a31340": {
           "type": "collections",
+          "disabled": true,
           "settings": {
             "title": "Collections",
             "menu": "collection-menu",
