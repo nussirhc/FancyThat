@@ -1076,6 +1076,11 @@
               -%}
             </div>
 
+          {%- when 'cbh_stock_location' -%}
+
+          {%- render 'cbh_stock_location' -%}
+
+
           {%- when 'custom_liquid' -%}
             <div class="product__block" {{ block.shopify_attributes }}>
               {{ block.settings.custom_liquid }}
