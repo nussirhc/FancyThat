@@ -21,7 +21,7 @@
       -%}
       {%- if sub_collection != blank -%}
         {%- unless parent_url == sub_collection.url -%}
-          {%- render 'collection-grid-item',
+          {%- render 'subcollection-grid-item',
             collection: sub_collection,
             grid_item_width: grid_item_width,
             collection_title: sub_collection_link.title
