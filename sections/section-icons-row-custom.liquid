@@ -120,7 +120,7 @@
               {%- if text != blank -%}
                 <div class="icons-row__text">{{ text }}</div>
               {%- endif -%}
-              
+
             </div>
           {%- endfor -%}
         </div>
@@ -144,12 +144,25 @@
     </div>
   </div>
 
+
+  {%- for block in section.blocks -%}
+              {%- liquid
+              assign title = block.settings.title
+              assign text = block.settings.text
+              assign image = block.settings.icon_image
+              assign icon = block.settings.icon_name
+              assign modal_content = block.settings.modal_content
+            -%}
+
               <div id="myModal" class="modal">
                 <div class="modal-content">
                   <span class="close">&times;</span>
-                  <p>This is the modal content.</p>
+                  <p>{{ modal_content }}</p>
                 </div>
               </div>  
+
+  {%- endfor -%}
+
 </section>
 
 
@@ -284,6 +297,11 @@
           "type": "page",
           "id": "icon_popup_page",
           "label": "Page"
+        },
+        {
+          "type": "richtext",
+          "id": "modal_content",
+          "label": "Modal Content"
         }
       ]
     }
