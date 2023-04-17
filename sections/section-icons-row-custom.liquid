@@ -8,6 +8,7 @@
   assign animations_enabled = settings.animations_enabled
   assign animation_anchor = '#IconsRow--' | append: section.id
   assign animation_delay = 250
+  assign blkcount = 1
 
   assign flex = false
   if columns > section.blocks.size
@@ -112,6 +113,7 @@
               {%- endif -%}
 
               {%- if title != blank -%}
+              {{ blkcount }}
               <button id="myBtn">
                 <h3 class="icons-row__title">{{ title }}</h3>
                 }
@@ -147,20 +149,20 @@
 
 
   {%- for block in section.blocks -%}
-              {%- liquid
-              assign title = block.settings.title
-              assign text = block.settings.text
-              assign image = block.settings.icon_image
-              assign icon = block.settings.icon_name
-              assign modal_content = block.settings.modal_content
-            -%}
+    {%- liquid
+      assign title = block.settings.title
+      assign text = block.settings.text
+      assign image = block.settings.icon_image
+      assign icon = block.settings.icon_name
+      assign modal_content = block.settings.modal_content
+    -%}
 
-              <div id="myModal" class="modal">
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <p>{{ modal_content }}</p>
-                </div>
-              </div>  
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>{{ modal_content }}</p>
+      </div>
+    </div>  
 
   {%- endfor -%}
 
