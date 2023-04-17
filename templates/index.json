@@ -1,1 +1,589 @@
-{"sections":{"02c1c9a4-2eef-49ec-b01a-2500e8a45a23":{"type":"section-slideshow","blocks":{"template--17308545843499__02c1c9a4-2eef-49ec-b01a-2500e8a45a23-167167478363656880-0":{"type":"image","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/banner.jpg","bg_position":"center-center","overlay_opacity":10,"text_width":"normal","text_position":"center","text_color":"text-light","title":"Welcome to Palo Alto","text":"","slide_btn_text":"Shop All","slide_btn_link":"shopify:\/\/collections\/all","slide_btn_style":"primary","slide_btn_text_2":"","slide_btn_link_2":"","slide_btn_style_2":"secondary","video_btn_text":"","video_btn_link":""}},"6e5cc410-33dd-42eb-90af-6dc9795144af":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/59.png","bg_position":"center-center","overlay_opacity":10,"text_width":"normal","text_position":"center","text_color":"text-light","title":"New Year's Eve","text":"Get ready to sparkle & shine!","slide_btn_text":"SHOP NOW","slide_btn_link":"shopify:\/\/collections\/all","slide_btn_style":"primary","slide_btn_text_2":"","slide_btn_link_2":"","slide_btn_style_2":"secondary","video_btn_text":"","video_btn_link":""}}},"block_order":["template--17308545843499__02c1c9a4-2eef-49ec-b01a-2500e8a45a23-167167478363656880-0","6e5cc410-33dd-42eb-90af-6dc9795144af"],"settings":{"slide_height":"six-fifty-height","show_nav_dots":false,"show_nav_arrows":false,"show_arrow_down":false,"autoplay":false,"duration":4,"transition":"slide","enable_zoom_animation":true,"heading_size":120}},"ec55fc55-9a0c-4467-834d-34186c70b580":{"type":"section-mosaic","blocks":{"7787f662-4e55-46b6-9460-8cfbe82428b7":{"type":"collection","settings":{"collection":"masquerade-eye-masks","bg_position":"center-center","overlay_opacity":10,"text_position":"top-left","subheading":"","show_description":true,"button_text":"Shop Now","text_color":"text-light"}},"template--17308545843499__ec55fc55-9a0c-4467-834d-34186c70b580-1672070396e332f665-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/72.jpg","bg_position":"center-center","overlay_opacity":10,"text_position":"top-left","subheading":"","title":"Santa Suits","text":"Shop Trending","button_text":"Shop Now","link":"shopify:\/\/collections\/santa-suits","secondary_button_text":"","secondary_button_link":"","text_color":"text-light"}},"template--17308545843499__ec55fc55-9a0c-4467-834d-34186c70b580-1672070396e332f665-1":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/75.jpg","bg_position":"center-center","overlay_opacity":10,"text_position":"top-left","subheading":"","title":"Contact Lenses","text":"Shop Clearance","button_text":"Shop Now","link":"shopify:\/\/collections\/contact-lenses","secondary_button_text":"","secondary_button_link":"","text_color":"text-light"}},"template--17308545843499__ec55fc55-9a0c-4467-834d-34186c70b580-1672070396e332f665-2":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/76.jpg","bg_position":"center-center","overlay_opacity":10,"text_position":"top-left","subheading":"","title":"Horror Masks","text":"Shop Best Sellers","button_text":"Shop Now","link":"shopify:\/\/collections\/horror-masks","secondary_button_text":"","secondary_button_link":"","text_color":"text-light"}}},"block_order":["7787f662-4e55-46b6-9460-8cfbe82428b7","template--17308545843499__ec55fc55-9a0c-4467-834d-34186c70b580-1672070396e332f665-0","template--17308545843499__ec55fc55-9a0c-4467-834d-34186c70b580-1672070396e332f665-1","template--17308545843499__ec55fc55-9a0c-4467-834d-34186c70b580-1672070396e332f665-2"],"settings":{"height":"650","wrapper":"normal","add_spacing":true,"heading_size":160,"button_style":"primary","secondary_button_style":"secondary btn--small","bg_color":"","enable_slider_mobile":true}},"16638063950f5b1e37":{"type":"section-logo-list","blocks":{"166380639508fab304-0":{"type":"item_logo","settings":{"image":"shopify:\/\/shop_images\/1920s.png","logos_width":100,"title":"1920s","url":"shopify:\/\/collections\/1920s-1940s"}},"166380639508fab304-1":{"type":"item_logo","settings":{"image":"shopify:\/\/shop_images\/1980s.png","logos_width":100,"title":"1980s","url":"shopify:\/\/collections\/1980s"}},"7a22bd0e-410a-408a-b834-f0eb07036b30":{"type":"item_logo","settings":{"image":"shopify:\/\/shop_images\/Disney.png","logos_width":100,"title":"Disney","url":"shopify:\/\/collections\/disney"}},"166380639508fab304-2":{"type":"item_logo","settings":{"image":"shopify:\/\/shop_images\/DC.png","logos_width":100,"title":"DC","url":"shopify:\/\/collections\/dc-universe"}},"166380639508fab304-3":{"type":"item_logo","settings":{"image":"shopify:\/\/shop_images\/Marvel.png","logos_width":100,"title":"Marvel","url":"shopify:\/\/collections\/marvel-universe"}}},"block_order":["166380639508fab304-0","166380639508fab304-1","7a22bd0e-410a-408a-b834-f0eb07036b30","166380639508fab304-2","166380639508fab304-3"],"settings":{"title":"Shop All Time Favourites","bg_color":"rgba(0,0,0,0)"}},"b12d545f-e4cd-4f8a-9e48-e5886c14cbe7":{"type":"section-collection","settings":{"collection":"costume-themes","title":"Featured products","products_rows":12,"products_layout":"carousel","show_collection_button":true,"button_style":"primary","bg_color":"rgba(0,0,0,0)","enable_slider_mobile":true}},"06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92":{"type":"section-list-collection","blocks":{"template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-0":{"type":"collection","settings":{"collection":"mexican"}},"template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-1":{"type":"collection","settings":{"collection":"masquerade-eye-masks"}},"template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-2":{"type":"collection","settings":{"collection":"balloons"}},"template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-3":{"type":"collection","settings":{"collection":"movies"}},"template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-4":{"type":"collection","settings":{"collection":"music-rock-pop-stars"}},"template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-5":{"type":"collection","settings":{"collection":"party-decor","custom_collection_image":"shopify:\/\/shop_images\/partydecor.jpg"}}},"block_order":["template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-0","template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-1","template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-2","template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-3","template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-4","template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-5"],"settings":{"wrapper":"full","layout":"grid","columns":3,"height":80,"text_size":100,"title":"Celebration Inspiration!","button_text":"Shop All","button_style":"primary","bg_color":"","text_color":"light","overlay_opacity":10,"enable_slider_mobile":true}},"a9e3c144-0da3-48eb-b90d-09eb70362043":{"type":"section-image-with-text","settings":{"section_height":"full-height","text_position":"left","wrapper":"full","image":"shopify:\/\/shop_images\/Fancy-That-Crows-Nest-CP-Trent-Van-der-jagt-3-1920x1080.jpg","image_background":false,"bg_position":"center-center","text_alignment":"left","subheading":"","heading":"Our Story","heading_size":100,"text":"<p>Fancy That! Costumes is the best quality, best organised costume emporium in Sydney, with the best & friendliest customer service – just ask our customers!   <\/p><p>We have a single, full service bricks & mortar store in Crows Nest, Sydney for costume sales, costume hire & balloons, plus spread the costume love across the country with sales items shipping Australia-wide.<\/p>","button_text":"Learn More","button_link":"shopify:\/\/pages\/about-us","secondary_button_text":"","secondary_button_link":"","button_style":"primary","video_url":"","bg_color":"","section_css_class":""}},"testimonials":{"type":"section-testimonials","blocks":{"ff8e843f-8b77-4753-aa2f-5381580f291f":{"type":"text","disabled":true,"settings":{"heading":"Customer Love","text_size":180,"subheading":"","block_color":"#eedfd7","text_color":"text-dark","text_alignment":"text-left"}},"testimonial-1":{"type":"testimonial","settings":{"star_rating":5,"text":"<p>I have been renting costumes from Fancy that on & off for the past 8 years. No matter the occasion the staff are always helpful & extremely knowledgeable. In my opinion Fancy that are the best costume hire shop in Sydney by a county mile.<\/p>","customer_name":"Wayne Brissett","subheading":""}},"testimonial-2":{"type":"testimonial","settings":{"star_rating":5,"text":"<p>YAAAS! Thank you Miles! You're our 600th reviewer! Happy Day of the Dead-themed New Years' Eve party to you! xx<\/p>","customer_name":"Miles Batten","subheading":""}},"testimonial-3":{"type":"testimonial","settings":{"star_rating":5,"text":"<p>Absolutely fabulous experience...great customer service, reasonable prices and confidence that we will get exactly what we requested. Have passed on the company details to our NSW team.<\/p>","customer_name":"Naomi Shapleski","subheading":""}},"testimonial-4":{"type":"testimonial","settings":{"star_rating":5,"text":"<p>Oh my goodness, if every single supplier and vendor can be as easy to deal with as Belinda, the world would be a better place. THANK YOU Belinda for your exemplary service. I would fit out my entire wardrobe by you, that's how good you are. I definitely recommend Fancy That! Costumes and Balloons<\/p>","customer_name":"Eshan Abeywickrema","subheading":""}},"testimonial-5":{"type":"testimonial","settings":{"star_rating":5,"text":"<p>Always so helpful and friendly and great value for money too. Huge range , 5 stars<\/p>","customer_name":"Edwina M","subheading":""}},"10f451c4-b57e-4c14-bbb7-023dc2ca9585":{"type":"testimonial","settings":{"star_rating":5,"text":"<p>I had to rush in for a last minute party and had a cab waiting. The manager on duty was extremely helpful and mindful of the time. Ran out to grab something in the back room and helped put together the order Highly recommend and thanks again.<\/p>","customer_name":"David","subheading":"<p>Loyal Customer<\/p>"}}},"block_order":["ff8e843f-8b77-4753-aa2f-5381580f291f","testimonial-1","testimonial-2","testimonial-3","testimonial-4","testimonial-5","10f451c4-b57e-4c14-bbb7-023dc2ca9585"],"settings":{"title":"Customer Love","text_size":100,"text_alignment":"text-center","wrapper":"full","bg_color":"#fafafa"}},"3531a624-520b-411c-bf38-02af159fef9d":{"type":"section-custom-content","blocks":{"template--17308545843499__3531a624-520b-411c-bf38-02af159fef9d-1672377302548d2d9e-0":{"type":"image","settings":{"text_position":"middle-center","image":"shopify:\/\/shop_images\/New_Project.jpg","image_link":"","image_position":"center-center","overlay_opacity":10,"text_color":"text-light","title":"","heading_size":100,"text":"","button_text":"","button_link":"","button_style":"primary"}},"template--17308545843499__3531a624-520b-411c-bf38-02af159fef9d-1672377302548d2d9e-1":{"type":"text","settings":{"text_position":"left","top_image_width":50,"text_color":"text-dark","subheading":"","title":"Fancy that Costumes & Balloons","text":"<p><strong>SERVICE <\/strong>- we’re bringing it back, baby! Welcome to your fancy new favourite one-stop shop for costumes & balloons – Fancy That! Costumes (& balloons)! We’re more than just a costume shop – we’re driven by a mission to encourage people (particularly adults) to <\/p><p><strong>PLAY MORE<\/strong> – to better connect with themselves & each other, to shave the spikey edges off adulthood & make the world a happier place! Our goal is to get you having fun from the get-go, whether you’re shopping online or visiting our pink & purple palace in Crows Nest, Sydney. <\/p><p>We want your Halloween Costumes, Celebrity Costumes, Disney Costumes, Superhero Costumes, 1920s Costumes, 1980s Costumes & everything in between, to do their job of putting you in disguise so that you can – ironically – drop your own, let loose & remember the freedom of childhood. <\/p><p>We also believe that every milestone should be celebrated & have Helium Balloons for every occasion to help you do just that. Gender Reveal balloons, 1st Birthday balloons, Graduation balloons, Valentines Day balloons, Engagement balloons, Hens Party Balloons, Wedding Balloons, Welcome Baby balloons, Anniversary balloons – & if you crack a century we’ve got balloons for that too! From basic bouquets to custom event décor to elevate your celebrations. <\/p><p>Qualatex latex balloons source from Rainforest Alliance Certified rubber plantations, with no service provided for balloon releases – <\/p><p><strong>EVER<\/strong>. Pin it & bin it when the fun is done, peeps. SO: life deserves to be celebrated. Quite possibly, we only get to be here once. Let’s make the most of it, shall we? We can’t wait to serve you online or instore, soon!<\/p>","button_text":"","button_link":"","button_style":"primary","secondary_button_text":"","secondary_button_link":"","secondary_button_style":"secondary","bg_color":""}}},"block_order":["template--17308545843499__3531a624-520b-411c-bf38-02af159fef9d-1672377302548d2d9e-0","template--17308545843499__3531a624-520b-411c-bf38-02af159fef9d-1672377302548d2d9e-1"],"settings":{"height":"four-fifty-height","add_spacing":false,"wrapper":"full","bg_color":""}},"166354779528c086f8":{"type":"apps","settings":{"include_margins":true}},"e984f758-5aef-4501-90eb-d506f06f1962":{"type":"section-text","blocks":{"template--17308545843499__e984f758-5aef-4501-90eb-d506f06f1962-16721156777468cb09-0":{"type":"subheading","disabled":true,"settings":{"text":"<p>Subheading<\/p>","size":100}},"template--17308545843499__e984f758-5aef-4501-90eb-d506f06f1962-16721156777468cb09-1":{"type":"heading","settings":{"text":"<p>Follow us on Instagram<\/p>","size":100}},"template--17308545843499__e984f758-5aef-4501-90eb-d506f06f1962-16721156777468cb09-2":{"type":"text","settings":{"text":"<p>Instagram Account Here<\/p>","size":100}}},"block_order":["template--17308545843499__e984f758-5aef-4501-90eb-d506f06f1962-16721156777468cb09-0","template--17308545843499__e984f758-5aef-4501-90eb-d506f06f1962-16721156777468cb09-1","template--17308545843499__e984f758-5aef-4501-90eb-d506f06f1962-16721156777468cb09-2"],"settings":{"text_position":"center","wrapper":"normal","padding":"standard-padding","bg_color":"","text_color":"text-dark"}},"c446ee42-6d1a-492e-b248-c35097d157d2":{"type":"section-custom-content","blocks":{"template--17308545843499__c446ee42-6d1a-492e-b248-c35097d157d2-167409077921db23db-0":{"type":"image","settings":{"text_position":"middle-center","image":"shopify:\/\/shop_images\/profesional-photo-studio.jpg","image_link":"http:\/\/www.ginonaliniphotography.com\/","image_position":"center-center","overlay_opacity":10,"text_color":"text-light","title":"","heading_size":110,"text":"","button_text":"","button_link":"","button_style":"primary"}}},"block_order":["template--17308545843499__c446ee42-6d1a-492e-b248-c35097d157d2-167409077921db23db-0"],"settings":{"height":"two-sixty-height","add_spacing":true,"wrapper":"normal","bg_color":"rgba(0,0,0,0)"}},"7059d9af-dc91-4589-862c-290d90ff56fe":{"type":"section-split-images","disabled":true,"blocks":{"template--17308545843499__7059d9af-dc91-4589-862c-290d90ff56fe-167401972347f170c9-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/profesional-photo-studio.jpg","image_link":"http:\/\/www.ginonaliniphotography.com\/","image_position":"center-center","show_image_mobile":true}}},"block_order":["template--17308545843499__7059d9af-dc91-4589-862c-290d90ff56fe-167401972347f170c9-0"],"settings":{"image_height":"two-sixty-height","mobile_layout":"inline","text_position":"middle-center","overlay_opacity":10,"text_color":"text-light","title":"","heading_size":120,"text":"","button_text":"","button_link":"","button_style":"primary"}},"3db54228-b4df-45b1-bb19-bab8bf0d8f2c":{"type":"section-newsletter","settings":{"flex_align":"align--middle-center","wrapper":"normal","text_color":"text-light","title":"Join the Party!","text":"<p>Sign-up for exclusive offers, sales & event alerts.<\/p>","extra_fields":"","button_text":"","bg_color":"#e20d66","image_height":"five-fifty-height","image_position":"center-center","overlay_opacity":10}}},"order":["02c1c9a4-2eef-49ec-b01a-2500e8a45a23","ec55fc55-9a0c-4467-834d-34186c70b580","16638063950f5b1e37","b12d545f-e4cd-4f8a-9e48-e5886c14cbe7","06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92","a9e3c144-0da3-48eb-b90d-09eb70362043","testimonials","3531a624-520b-411c-bf38-02af159fef9d","166354779528c086f8","e984f758-5aef-4501-90eb-d506f06f1962","c446ee42-6d1a-492e-b248-c35097d157d2","7059d9af-dc91-4589-862c-290d90ff56fe","3db54228-b4df-45b1-bb19-bab8bf0d8f2c"]}
+{
+  "sections": {
+    "02c1c9a4-2eef-49ec-b01a-2500e8a45a23": {
+      "type": "section-slideshow",
+      "blocks": {
+        "template--17308545843499__02c1c9a4-2eef-49ec-b01a-2500e8a45a23-167167478363656880-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner.jpg",
+            "bg_position": "center-center",
+            "overlay_opacity": 10,
+            "text_width": "normal",
+            "text_position": "center",
+            "text_color": "text-light",
+            "title": "Welcome to Palo Alto",
+            "text": "",
+            "slide_btn_text": "Shop All",
+            "slide_btn_link": "shopify:\/\/collections\/all",
+            "slide_btn_style": "primary",
+            "slide_btn_text_2": "",
+            "slide_btn_link_2": "",
+            "slide_btn_style_2": "secondary",
+            "video_btn_text": "",
+            "video_btn_link": ""
+          }
+        },
+        "6e5cc410-33dd-42eb-90af-6dc9795144af": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/59.png",
+            "bg_position": "center-center",
+            "overlay_opacity": 10,
+            "text_width": "normal",
+            "text_position": "center",
+            "text_color": "text-light",
+            "title": "New Year's Eve",
+            "text": "Get ready to sparkle & shine!",
+            "slide_btn_text": "SHOP NOW",
+            "slide_btn_link": "shopify:\/\/collections\/all",
+            "slide_btn_style": "primary",
+            "slide_btn_text_2": "",
+            "slide_btn_link_2": "",
+            "slide_btn_style_2": "secondary",
+            "video_btn_text": "",
+            "video_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17308545843499__02c1c9a4-2eef-49ec-b01a-2500e8a45a23-167167478363656880-0",
+        "6e5cc410-33dd-42eb-90af-6dc9795144af"
+      ],
+      "settings": {
+        "slide_height": "six-fifty-height",
+        "show_nav_dots": false,
+        "show_nav_arrows": false,
+        "show_arrow_down": false,
+        "autoplay": false,
+        "duration": 4,
+        "transition": "slide",
+        "enable_zoom_animation": true,
+        "heading_size": 120
+      }
+    },
+    "ec55fc55-9a0c-4467-834d-34186c70b580": {
+      "type": "section-mosaic",
+      "blocks": {
+        "7787f662-4e55-46b6-9460-8cfbe82428b7": {
+          "type": "collection",
+          "settings": {
+            "collection": "masquerade-eye-masks",
+            "bg_position": "center-center",
+            "overlay_opacity": 10,
+            "text_position": "top-left",
+            "subheading": "",
+            "show_description": true,
+            "button_text": "Shop Now",
+            "text_color": "text-light"
+          }
+        },
+        "template--17308545843499__ec55fc55-9a0c-4467-834d-34186c70b580-1672070396e332f665-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/72.jpg",
+            "bg_position": "center-center",
+            "overlay_opacity": 10,
+            "text_position": "top-left",
+            "subheading": "",
+            "title": "Santa Suits",
+            "text": "Shop Trending",
+            "button_text": "Shop Now",
+            "link": "shopify:\/\/collections\/santa-suits",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "text_color": "text-light"
+          }
+        },
+        "template--17308545843499__ec55fc55-9a0c-4467-834d-34186c70b580-1672070396e332f665-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/75.jpg",
+            "bg_position": "center-center",
+            "overlay_opacity": 10,
+            "text_position": "top-left",
+            "subheading": "",
+            "title": "Contact Lenses",
+            "text": "Shop Clearance",
+            "button_text": "Shop Now",
+            "link": "shopify:\/\/collections\/contact-lenses",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "text_color": "text-light"
+          }
+        },
+        "template--17308545843499__ec55fc55-9a0c-4467-834d-34186c70b580-1672070396e332f665-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/76.jpg",
+            "bg_position": "center-center",
+            "overlay_opacity": 10,
+            "text_position": "top-left",
+            "subheading": "",
+            "title": "Horror Masks",
+            "text": "Shop Best Sellers",
+            "button_text": "Shop Now",
+            "link": "shopify:\/\/collections\/horror-masks",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "text_color": "text-light"
+          }
+        }
+      },
+      "block_order": [
+        "7787f662-4e55-46b6-9460-8cfbe82428b7",
+        "template--17308545843499__ec55fc55-9a0c-4467-834d-34186c70b580-1672070396e332f665-0",
+        "template--17308545843499__ec55fc55-9a0c-4467-834d-34186c70b580-1672070396e332f665-1",
+        "template--17308545843499__ec55fc55-9a0c-4467-834d-34186c70b580-1672070396e332f665-2"
+      ],
+      "settings": {
+        "height": "650",
+        "wrapper": "normal",
+        "add_spacing": true,
+        "heading_size": 160,
+        "button_style": "primary",
+        "secondary_button_style": "secondary btn--small",
+        "bg_color": "",
+        "enable_slider_mobile": true
+      }
+    },
+    "16638063950f5b1e37": {
+      "type": "section-logo-list",
+      "blocks": {
+        "166380639508fab304-0": {
+          "type": "item_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1920s.png",
+            "logos_width": 100,
+            "title": "1920s",
+            "url": "shopify:\/\/collections\/1920s-1940s"
+          }
+        },
+        "166380639508fab304-1": {
+          "type": "item_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1980s.png",
+            "logos_width": 100,
+            "title": "1980s",
+            "url": "shopify:\/\/collections\/1980s"
+          }
+        },
+        "7a22bd0e-410a-408a-b834-f0eb07036b30": {
+          "type": "item_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Disney.png",
+            "logos_width": 100,
+            "title": "Disney",
+            "url": "shopify:\/\/collections\/disney"
+          }
+        },
+        "166380639508fab304-2": {
+          "type": "item_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DC.png",
+            "logos_width": 100,
+            "title": "DC",
+            "url": "shopify:\/\/collections\/dc-universe"
+          }
+        },
+        "166380639508fab304-3": {
+          "type": "item_logo",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Marvel.png",
+            "logos_width": 100,
+            "title": "Marvel",
+            "url": "shopify:\/\/collections\/marvel-universe"
+          }
+        }
+      },
+      "block_order": [
+        "166380639508fab304-0",
+        "166380639508fab304-1",
+        "7a22bd0e-410a-408a-b834-f0eb07036b30",
+        "166380639508fab304-2",
+        "166380639508fab304-3"
+      ],
+      "settings": {
+        "title": "Shop All Time Favourites",
+        "bg_color": "rgba(0,0,0,0)"
+      }
+    },
+    "b12d545f-e4cd-4f8a-9e48-e5886c14cbe7": {
+      "type": "section-collection",
+      "settings": {
+        "collection": "costume-themes",
+        "title": "Featured products",
+        "products_rows": 12,
+        "products_layout": "carousel",
+        "show_collection_button": true,
+        "button_style": "primary",
+        "bg_color": "rgba(0,0,0,0)",
+        "enable_slider_mobile": true
+      }
+    },
+    "06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92": {
+      "type": "section-list-collection",
+      "blocks": {
+        "template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "mexican"
+          }
+        },
+        "template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "masquerade-eye-masks"
+          }
+        },
+        "template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "balloons"
+          }
+        },
+        "template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "movies"
+          }
+        },
+        "template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "music-rock-pop-stars"
+          }
+        },
+        "template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "party-decor",
+            "custom_collection_image": "shopify:\/\/shop_images\/partydecor.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-0",
+        "template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-1",
+        "template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-2",
+        "template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-3",
+        "template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-4",
+        "template--17308545843499__06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92-16720376013f9d1b5b-5"
+      ],
+      "settings": {
+        "wrapper": "full",
+        "layout": "grid",
+        "columns": 3,
+        "height": 80,
+        "text_size": 100,
+        "title": "Celebration Inspiration!",
+        "button_text": "Shop All",
+        "button_style": "primary",
+        "bg_color": "",
+        "text_color": "light",
+        "overlay_opacity": 10,
+        "enable_slider_mobile": false
+      }
+    },
+    "a9e3c144-0da3-48eb-b90d-09eb70362043": {
+      "type": "section-image-with-text",
+      "settings": {
+        "section_height": "full-height",
+        "text_position": "left",
+        "wrapper": "full",
+        "image": "shopify:\/\/shop_images\/Fancy-That-Crows-Nest-CP-Trent-Van-der-jagt-3-1920x1080.jpg",
+        "image_background": false,
+        "bg_position": "center-center",
+        "text_alignment": "left",
+        "subheading": "",
+        "heading": "Our Story",
+        "heading_size": 100,
+        "text": "<p>Fancy That! Costumes is the best quality, best organised costume emporium in Sydney, with the best & friendliest customer service – just ask our customers!   <\/p><p>We have a single, full service bricks & mortar store in Crows Nest, Sydney for costume sales, costume hire & balloons, plus spread the costume love across the country with sales items shipping Australia-wide.<\/p>",
+        "button_text": "Learn More",
+        "button_link": "shopify:\/\/pages\/about-us",
+        "secondary_button_text": "",
+        "secondary_button_link": "",
+        "button_style": "primary",
+        "video_url": "",
+        "bg_color": "",
+        "section_css_class": ""
+      }
+    },
+    "testimonials": {
+      "type": "section-testimonials",
+      "blocks": {
+        "ff8e843f-8b77-4753-aa2f-5381580f291f": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "heading": "Customer Love",
+            "text_size": 180,
+            "subheading": "",
+            "block_color": "#eedfd7",
+            "text_color": "text-dark",
+            "text_alignment": "text-left"
+          }
+        },
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "text": "<p>I have been renting costumes from Fancy that on & off for the past 8 years. No matter the occasion the staff are always helpful & extremely knowledgeable. In my opinion Fancy that are the best costume hire shop in Sydney by a county mile.<\/p>",
+            "customer_name": "Wayne Brissett",
+            "subheading": ""
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "text": "<p>YAAAS! Thank you Miles! You're our 600th reviewer! Happy Day of the Dead-themed New Years' Eve party to you! xx<\/p>",
+            "customer_name": "Miles Batten",
+            "subheading": ""
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "text": "<p>Absolutely fabulous experience...great customer service, reasonable prices and confidence that we will get exactly what we requested. Have passed on the company details to our NSW team.<\/p>",
+            "customer_name": "Naomi Shapleski",
+            "subheading": ""
+          }
+        },
+        "testimonial-4": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "text": "<p>Oh my goodness, if every single supplier and vendor can be as easy to deal with as Belinda, the world would be a better place. THANK YOU Belinda for your exemplary service. I would fit out my entire wardrobe by you, that's how good you are. I definitely recommend Fancy That! Costumes and Balloons<\/p>",
+            "customer_name": "Eshan Abeywickrema",
+            "subheading": ""
+          }
+        },
+        "testimonial-5": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "text": "<p>Always so helpful and friendly and great value for money too. Huge range , 5 stars<\/p>",
+            "customer_name": "Edwina M",
+            "subheading": ""
+          }
+        },
+        "10f451c4-b57e-4c14-bbb7-023dc2ca9585": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "text": "<p>I had to rush in for a last minute party and had a cab waiting. The manager on duty was extremely helpful and mindful of the time. Ran out to grab something in the back room and helped put together the order Highly recommend and thanks again.<\/p>",
+            "customer_name": "David",
+            "subheading": "<p>Loyal Customer<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "ff8e843f-8b77-4753-aa2f-5381580f291f",
+        "testimonial-1",
+        "testimonial-2",
+        "testimonial-3",
+        "testimonial-4",
+        "testimonial-5",
+        "10f451c4-b57e-4c14-bbb7-023dc2ca9585"
+      ],
+      "settings": {
+        "title": "Customer Love",
+        "text_size": 100,
+        "text_alignment": "text-center",
+        "wrapper": "full",
+        "bg_color": "#fafafa"
+      }
+    },
+    "3531a624-520b-411c-bf38-02af159fef9d": {
+      "type": "section-custom-content",
+      "blocks": {
+        "template--17308545843499__3531a624-520b-411c-bf38-02af159fef9d-1672377302548d2d9e-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/New_Project.jpg",
+            "image_link": "",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        },
+        "template--17308545843499__3531a624-520b-411c-bf38-02af159fef9d-1672377302548d2d9e-1": {
+          "type": "text",
+          "settings": {
+            "text_position": "left",
+            "top_image_width": 50,
+            "text_color": "text-dark",
+            "subheading": "",
+            "title": "Fancy that Costumes & Balloons",
+            "text": "<p><strong>SERVICE <\/strong>- we’re bringing it back, baby! Welcome to your fancy new favourite one-stop shop for costumes & balloons – Fancy That! Costumes (& balloons)! We’re more than just a costume shop – we’re driven by a mission to encourage people (particularly adults) to <\/p><p><strong>PLAY MORE<\/strong> – to better connect with themselves & each other, to shave the spikey edges off adulthood & make the world a happier place! Our goal is to get you having fun from the get-go, whether you’re shopping online or visiting our pink & purple palace in Crows Nest, Sydney. <\/p><p>We want your Halloween Costumes, Celebrity Costumes, Disney Costumes, Superhero Costumes, 1920s Costumes, 1980s Costumes & everything in between, to do their job of putting you in disguise so that you can – ironically – drop your own, let loose & remember the freedom of childhood. <\/p><p>We also believe that every milestone should be celebrated & have Helium Balloons for every occasion to help you do just that. Gender Reveal balloons, 1st Birthday balloons, Graduation balloons, Valentines Day balloons, Engagement balloons, Hens Party Balloons, Wedding Balloons, Welcome Baby balloons, Anniversary balloons – & if you crack a century we’ve got balloons for that too! From basic bouquets to custom event décor to elevate your celebrations. <\/p><p>Qualatex latex balloons source from Rainforest Alliance Certified rubber plantations, with no service provided for balloon releases – <\/p><p><strong>EVER<\/strong>. Pin it & bin it when the fun is done, peeps. SO: life deserves to be celebrated. Quite possibly, we only get to be here once. Let’s make the most of it, shall we? We can’t wait to serve you online or instore, soon!<\/p>",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary",
+            "secondary_button_text": "",
+            "secondary_button_link": "",
+            "secondary_button_style": "secondary",
+            "bg_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17308545843499__3531a624-520b-411c-bf38-02af159fef9d-1672377302548d2d9e-0",
+        "template--17308545843499__3531a624-520b-411c-bf38-02af159fef9d-1672377302548d2d9e-1"
+      ],
+      "settings": {
+        "height": "four-fifty-height",
+        "add_spacing": false,
+        "wrapper": "full",
+        "bg_color": ""
+      }
+    },
+    "166354779528c086f8": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "e984f758-5aef-4501-90eb-d506f06f1962": {
+      "type": "section-text",
+      "blocks": {
+        "template--17308545843499__e984f758-5aef-4501-90eb-d506f06f1962-16721156777468cb09-0": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Subheading<\/p>",
+            "size": 100
+          }
+        },
+        "template--17308545843499__e984f758-5aef-4501-90eb-d506f06f1962-16721156777468cb09-1": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>Follow us on Instagram<\/p>",
+            "size": 100
+          }
+        },
+        "template--17308545843499__e984f758-5aef-4501-90eb-d506f06f1962-16721156777468cb09-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Instagram Account Here<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "template--17308545843499__e984f758-5aef-4501-90eb-d506f06f1962-16721156777468cb09-0",
+        "template--17308545843499__e984f758-5aef-4501-90eb-d506f06f1962-16721156777468cb09-1",
+        "template--17308545843499__e984f758-5aef-4501-90eb-d506f06f1962-16721156777468cb09-2"
+      ],
+      "settings": {
+        "text_position": "center",
+        "wrapper": "normal",
+        "padding": "standard-padding",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    },
+    "c446ee42-6d1a-492e-b248-c35097d157d2": {
+      "type": "section-custom-content",
+      "blocks": {
+        "template--17308545843499__c446ee42-6d1a-492e-b248-c35097d157d2-167409077921db23db-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/profesional-photo-studio.jpg",
+            "image_link": "http:\/\/www.ginonaliniphotography.com\/",
+            "image_position": "center-center",
+            "overlay_opacity": 10,
+            "text_color": "text-light",
+            "title": "",
+            "heading_size": 110,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--17308545843499__c446ee42-6d1a-492e-b248-c35097d157d2-167409077921db23db-0"
+      ],
+      "settings": {
+        "height": "two-sixty-height",
+        "add_spacing": true,
+        "wrapper": "normal",
+        "bg_color": "rgba(0,0,0,0)"
+      }
+    },
+    "7059d9af-dc91-4589-862c-290d90ff56fe": {
+      "type": "section-split-images",
+      "disabled": true,
+      "blocks": {
+        "template--17308545843499__7059d9af-dc91-4589-862c-290d90ff56fe-167401972347f170c9-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/profesional-photo-studio.jpg",
+            "image_link": "http:\/\/www.ginonaliniphotography.com\/",
+            "image_position": "center-center",
+            "show_image_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "template--17308545843499__7059d9af-dc91-4589-862c-290d90ff56fe-167401972347f170c9-0"
+      ],
+      "settings": {
+        "image_height": "two-sixty-height",
+        "mobile_layout": "inline",
+        "text_position": "middle-center",
+        "overlay_opacity": 10,
+        "text_color": "text-light",
+        "title": "",
+        "heading_size": 120,
+        "text": "",
+        "button_text": "",
+        "button_link": "",
+        "button_style": "primary"
+      }
+    },
+    "3db54228-b4df-45b1-bb19-bab8bf0d8f2c": {
+      "type": "section-newsletter",
+      "settings": {
+        "flex_align": "align--middle-center",
+        "wrapper": "normal",
+        "text_color": "text-light",
+        "title": "Join the Party!",
+        "text": "<p>Sign-up for exclusive offers, sales & event alerts.<\/p>",
+        "extra_fields": "",
+        "button_text": "",
+        "bg_color": "#e20d66",
+        "image_height": "five-fifty-height",
+        "image_position": "center-center",
+        "overlay_opacity": 10
+      }
+    }
+  },
+  "order": [
+    "02c1c9a4-2eef-49ec-b01a-2500e8a45a23",
+    "ec55fc55-9a0c-4467-834d-34186c70b580",
+    "16638063950f5b1e37",
+    "b12d545f-e4cd-4f8a-9e48-e5886c14cbe7",
+    "06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92",
+    "a9e3c144-0da3-48eb-b90d-09eb70362043",
+    "testimonials",
+    "3531a624-520b-411c-bf38-02af159fef9d",
+    "166354779528c086f8",
+    "e984f758-5aef-4501-90eb-d506f06f1962",
+    "c446ee42-6d1a-492e-b248-c35097d157d2",
+    "7059d9af-dc91-4589-862c-290d90ff56fe",
+    "3db54228-b4df-45b1-bb19-bab8bf0d8f2c"
+  ]
+}
