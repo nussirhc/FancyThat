@@ -114,7 +114,7 @@
             "title": "Need More?",
             "text": "",
             "icon_popup_page": "",
-            "modal_content": "<p><strong>Need more?<\/strong><\/p><p>If this is an instore stocked item & you need more than we have instore, we can usually ship to you direct from our Australian based suppliers.  <\/p><p>CALL us on (02) 9906 6135 or email play@fancythatcostumes.com.au   <\/p>"
+            "modal_content": "<p><strong>Need more?<\/strong><\/p><p>If this is an instore stocked item & you need more than we have instore, we can usually ship to you direct from our Australian based suppliers.  <\/p><p>CALL us on <a href=\"tel:(02) 9906 6135\" title=\"tel:(02) 9906 6135\">(02) 9906 6135<\/a> or email <a href=\"mailto:play@fancythatcostumes.com.au\" title=\"mailto:play@fancythatcostumes.com.au\">play@fancythatcostumes.com.au<\/a>   <\/p>"
           }
         }
       },
