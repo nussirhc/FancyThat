@@ -12328,7 +12328,7 @@ $(document).ready(function(){
   // var modal = document.getElementsByClassName("modal");
 
   // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close");
+  var span = document.getElementsByClassName("close0");
 
   // When the user clicks on the button, open the modal
   $("#myBtn0").click(function() {
@@ -12355,7 +12355,7 @@ $(document).ready(function(){
   // var modal = document.getElementsByClassName("modal");
 
   // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close");
+  var span = document.getElementsByClassName("close1");
 
   // When the user clicks on the button, open the modal
   $("#myBtn1").click(function() {
@@ -12381,7 +12381,7 @@ $(document).ready(function(){
   // var modal = document.getElementsByClassName("modal");
 
   // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close");
+  var span = document.getElementsByClassName("close2");
 
   // When the user clicks on the button, open the modal
   $("#myBtn2").click(function() {
@@ -12407,7 +12407,7 @@ $(document).ready(function(){
   // var modal = document.getElementsByClassName("modal");
 
   // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close");
+  var span = document.getElementsByClassName("close3");
 
   // When the user clicks on the button, open the modal
   $("#myBtn3").click(function() {
