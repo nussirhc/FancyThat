@@ -18215,7 +18215,7 @@ button.collection__filters__toggle {
 }
 @media only screen and (max-width: 767px) {
   .testimonials__slider {
-    display: flex;
+    display: block;
     flex-flow: row nowrap;
     overflow-y: hidden;
     overflow-x: scroll;
@@ -18295,7 +18295,8 @@ button.collection__filters__toggle {
     --item-width: calc((var(--wrapper-width) * 0.9 - var(--grid-gutter)) / 2);
     width: auto;
     min-width: var(--item-width);
-    margin-right: var(--grid-gutter);
+    margin-right: 0;
+    margin-bottom: var(--grid-gutter);;
   }
 }
 @media only screen and (max-width: 479px) {
