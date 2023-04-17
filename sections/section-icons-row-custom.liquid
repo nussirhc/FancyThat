@@ -113,7 +113,9 @@
 
               {%- if title != blank -%}
               <button id="myBtn">
+                {{ block }}
                 <h3 class="icons-row__title">{{ title }}</h3>
+                }
               </button>
               {%- endif -%}
 
@@ -169,7 +171,7 @@
 {% schema %}
 {
   "name": "Icons row Style-II",
-  "max_blocks": 6,
+  "max_blocks": 4,
   "settings": [
     {
       "type": "header",
