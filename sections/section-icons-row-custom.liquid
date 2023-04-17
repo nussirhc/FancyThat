@@ -99,7 +99,6 @@
             -%}
 
             <div class="icons-row__item{% if boxes %} icons-row__item--box{% endif %}" {{ block.shopify_attributes }}
-              <button id="myBtn">
               {% if animations_enabled %} data-aos="fade-up" data-aos-anchor="{{ animation_anchor }}" data-aos-delay="{{ animation_delay }}"{% endif %}>
               {%- assign animation_delay = animation_delay | plus: 250 -%}
               {%- if image != blank or icon != 'none' -%}
@@ -113,13 +112,15 @@
               {%- endif -%}
 
               {%- if title != blank -%}
+              <button id="myBtn">
                 <h3 class="icons-row__title">{{ title }}</h3>
+              </button>
               {%- endif -%}
 
               {%- if text != blank -%}
                 <div class="icons-row__text">{{ text }}</div>
               {%- endif -%}
-              </button>
+              
             </div>
           {%- endfor -%}
         </div>

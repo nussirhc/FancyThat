@@ -228,7 +228,7 @@
                 {%- endif -%}
               </h1>
             </div>
-            {%- render 'afterpay' -%}
+           
             <div class="product__block product__price-and-badge">
   <div class="product__price" data-price-wrapper>
     {%- unless product == blank -%}
@@ -295,7 +295,9 @@
       <span data-price-off-amount></span>
     </span>
   </div>
-
+          
+ {%- render 'afterpay' -%}
+          
   {%- if block.settings.show_rating or settings.show_rating and section_type == 'quickview' -%}
     {%- unless product != blank -%}
       {%- render 'rating', show_rating_count: block.settings.show_rating_count, single_star: true, reviews: product.metafields.reviews -%}
