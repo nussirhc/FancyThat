@@ -13091,7 +13091,8 @@ button.collection__filters__toggle {
   .logo-list__slider {
     overflow-y: hidden;
     overflow-x: scroll;
-    display: flex;
+    display: block;
+    /*display: flex;*/
     flex-flow: row nowrap;
     align-items: center;
     line-height: 0;
