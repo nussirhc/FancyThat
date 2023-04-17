@@ -8130,6 +8130,10 @@ button.mfp-close {
   .footer-block ul li{
       display: block !important;
   }
+
+  .rich-text__heading{
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 768px) {
