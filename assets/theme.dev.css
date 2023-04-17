@@ -19713,3 +19713,9 @@ span.afterpay-logo-link button#logo-link:after {
   }
 
 }
+
+.newsletter-form input[type=email].input-group__field{
+	border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
