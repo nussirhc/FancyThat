@@ -18100,7 +18100,7 @@ button.collection__filters__toggle {
     margin-right: 0;
   }
   .text__button:last-of-type {
-    /*margin-top: var(--text-gap);*/
+    margin-top: 0;
   }
 }
 
