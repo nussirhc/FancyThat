@@ -97,6 +97,7 @@
               assign text = block.settings.text
               assign image = block.settings.icon_image
               assign icon = block.settings.icon_name
+              assign someVar = someVar | plus:1
             -%}
 
             <div class="icons-row__item{% if boxes %} icons-row__item--box{% endif %}" {{ block.shopify_attributes }}
@@ -113,7 +114,7 @@
               {%- endif -%}
 
               {%- if title != blank -%}
-              {{ blkcount }}
+              {{ someVar }}
               <button id="myBtn">
                 <h3 class="icons-row__title">{{ title }}</h3>
               </button>
