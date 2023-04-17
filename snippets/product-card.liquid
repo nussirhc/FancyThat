@@ -490,9 +490,7 @@
               </div>
             {% endif %}
           </div>
-          <div class="sf-afterpay">
-             {% render 'afterpay' %}
-          </div>
+          
           
           <div class="product-grid-item__price sf__pcard-price leading-normal">
             {% render 'product-prices', product: product, is_product_card: true %}
@@ -501,7 +499,9 @@
             {% render 'product-card-option', product: product %}
           {% endif %}
         </div>
-    
+        <div class="sf-afterpay">
+             {% render 'afterpay' %}
+          </div>
         {%- if sold_out == false and settings.show_cart_button and card_style == '4' -%}
           <div class="sf__pcard-action-atc flex justify-center">
             {% render 'product-card-quick-add-btn', product: product, quick_add_text: quick_add_text, section: section %}
