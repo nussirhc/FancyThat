@@ -12322,7 +12322,6 @@ window.addEventListener('load', () => {
 });
 
 
-// Popup 1 //
 $(document).ready(function(){
   // Get the modal
   var modal = document.getElementById("myModal");
