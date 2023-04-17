@@ -8128,7 +8128,7 @@ button.mfp-close {
       text-align: center;   
   }
   .footer-block ul li{
-      display: block;
+      display: block !important;
   }
 }
 
