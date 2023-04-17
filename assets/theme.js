@@ -12324,14 +12324,14 @@ window.addEventListener('load', () => {
 
 $(document).ready(function(){
   // Get the modal
-  // var modal = document.getElementById("myModal");
-  var modal = document.getElementsByClassName("modal");
+  var modal = document.getElementById("myModal");
+  // var modal = document.getElementsByClassName("modal");
 
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
 
   // When the user clicks on the button, open the modal
-  $("#myBtn").click(function() {
+  $("#myBtn0").click(function() {
     modal.style.display = "block";
   });
 

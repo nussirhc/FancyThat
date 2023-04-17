@@ -114,8 +114,7 @@
               {%- endif -%}
 
               {%- if title != blank -%}
-             {% increment my_counter %}
-              <button id="myBtn">
+              <button id="myBtn{% increment my_counter %}">
                 <h3 class="icons-row__title">{{ title }}</h3>
               </button>
               {%- endif -%}
