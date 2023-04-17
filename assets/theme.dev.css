@@ -8171,6 +8171,11 @@ button.mfp-close {
   max-width: 100%;
 }
 
+.footer-contact-link,
+.footer-block .rte a{
+  text-decoration: none;
+}
+
 .footer-block__shop-name {
   color: var(--text);
   font-size: calc( 1.125rem * var(--adjust-heading));
