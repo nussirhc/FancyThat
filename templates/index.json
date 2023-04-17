@@ -145,7 +145,7 @@
         "button_style": "primary",
         "secondary_button_style": "secondary btn--small",
         "bg_color": "",
-        "enable_slider_mobile": true
+        "enable_slider_mobile": false
       }
     },
     "16638063950f5b1e37": {
