@@ -12324,7 +12324,8 @@ window.addEventListener('load', () => {
 
 $(document).ready(function(){
   // Get the modal
-  var modal = document.getElementById("myModal");
+  // var modal = document.getElementById("myModal");
+  var modal = document.getElementsByClassName("modal");
 
   // Get the <span> element that closes the modal
   var span = document.getElementsByClassName("close")[0];
