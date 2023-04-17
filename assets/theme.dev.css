@@ -74,7 +74,7 @@
 }
 
 /*============================================================================
-	#Breakpoint and Grid Variables
+  #Breakpoint and Grid Variables
 ==============================================================================*/
 /*================ TOOLS ================*/
 /*================ Media Query Mixin ================*/
@@ -1606,7 +1606,7 @@ input.btn, input.shopify-payment-button__button--unbranded {
 }
 
 /*============================================================================
-	#Helper Classes
+  #Helper Classes
 ==============================================================================*/
 .text-light {
   --text: var(--white);
@@ -2927,7 +2927,7 @@ input {
 }
 
 /*============================================================================
-	#Notes and Form Feedback
+  #Notes and Form Feedback
 ==============================================================================*/
 .note,
 .errors {
@@ -5696,7 +5696,7 @@ button.mfp-close {
 
 /*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
 /*
-	Styles for basic PhotoSwipe functionality (sliding area, open/close transitions)
+  Styles for basic PhotoSwipe functionality (sliding area, open/close transitions)
 */
 /* pswp = photoswipe */
 .pswp {
@@ -5760,8 +5760,8 @@ button.mfp-close {
 }
 
 /*
-	Background is added as a separate element.
-	As animating opacity is much faster than animating rgba() background-color.
+  Background is added as a separate element.
+  As animating opacity is much faster than animating rgba() background-color.
 */
 .pswp__bg {
   position: absolute;
@@ -5848,16 +5848,16 @@ button.mfp-close {
 }
 
 /*
-	stretched thumbnail or div placeholder element (see below)
-	style is added to avoid flickering in webkit/blink when layers overlap
+  stretched thumbnail or div placeholder element (see below)
+  style is added to avoid flickering in webkit/blink when layers overlap
 */
 .pswp__img--placeholder {
   -webkit-backface-visibility: hidden;
 }
 
 /*
-	div element that matches size of large image
-	large image loads on top of it
+  div element that matches size of large image
+  large image loads on top of it
 */
 .pswp__img--placeholder--blank {
   background: #222;
@@ -5871,8 +5871,8 @@ button.mfp-close {
 }
 
 /*
-	Error message appears when image is not loaded
-	(JS option errorMsg controls markup)
+  Error message appears when image is not loaded
+  (JS option errorMsg controls markup)
 */
 .pswp__error-msg {
   position: absolute;
@@ -7137,7 +7137,7 @@ button.mfp-close {
 }
 
 /*============================================================================
-	#Nav search results
+  #Nav search results
 ==============================================================================*/
 .results {
   margin-top: 44px;
@@ -18094,12 +18094,13 @@ button.collection__filters__toggle {
 @media only screen and (max-width: 479px) {
   .text__button {
     width: 100%;
+    margin-bottom: var(--text-gap);
   }
   .text__button:first-of-type {
     margin-right: 0;
   }
   .text__button:last-of-type {
-    margin-top: var(--text-gap);
+    /*margin-top: var(--text-gap);*/
   }
 }
 
@@ -19635,7 +19636,7 @@ span.afterpay-logo-link button#logo-link:after {
 
 
 .template-product .icons-row__item .icons-row__icon{
-	top: 5px;
+  top: 5px;
 }
 
 
@@ -19733,7 +19734,7 @@ span.afterpay-logo-link button#logo-link:after {
 }
 
 .newsletter-form input[type=email].input-group__field{
-	border-left: 2px solid;
+  border-left: 2px solid;
     border-top: 2px solid;
     border-bottom: 2px solid;
 }
