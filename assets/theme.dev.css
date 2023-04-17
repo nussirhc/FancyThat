@@ -8123,6 +8123,13 @@ button.mfp-close {
     gap: calc(var(--gutter)/ 2);
     align-content: start;
   }
+  .footer-block{
+      justify-items: center;
+      text-align: center;   
+  }
+  .footer-block ul li{
+      display: block;
+  }
 }
 
 @media only screen and (min-width: 768px) {
