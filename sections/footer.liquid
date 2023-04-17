@@ -112,7 +112,7 @@
                     <div class="footer-title h5">{{ title }}</div>
                   {%- endif -%}
 
-                  <ul class="footer-links" data-collapsible-content-mobile aria-expanded="false">
+                  <ul class="footer-links" aria-expanded="false">
                     {%- for link in menu_links -%}
                       <li> <a class="footer-link" href="{{ link.url }}">{{ link.title }}</a></li>
                     {%- endfor -%}
@@ -128,7 +128,7 @@
                     <div class="footer-title h5">{{ second_heading }}</div>
                   {%- endif -%}
                   <div class="footer-title h5">Company</div>
-                  <ul class="footer-links" data-collapsible-content-mobile aria-expanded="false">
+                  <ul class="footer-links" aria-expanded="false">
                     {%- for link in second_menu_links -%}
                       <li><a class="footer-link" href="{{ link.url }}">{{ link.title }}</a></li>
                     {%- endfor -%}
