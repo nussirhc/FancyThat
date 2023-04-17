@@ -8173,7 +8173,7 @@ button.mfp-close {
 
 .footer-contact-link,
 .footer-block .rte a{
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .footer-block__shop-name {
