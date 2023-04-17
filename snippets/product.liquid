@@ -62,8 +62,7 @@
 -%}
 
 <div class="product_container">
- {%- render 'afterpay' -%}
-<div class="product-single__wrapper{% if image_size %} product__wrapper--{{ image_size }}{% endif %}" data-section-id="{{ unique }}" data-product>
+ <div class="product-single__wrapper{% if image_size %} product__wrapper--{{ image_size }}{% endif %}" data-section-id="{{ unique }}" data-product>
   {%- comment -%} Product media {%- endcomment -%}
   {%- unless product == blank -%}
     <div class="product-single__gallery"
