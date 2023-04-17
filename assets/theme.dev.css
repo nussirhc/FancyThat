@@ -13120,7 +13120,7 @@ button.collection__filters__toggle {
 }
 @media only screen and (max-width: 767px) {
   .logo-list__slide {
-    margin-right: calc(var(--grid-gutter) + var(--gutter-mobile));
+    margin-right: 0;
   }
   .logo-list__slide:last-child {
     margin: 0;
