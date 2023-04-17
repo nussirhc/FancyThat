@@ -107,7 +107,7 @@
 
              <div class="footer-block" {{ block.shopify_attributes }}>
               {%- if menu_links != empty -%}
-                <div class="footer-links__wrapper" id="FooterMenu--{{ title | handle }}-{{ forloop.index0 }}" data-collapsible-container-mobile>
+                <div class="footer-links__wrapper" id="FooterMenu--{{ title | handle }}-{{ forloop.index0 }}">
                  {%- if title != blank -%}
                     <div class="footer-title h5">{{ title }}</div>
                   {%- endif -%}
@@ -123,7 +123,7 @@
               {%- assign second_menu_links = linklists[block.settings.second_menu].links -%}
 
               {%- if second_menu_links != empty -%}
-                <div class="footer-links__wrapper" id="FooterMenu--{{ second_heading | handle }}-{{ forloop.index0 }}" data-collapsible-container-mobile>
+                <div class="footer-links__wrapper" id="FooterMenu--{{ second_heading | handle }}-{{ forloop.index0 }}">
                   {%- if second_heading != blank -%}
                     <div class="footer-title h5">{{ second_heading }}</div>
                   {%- endif -%}
