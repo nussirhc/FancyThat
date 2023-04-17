@@ -74,8 +74,64 @@
         "collection": "buy-accessories"
       }
     },
+    "7f4bca39-c61a-4609-8cd2-f42120492306": {
+      "type": "section-icons-row-custom",
+      "blocks": {
+        "template--18628010279211__7f4bca39-c61a-4609-8cd2-f42120492306-16816989464147f024-0": {
+          "type": "text",
+          "settings": {
+            "icon_name": "truck",
+            "title": "Free Shipping",
+            "text": "<p>on all order over $99<\/p>",
+            "icon_popup_page": ""
+          }
+        },
+        "template--18628010279211__7f4bca39-c61a-4609-8cd2-f42120492306-16816989464147f024-1": {
+          "type": "text",
+          "settings": {
+            "icon_name": "zap",
+            "title": "Fast Delivery",
+            "text": "",
+            "icon_popup_page": ""
+          }
+        },
+        "template--18628010279211__7f4bca39-c61a-4609-8cd2-f42120492306-16816989464147f024-2": {
+          "type": "text",
+          "settings": {
+            "icon_name": "thumbs-up",
+            "title": "No Fuss Return",
+            "text": "",
+            "icon_popup_page": ""
+          }
+        },
+        "b82477bd-5600-48ad-8309-2da33585c253": {
+          "type": "text",
+          "settings": {
+            "icon_name": "info",
+            "title": "Need More?",
+            "text": "",
+            "icon_popup_page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18628010279211__7f4bca39-c61a-4609-8cd2-f42120492306-16816989464147f024-0",
+        "template--18628010279211__7f4bca39-c61a-4609-8cd2-f42120492306-16816989464147f024-1",
+        "template--18628010279211__7f4bca39-c61a-4609-8cd2-f42120492306-16816989464147f024-2",
+        "b82477bd-5600-48ad-8309-2da33585c253"
+      ],
+      "settings": {
+        "alignment": "left",
+        "columns": 4,
+        "icons_width": 30,
+        "bg_color": "#fafafa",
+        "box_color": "#f4f4f4",
+        "text_color": "#333"
+      }
+    },
     "726968d1-cc05-4083-b5d2-d47745122999": {
       "type": "section-icons-row",
+      "disabled": true,
       "blocks": {
         "template--17308801499435__726968d1-cc05-4083-b5d2-d47745122999-16792820880c7108a8-0": {
           "type": "text",
@@ -343,6 +399,7 @@
   },
   "order": [
     "main",
+    "7f4bca39-c61a-4609-8cd2-f42120492306",
     "726968d1-cc05-4083-b5d2-d47745122999",
     "1663776506dfcd60a2",
     "165820151557db6d55",
