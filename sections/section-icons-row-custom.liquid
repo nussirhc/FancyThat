@@ -27,7 +27,7 @@
   opacity: 1;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 9; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -112,14 +112,16 @@
               {%- endif -%}
 
               {%- if title != blank -%}
+              <a href="#" id="myBtn">
                 <h3 class="icons-row__title">{{ title }}</h3>
+              </a>
               {%- endif -%}
 
               {%- if text != blank -%}
                 <div class="icons-row__text">{{ text }}</div>
               {%- endif -%}
 
-              <button id="myBtn"> Open Modal</button>
+              <button id="myBtnq"> Open Modal</button>
 
 
 
