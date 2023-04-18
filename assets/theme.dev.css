@@ -19768,3 +19768,9 @@ span.afterpay-logo-link button#logo-link:after {
 .facest-filters-section .grid__item .arrow-right-white{
     left: 0;
 }
+
+@media only screen and (max-width: 480px) {
+  .facest-filters-section .grid__item a.collection-item{
+    font-size: 14px;
+  }
+}
