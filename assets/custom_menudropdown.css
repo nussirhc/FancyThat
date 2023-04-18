@@ -21,7 +21,7 @@ Main Components
   border-radius: 3px;
 }
 
-.has-children>a:hover {
+.cd-has-children>a:hover {
   background: #000;
   color: #fff !important;
   font-weight: bold;
