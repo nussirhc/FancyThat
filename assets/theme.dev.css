@@ -18309,7 +18309,7 @@ button.collection__filters__toggle {
     --item-width: calc((var(--wrapper-width) * 0.9 - var(--grid-gutter)) / 2);
     width: auto;
     min-width: var(--item-width);
-    margin-right: 0;
+    margin-right: calc(var(--gutter) / 2);
     margin-bottom: var(--grid-gutter);;
   }
 }
