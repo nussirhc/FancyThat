@@ -66,6 +66,12 @@
   endcapture
 -%}
 
+<style>
+.cd-dropdown-content ul li ul{display: none; // or whatever code you want for hiding sub menu items}
+.cd-dropdown-content ul li:hover ul{display: block; // or whatever code you want for showing sub menu items}
+</style>
+
+
 <div
   class="{{ classes }}"
   data-nav-item
