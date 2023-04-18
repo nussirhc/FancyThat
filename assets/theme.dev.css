@@ -19760,3 +19760,7 @@ span.afterpay-logo-link button#logo-link:after {
 .template-product #IconsRow--section-icons-row .icons-row__item:nth-child(3) .icons-row__icon{
       width: 5rem!important;
 }
+
+.template-product #IconsRow--section-icons-row .icons-row__item .icons-row__icon{
+  top: 0;
+}
