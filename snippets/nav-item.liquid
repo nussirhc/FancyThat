@@ -81,7 +81,7 @@
     data-top-link
     class="navlink navlink--toplevel{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
   >
-    <span class="navtext">{{ link_title }}</span>
+    <span class="1 navtext">{{ link_title }}</span>
   </a>
   {%- if expands -%}
     <div class="header__dropdown" data-hover-disclosure id="dropdown-{{ key }}">
@@ -123,7 +123,7 @@
                         class="1 {% if link_image_markup != blank %} navlink--image{% endif %}{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
                       >
                         {{- link_image_markup -}}
-                        <span class="navtext">{{ link_title }}</span>
+                        <span class="2 navtext">{{ link_title }}</span>
                       </a>
 
                       <!-- Sub Menu -->
@@ -138,7 +138,7 @@
                               data-stagger-second
                               class="cd-dropdown-item {% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
                             >
-                              <span class="navtext">{{ link_title }}</span>
+                              <span class="3 navtext">{{ link_title }}</span>
                             </a>
                           </li>
                         {%- endfor -%}
@@ -174,9 +174,9 @@
                       <a
                         href="{{ link.url }}"
                         data-stagger
-                        class="3 navlink navlink--grandchild{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
+                        class="navlink navlink--grandchild{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
                       >
-                        <span class="navtext">{{ link_title }}</span>
+                        <span class="4 navtext">{{ link_title }}</span>
                       </a>
                     {%- endfor %}
                   </div>
@@ -201,7 +201,7 @@
                 data-stagger
                 class="2 navlink navlink--child{% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}"
               >
-                <span class="navtext">{{ link_title }}</span>
+                <span class="5 navtext">{{ link_title }}</span>
               </a>
             {%- endfor -%}
           {%- endif -%}
