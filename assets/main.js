@@ -23,7 +23,7 @@ jQuery(document).ready(function($){
 	var submenuDirection = ( !$('.cd-dropdown-wrapper').hasClass('open-to-left') ) ? 'right' : 'left';
 	$('.cd-dropdown-content').menuAim({
         activate: function(row) {
-        	$(row).children().addClass('1is-active').removeClass('fade-out');
+        	$(row).children().addClass('is-active').removeClass('fade-out');
         	if( $('.cd-dropdown-content .fade-in').length == 0 ) $(row).children('ul').addClass('fade-in');
         },
         deactivate: function(row) {
