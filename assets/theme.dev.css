@@ -19764,3 +19764,7 @@ span.afterpay-logo-link button#logo-link:after {
 .template-product #IconsRow--section-icons-row .icons-row__item .icons-row__icon{
   top: 0;
 }
+
+.facest-filters-section .grid__item .arrow-right-white{
+    left: 0;
+}
