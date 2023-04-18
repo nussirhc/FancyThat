@@ -18229,7 +18229,7 @@ button.collection__filters__toggle {
 }
 @media only screen and (max-width: 767px) {
   .testimonials__slider {
-    display: block;
+    display: flex;
     flex-flow: row nowrap;
     overflow-y: hidden;
     overflow-x: scroll;
