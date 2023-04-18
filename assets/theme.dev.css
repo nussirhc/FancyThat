@@ -7175,7 +7175,8 @@ button.mfp-close {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-    flex-flow: row nowrap;
+    flex-flow: row wrap
+    /*flex-flow: row nowrap;*/
     scrollbar-width: none;
     -ms-overflow-style: none;
     /* for Internet Explorer, Edge */
