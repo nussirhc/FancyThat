@@ -7187,8 +7187,8 @@ button.mfp-close {
   }
 
   .nav-search__submit{
-    top: 0;
-    right: 0;
+    top: 0 !important; 
+    right: 0 !important;
   }
 }
 .results-popular__links li {
