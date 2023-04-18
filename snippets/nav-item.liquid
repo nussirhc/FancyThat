@@ -120,7 +120,7 @@
                         {{- link_image_markup -}}
                         <span class="2 navtext">{{ link_title }}</span>
                       </a>
-                      <li {% if link.active %}class="active {% if link.child_active %}child-active{% endif %}"{% endif %}><a href="{{ link.url }}">{{ link.title }}</a></li>
+                      <li {% if link.active %}class="has-children {% if link.child_active %}child-active{% endif %}"{% endif %}><a href="{{ link.url }}">{{ link.title }}</a></li>
                       <!-- Sub Menu -->
                       <ul class="cd-dropdown-icons is-hidden">
                         {%- for link in link.links -%}
