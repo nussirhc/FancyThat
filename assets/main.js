@@ -23,11 +23,11 @@ jQuery(document).ready(function($){
 	var submenuDirection = ( !$('.cd-dropdown-wrapper').hasClass('open-to-left') ) ? 'right' : 'left';
 	$('.cd-dropdown-content').menuAim({
         activate: function(row) {
-        	$(row).children().addClass('is-active').removeClass('fade-out');
+        	$(row).children().addClass('1is-active').removeClass('fade-out');
         	if( $('.cd-dropdown-content .fade-in').length == 0 ) $(row).children('ul').addClass('fade-in');
         },
         deactivate: function(row) {
-        	$(row).children().removeClass('is-active');
+        	$(row).children().removeClass('2is-active');
         	if( $('li.has-children:hover').length == 0 || $('li.has-children:hover').is($(row)) ) {
         		$('.cd-dropdown-content').find('.fade-in').removeClass('fade-in');
         		$(row).children('ul').addClass('fade-out')
