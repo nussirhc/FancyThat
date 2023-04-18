@@ -76,6 +76,7 @@
     },
     "7f4bca39-c61a-4609-8cd2-f42120492306": {
       "type": "section-icons-row-custom",
+      "disabled": true,
       "blocks": {
         "template--18628010279211__7f4bca39-c61a-4609-8cd2-f42120492306-16816989464147f024-0": {
           "type": "text",
