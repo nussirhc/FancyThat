@@ -17125,7 +17125,8 @@ button.collection__filters__toggle {
     padding: var(--gutter-mobile);
   }
   .rich-text__wrapper--no-video .rich-text__content {
-    margin-top: var(--gutter);
+   /* margin-top: var(--gutter);*/
+      margin-top: 20px;
   }
   .wrapper--full .rich-text__content {
     width: auto;
