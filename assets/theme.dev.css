@@ -17077,7 +17077,7 @@ button.collection__filters__toggle {
   .rich-text__image-bg {
     height: auto;
     padding-top: 100%;
-    background-size: cover;
+    background-size: cover !important;
   }
 }
 .rich-text__image-bg .placeholder-svg, .rich-text__image-bg .placeholder-svg-filled {
