@@ -112,7 +112,7 @@
                       endif
                     -%}
 
-                    <li {% if link.active %}class="1 has-children active {% if link.child_active %}child-active{% endif %}"{% endif %}>
+                    <li class="1 has-children">
                       <!-- Main Menu -->
                       {%- assign link_title = link.title | strip_html | escape -%}
                       {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
@@ -120,6 +120,7 @@
                         {{- link_image_markup -}}
                         <span class="2 navtext">{{ link_title }}</span>
                       </a>
+                      <li {% if link.active %}class="active {% if link.child_active %}child-active{% endif %}"{% endif %}><a href="{{ link.url }}">{{ link.title }}</a></li>
                       <!-- Sub Menu -->
                       <ul class="cd-dropdown-icons is-hidden">
                         {%- for link in link.links -%}
