@@ -19749,3 +19749,10 @@ span.afterpay-logo-link button#logo-link:after {
     border-top: 2px solid;
     border-bottom: 2px solid;
 }
+
+.template-product #IconsRow--section-icons-row .icons-row__item{
+  display: flex !important;
+}
+.template-product #IconsRow--section-icons-row .template-product .icons-row__text{
+  padding-left: 0;
+}
