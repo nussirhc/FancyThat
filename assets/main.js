@@ -25,6 +25,7 @@ jQuery(document).ready(function($){
         activate: function(row) {
         	$(row).children().addClass('is-active').removeClass('fade-out');
         	if( $('.cd-dropdown-content .fade-in').length == 0 ) $(row).children('ul').addClass('fade-in');
+            console.log(content);
         },
         deactivate: function(row) {
         	$(row).children().removeClass('2is-active');
