@@ -17051,6 +17051,9 @@ button.collection__filters__toggle {
   .rich-text__wrapper--reversed .rich-text__image {
     left: 0;
   }
+  .rich-text--meet_team .rich-text__image{
+        margin: 0px auto;
+  }
 }
 @media only screen and (max-width: 767px) {
   .rich-text__image {
