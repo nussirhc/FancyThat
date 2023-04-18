@@ -7185,6 +7185,11 @@ button.mfp-close {
     display: none;
     /* for Chrome, Safari, and Opera */
   }
+
+  .nav-search__submit{
+    top: 0;
+    right: 0;
+  }
 }
 .results-popular__links li {
   display: inline-block;
