@@ -18315,7 +18315,7 @@ button.collection__filters__toggle {
 }
 @media only screen and (max-width: 479px) {
   .testimonial__item {
-    --item-width: calc(90% - var(--grid-gutter));
+    --item-width: calc(100% - var(--grid-gutter));
   }
   .testimonials__slider--blocks-1 .testimonial__item {
     width: 100%;
