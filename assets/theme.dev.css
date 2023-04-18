@@ -19756,3 +19756,7 @@ span.afterpay-logo-link button#logo-link:after {
 .template-product #IconsRow--section-icons-row .icons-row__text{
   padding-left: 0;
 }
+
+.template-product #IconsRow--section-icons-row .icons-row__item:nth-child(3) .icons-row__icon{
+      width: 5rem!important;
+}
