@@ -19317,6 +19317,10 @@ a.footer-contact-link{
     border: 0;
 }
 
+#about-us .brick__blocks__flex {
+    border: 0px;
+}
+
 .brick__blocks__flex {
   border: 2px solid #ac1700;
   min-height: 197px;
