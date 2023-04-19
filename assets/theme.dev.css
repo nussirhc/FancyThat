@@ -19397,6 +19397,7 @@ p.excerpt{
 
 .nav-search .search-form {
     border-radius: 10px;
+    margin: 0;
 }
 
 .nav-search__submit {
