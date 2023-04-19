@@ -7035,7 +7035,7 @@ button.mfp-close {
   position: sticky;
   top: 0;
   z-index: 2;
-  padding-bottom: 30px;
+  padding-bottom: 0;
   margin: 50px auto;
   transition: margin-top 0.25s ease-out;
   background: var(--bg);
