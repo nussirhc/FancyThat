@@ -28,7 +28,7 @@ jQuery(document).ready(function($){
         	if( $('.cd-dropdown-content .fade-in').length == 0 ) $(row).children('ul').addClass('fade-in');
         },
         deactivate: function(row) {
-        	$(row).children().removeClass('2is-active');
+        	$(row).children().removeClass('is-active');
         	if( $('li.has-children:hover').length == 0 || $('li.has-children:hover').is($(row)) ) {
         		$('.cd-dropdown-content').find('.fade-in').removeClass('fade-in');
         		$(row).children('ul').addClass('fade-out')
