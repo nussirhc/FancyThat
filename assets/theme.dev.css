@@ -6654,7 +6654,6 @@ button.mfp-close {
 .grandparent .header__dropdown__wrapper {
   overflow-y: auto;
   max-height: calc(100vh - var(--header-height));
-  box-shadow: 0 4px 2px -2px #dad9d9;
 }
 .grandparent .header__dropdown__inner {
   display: flex;
@@ -6740,9 +6739,6 @@ button.mfp-close {
 
 .grandparent.no-images .header__dropdown__inner {
   width: var(--wrapper-width);
-  padding-left: 6%;
-  padding-right: 6%;
-  width: 100%;
 }
 
 .grandparent.no-images.kids-1 .header__dropdown__inner {
@@ -6897,10 +6893,6 @@ button.mfp-close {
 
 .mobile-menu__button .icon-search {
   transform: translateX(2px);
-}
-
-.mobile-menu__button a.header-icon-link {
-  font-size: 25px;
 }
 
 .cart__toggle {
@@ -19782,6 +19774,10 @@ span.afterpay-logo-link button#logo-link:after {
 
 .facest-filters-section .grid__item .arrow-right-white{
     left: 0;
+}
+
+.has-scrolled .logo__image-link{
+    width: 196px;  
 }
 
 @media only screen and (max-width: 480px) {
