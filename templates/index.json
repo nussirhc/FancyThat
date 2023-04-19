@@ -442,7 +442,7 @@
       ],
       "settings": {
         "height": "four-fifty-height",
-        "add_spacing": true,
+        "add_spacing": false,
         "wrapper": "full",
         "bg_color": "#ffffff"
       }
