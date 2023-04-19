@@ -6740,6 +6740,9 @@ button.mfp-close {
 
 .grandparent.no-images .header__dropdown__inner {
   width: var(--wrapper-width);
+  padding-left: 6%;
+  padding-right: 6%;
+  width: 100%;
 }
 
 .grandparent.no-images.kids-1 .header__dropdown__inner {
