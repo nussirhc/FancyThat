@@ -12,9 +12,8 @@ jQuery(document).ready(function($){
 	});
 
 	//on mobile - open submenu
-	$('.has-children').children('a').on('click', function(event){
+	$('.has-children').children('a').trigger('click', function(event){
 		//prevent default clicking on direct children of .has-children 
-        $("a").trigger("click");
 		event.preventDefault();
 		var selected = $(this);
 		selected.next('ul').removeClass('is-hidden').end().parent('.has-children').parent('ul').addClass('move-out');
