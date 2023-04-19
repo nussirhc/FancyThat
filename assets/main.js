@@ -21,7 +21,8 @@ jQuery(document).ready(function($){
 
 	//on desktop - differentiate between a user trying to hover over a dropdown item vs trying to navigate into a submenu's contents
 	var submenuDirection = ( !$('.cd-dropdown-wrapper').hasClass('open-to-left') ) ? 'right' : 'left';
-	$('.cd-dropdown-content').menuAim({
+
+  	$('.cd-dropdown-content').menuAim({
         activate: function(row) {
         	$(row).children().addClass('is-active').removeClass('fade-out');
         	if( $('.cd-dropdown-content .fade-in').length == 0 ) $(row).children('ul').addClass('fade-in');
