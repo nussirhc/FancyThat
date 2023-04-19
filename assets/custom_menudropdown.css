@@ -465,6 +465,7 @@ Main Components
     position: static;
     height: auto;
     width: 375px;
+    padding-bottom: 40px;
     list-style-type: none
   }
   .cd-dropdown-content > li:last-of-type a {
