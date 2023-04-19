@@ -6186,7 +6186,7 @@ button.mfp-close {
 }
 @media only screen and (max-width: 479px) {
   .logo {
-    max-width: calc(100% - 124px);
+    max-width: 126px;
   }
 }
 
