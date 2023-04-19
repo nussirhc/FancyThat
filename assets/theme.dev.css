@@ -6895,6 +6895,10 @@ button.mfp-close {
   transform: translateX(2px);
 }
 
+.mobile-menu__button a.header-icon-link {
+   font-size: 25px;
+}
+
 .cart__toggle {
   position: relative;
   font-size: calc(0.875rem * var(--adjust-body));
