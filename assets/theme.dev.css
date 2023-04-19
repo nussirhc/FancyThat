@@ -6654,6 +6654,7 @@ button.mfp-close {
 .grandparent .header__dropdown__wrapper {
   overflow-y: auto;
   max-height: calc(100vh - var(--header-height));
+  box-shadow: 0 4px 2px -2px #dad9d9;
 }
 .grandparent .header__dropdown__inner {
   display: flex;
