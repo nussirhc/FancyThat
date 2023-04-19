@@ -19408,6 +19408,7 @@ p.excerpt{
 .nav-search__input {
     padding: 40px;
     border-radius: 10px;
+    border: 0 !important;
 }
 
 .footer-block ul {
