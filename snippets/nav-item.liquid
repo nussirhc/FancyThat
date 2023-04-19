@@ -122,7 +122,7 @@
                       <!-- Main Menu -->
                       {%- assign link_title = link.title | strip_html | escape -%}
                       {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
-                       <a href="{{ link.url }}" class="cd-dropdown-item {% if link.active %} main-menu--active{% endif %}{% if highlight_item == link_title_lowercase %} navlink--highlight{% endif %}">
+                       <a href="{{ link.url }}" class="cd-dropdown-item {% if link.active %} main-menu--active{% endif %} navlink--highlight">
                          {{ link_title }}
                        </a>
 
