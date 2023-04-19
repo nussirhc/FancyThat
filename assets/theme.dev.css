@@ -19777,7 +19777,7 @@ span.afterpay-logo-link button#logo-link:after {
 }
 
 .has-scrolled .logo__image-link{
-    width: 196px;  
+    width: 196px !important;  
 }
 
 @media only screen and (max-width: 480px) {
