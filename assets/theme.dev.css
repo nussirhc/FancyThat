@@ -8536,6 +8536,7 @@ button.mfp-close {
 .accordion__item__title__text {
   position: relative;
   display: inline-block;
+  padding-left: 10px;
 }
 .accordion__item__title__text::after {
   content: "";
