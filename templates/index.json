@@ -441,7 +441,7 @@
         "template--17308545843499__3531a624-520b-411c-bf38-02af159fef9d-1672377302548d2d9e-1"
       ],
       "custom_css": [
-
+        ".brick__block__inner{padding-left: 30px;}"
       ],
       "settings": {
         "height": "four-fifty-height",
