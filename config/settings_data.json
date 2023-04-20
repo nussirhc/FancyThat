@@ -30,7 +30,7 @@
     "show_quantity": true,
     "show_payment_button": true,
     "variants_style": "boxes",
-    "cart_type": "drawer",
+    "cart_type": "page",
     "enable_additional_buttons": false,
     "empty_cart_buttons": "collection-menu",
     "free_shipping_limit": "70",
