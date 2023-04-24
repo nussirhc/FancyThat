@@ -76,7 +76,7 @@
                   </a> {%- endcomment -%}
 
                   <a href="{{ sub_link.url }}" class="2 mobile-navlink mobile-navlink--level-2{% if sub_link.levels == 1 and mobile_menu_behaviour == 'trigger' %} mobile-navlink--trigger{% endif %}" data-nav-link-mobile>
-                    {{- link_title -}}
+                        {{ link.title | escape }}
                   </a> 
 
                   {%- if sub_link.levels == 1 -%}
