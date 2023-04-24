@@ -54,7 +54,7 @@
       {%- if link.links != blank -%}
         <li class="mobile-menu__item mobile-menu__item--level-1 mobile-menu__item--has-items" aria-haspopup="true">
 
-        <a href="{{ link.url }}" class="mobile-navlink mobile-navlink--level-1{% if link.active %} mobile-menu__item--active{% endif %}">
+        <a href="{{ link.url }}" class="mobile-navlink mobile-navlink--level-1{% if link.active %} mobile-menu__item--active{% endif %} {% if mobile_menu_behaviour == 'trigger' %} mobile-navlink--trigger{% endif %}">
         {{ link.title | escape }}
         </a>
 
