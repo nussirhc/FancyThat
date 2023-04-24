@@ -17,3 +17,8 @@ accordionBtns.forEach((accordion) => {
     }
   };
 });
+
+
+
+
+
