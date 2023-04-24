@@ -71,12 +71,11 @@
                 <li class="mobile-menu__item mobile-menu__item--level-2{% if sub_link.levels == 1 %} mobile-menu__item--has-items{% endif %}{% if sub_link.active %} mobile-menu__item--active{% endif %}" {% if sub_link.levels == 1 %}aria-haspopup="true"{% endif %}>
                   
                   {%- comment -%}   {%- endcomment -%}
-                
                   <a href="{{ sub_link.url }}" class="2 mobile-navlink mobile-navlink--level-2{% if sub_link.levels == 1 and mobile_menu_behaviour == 'trigger' %} mobile-navlink--trigger{% endif %}{% if highlight_item == link_title_lowercase %} mobile-navlink--highlight{% endif %}" data-nav-link-mobile>
-                     {{ link.title | escape }}
+                    {{- link_title -}}
                   </a>
 
-             
+
                   {%- if sub_link.levels == 1 -%}
                     <button type="button" class="mobile-nav__trigger mobile-nav__trigger--level-2" aria-controls="MobileNav--{{ link.handle }}-{{ sub_link.handle }}-{{ forloop.index0 }}" data-collapsible-trigger>
                       {%- render 'icon-toggle-plus' -%}
