@@ -75,6 +75,10 @@
                     {{- link_title -}}
                   </a> {%- endcomment -%}
 
+                  <a href="{{ link.url }}" class="2 mobile-navlink mobile-navlink--level-1{% if link.active %} mobile-menu__item--active{% endif %} {% if mobile_menu_behaviour == 'trigger' %} mobile-navlink--trigger{% endif %}">
+                      {{ link.title | escape }}
+                      </a>
+
                   {%- if sub_link.levels == 1 -%}
                     <button type="button" class="mobile-nav__trigger mobile-nav__trigger--level-2" aria-controls="MobileNav--{{ link.handle }}-{{ sub_link.handle }}-{{ forloop.index0 }}" data-collapsible-trigger>
                       {%- render 'icon-toggle-plus' -%}
