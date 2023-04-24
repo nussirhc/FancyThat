@@ -53,8 +53,8 @@
       {%- assign link_title_lowercase = link.title | downcase | strip_html | escape -%}
       {%- if link.links != blank -%}
         <li class="mobile-menu__item mobile-menu__item--level-1 mobile-menu__item--has-items" aria-haspopup="true">
-         
-          <a href="{{ link.url }}" class="menu-drawer__menu-item link--text">{{ link.title | escape }}</a>
+
+          <a href="{{ link.url }}" class="1 mobile-navlink mobile-navlink--level-1{% if link.active %} mobile-menu__item--active{% endif %}{% if mobile_menu_behaviour == 'trigger' %} mobile-navlink--trigger{% endif %}{% if highlight_item == link_title_lowercase %} mobile-navlink--highlight{% endif %}" data-nav-link-mobile>{{ link.title | escape }}</a>
           <button type="button" class="mobile-nav__trigger mobile-nav__trigger--level-1" aria-controls="MobileNav--{{ link.handle }}-{{ forloop.index0 }}" data-collapsible-trigger>
             {%- render 'icon-toggle-plus' -%}
             {%- render 'icon-toggle-minus' -%}
