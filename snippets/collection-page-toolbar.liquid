@@ -1,6 +1,6 @@
 {%- assign st = section.settings -%}
 
-{%- liquid  
+{%- liquid 
   assign sort_by = results.sort_by | default: results.default_sort_by
   for option in results.sort_options
     if option.value == sort_by
@@ -27,10 +27,7 @@
     </div>
     {%- if st.show_sorting or st.show_columns_switcher -%}
       <div class="flex flex-1 items-center justify-between">
-        <span class="filters-toolbar__product-count">{{ 'collections.general.items_with_count' | t: count: collection.products_count }}</span>
-          <div class="flex-1"></div>
-          <div class="sf__gridColumn-view flex pl-4 md:pl-7">
-           {% if st.show_sorting %}
+        {% if st.show_sorting %}
           <div class="font-medium hidden md:block" data-toolbar-sorting>
             <div class="sf__custom-select">
               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
@@ -39,7 +36,8 @@
                   <option 
                     value="{{ option.value | escape }}"
                     {% if option.value == sort_by %} selected="selected"{% endif %}
-                    data-index="{{ forloop.index0 }}">
+                    data-index="{{ forloop.index0 }}"
+                  >
                     {{ option.name | escape }}
                   </option>
                 {%- endfor -%}
@@ -47,7 +45,31 @@
             </div>
           </div>
         {% endif %}
+        {% if st.show_columns_switcher %}
+          <div class="flex-1"></div>
+          <div class="sf__gridColumn-view flex pl-4 md:pl-7">
+            <button class="flex sf__tooltip-item sf__tooltip-top" data-column="1">
+              {% render 'icon', name: 'view-list', size: 'extra-small' %}
+              <span class="sf__tooltip-content text-[12px]">{{ 'collections.toolbar.view_list' | t }}</span>
+            </button>
+            <button class="flex sf__tooltip-item sf__tooltip-top" data-column="2">
+              {% render 'icon', name: 'view-grid-2column', size: 'extra-small' %}
+              <span class="sf__tooltip-content text-[12px]">{{ 'collections.toolbar.grid_2cloumns' | t }}</span>
+            </button>
+            <button class="hidden md:flex sf__tooltip-item sf__tooltip-top" data-column="3">
+              {% render 'icon', name: 'view-grid-3column', size: 'extra-small' %}
+              <span class="sf__tooltip-content text-[12px]">{{ 'collections.toolbar.grid_3cloumns' | t }}</span>
+            </button>
+            <button class="hidden md:flex sf__tooltip-item sf__tooltip-top" data-column="4">
+              {% render 'icon', name: 'view-grid-4column', size: 'extra-small' %}
+              <span class="sf__tooltip-content text-[12px]">{{ 'collections.toolbar.grid_4cloumns' | t }}</span>
+            </button>
+            <button class="hidden lg:flex sf__tooltip-item sf__tooltip-top" data-column="5">
+              {% render 'icon', name: 'view-grid-5column', size: 'extra-small' %}
+              <span class="sf__tooltip-content text-[12px]">{{ 'collections.toolbar.grid_5cloumns' | t }}</span>
+            </button>
           </div>
+        {% endif %}
       </div>
     {%- endif -%}
   </div>
