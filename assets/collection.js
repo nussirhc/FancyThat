@@ -18,7 +18,7 @@ accordionBtns.forEach((accordion) => {
   };
 });
 
-$('.sf__toggle-filter ').click(function() {
+$('.sf__sidebar-open').click(function() {
     $('#sf__sidebar').toggle('slow');
 });
 
