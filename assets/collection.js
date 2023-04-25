@@ -22,3 +22,17 @@ accordionBtns.forEach((accordion) => {
 $('.toggle').click(function() {
     $('#target').toggle('slow');
 });
+
+
+// variable for the button
+const mytogglebutton = document.querySelector('#my-toggle-button');
+
+// variable for the target element that I will show and hide
+const mytargetelement = document.querySelector('#my-hidden-element');
+
+// event listener (onclick) with a function to toggle the class on the target element to show and hide it
+mytogglebutton.onclick = function() {
+  // function actions/statements go here
+  mytargetelement.classList.toggle('hidden');
+  
+};
