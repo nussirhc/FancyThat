@@ -19,8 +19,8 @@ accordionBtns.forEach((accordion) => {
 });
 
 $('.sf__sidebar-open').click(function() {
-    $('#sf__sidebar-content').toggle('slow');
-   console.log("sideba open");
+  // $('#sf__sidebar-content').toggle('slow');
+   console.log("sf__sidebar-open");
 });
 
 
