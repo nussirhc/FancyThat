@@ -1,6 +1,6 @@
 {%- assign st = section.settings -%}
 
-{%- liquid 
+{%- liquid  
   assign sort_by = results.sort_by | default: results.default_sort_by
   for option in results.sort_options
     if option.value == sort_by
@@ -27,7 +27,10 @@
     </div>
     {%- if st.show_sorting or st.show_columns_switcher -%}
       <div class="flex flex-1 items-center justify-between">
-        {% if st.show_sorting %}
+        <span class="filters-toolbar__product-count">{{ 'collections.general.items_with_count' | t: count: collection.products_count }}</span>
+          <div class="flex-1"></div>
+          <div class="sf__gridColumn-view flex pl-4 md:pl-7">
+           {% if st.show_sorting %}
           <div class="font-medium hidden md:block" data-toolbar-sorting>
             <div class="sf__custom-select">
               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
@@ -36,8 +39,7 @@
                   <option 
                     value="{{ option.value | escape }}"
                     {% if option.value == sort_by %} selected="selected"{% endif %}
-                    data-index="{{ forloop.index0 }}"
-                  >
+                    data-index="{{ forloop.index0 }}">
                     {{ option.name | escape }}
                   </option>
                 {%- endfor -%}
@@ -45,12 +47,7 @@
             </div>
           </div>
         {% endif %}
-        {% if st.show_columns_switcher %}
-          <div class="flex-1"></div>
-          <div class="sf__gridColumn-view flex pl-4 md:pl-7">
-            <span class="filters-toolbar__product-count">{{ 'collections.general.items_with_count' | t: count: collection.products_count }}</span>
           </div>
-        {% endif %}
       </div>
     {%- endif -%}
   </div>
