@@ -1,5 +1,5 @@
 const accordionBtns = document.querySelectorAll(".sf__accordion-button");
-const filterBtns = document.querySelectorAll(".sf__accordion-button");
+const filterBtns = document.querySelectorAll(".sf__sidebar-open");
 
 accordionBtns.forEach((accordion) => {
   accordion.onclick = function () {
