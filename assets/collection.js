@@ -19,7 +19,7 @@ accordionBtns.forEach((accordion) => {
 });
 
 $('.sf__sidebar-open').click(function() {
-    $('#sf__sidebar').toggle('slow');
+    $('#sf__sidebar-content').toggle('slow');
    console.log("sideba open");
 });
 
