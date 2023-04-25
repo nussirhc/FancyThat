@@ -9,6 +9,12 @@
     endif
   endfor
 -%}
+<style>
+  .divhidden{
+    display: none;
+  }
+</style>
+
 <div class="sf__collection-toolbar">
   <div class="sf__toolbar-wrapper">
     <div class="sf__toggle-filter flex {% unless st.sidebar == 'fixed' %}xl:hidden{% endunless %}">
