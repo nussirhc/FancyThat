@@ -18,10 +18,7 @@ accordionBtns.forEach((accordion) => {
   };
 });
 
-$('.sf__sidebar-open').click(function() {
-  // $('#sf__sidebar-content').toggle('slow');
-  console.log("Hello world!");
 
+$('.toggle').click(function() {
+    $('#target').toggle('slow');
 });
-
-
