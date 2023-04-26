@@ -28,7 +28,7 @@ const mytargetelement = document.querySelector('#my-hidden-element');
 // event listener (onclick) with a function to toggle the class on the target element to show and hide it
 mytogglebutton.addEventListener("click", function(e){
   // function actions/statements go here
-  mytargetelement.classList.toggle('invisible');
+  mytargetelement.classList.toggle('hidden');
    console.log(mytogglebutton);
    console.log(mytargetelement);
 };
