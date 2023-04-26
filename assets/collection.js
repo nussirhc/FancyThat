@@ -30,4 +30,5 @@ mytogglebutton.onclick = function() {
   // function actions/statements go here
   mytargetelement.classList.toggle('hidden');
    console.log(mytogglebutton);
+   console.log(mytargetelement);
 };
