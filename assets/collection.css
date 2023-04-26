@@ -187,12 +187,11 @@ ul.sf__options-swatch.sf__button-rounded li.active a {
   transition: all 0.25s ease;
 }
 #sf-filter-by-items .filtered-item:hover {
-  background: #000;
+  background: var(--color-btn-bg-hover);
   color: #fff;
 }
 .sf__filter-wrapper .sf__accordion-item {
   margin-bottom: 30px;
-  border-bottom: 1px solid #ccc;
 }
 .sf__filter-wrapper .sf__accordion-item .sf__accordion-button {
   font-size: var(--font-base-size);
