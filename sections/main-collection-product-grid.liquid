@@ -4,7 +4,6 @@
 
 <script src="{{ 'collection.js' | asset_url }}" async="async"></script>
 
-<style></style>
 
 {%- liquid
   assign st = section.settings
@@ -24,7 +23,7 @@
 -%}
 
 <section
-  class="facest-filters-section sidebar-open"
+  class="facest-filters-section"
   data-section-type="collection-template"
   data-section-id="{{ section.id }}"
   data-filters-type="{{ st.filters_type }}"
