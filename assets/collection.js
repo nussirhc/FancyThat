@@ -19,11 +19,6 @@ accordionBtns.forEach((accordion) => {
 });
 
 
-$('.toggle').click(function() {
-    $('#target').toggle('slow');
-});
-
-
 // variable for the button
 const mytogglebutton = document.querySelector('#my-toggle-button');
 
@@ -34,5 +29,5 @@ const mytargetelement = document.querySelector('#my-hidden-element');
 mytogglebutton.onclick = function() {
   // function actions/statements go here
   mytargetelement.classList.toggle('hidden');
-  
+   console.log(mytogglebutton);
 };
