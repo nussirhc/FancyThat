@@ -55,6 +55,7 @@
 
 {%- if column_wrapper -%}<div class="sf-column">{%- endif -%}
   <div data-a="{{ section.settings.change_product_variant_on_fitlering }}" class="sf__pcard{% if sold_out %} sf__pcard--soldout{% endif %}{% if on_sale %} sf__pcard--onsale{% endif %} cursor-pointer sf-prod__block sf__pcard-style-{{ card_style }} cbh" data-view="card"{% if sold_number != blank %} data-sold-number="{{ sold_number }}"{% endif %}>  
+       <div id="product-price-selector sf-afterpay"> {% render 'afterpay' %} </div>
       <div class="sf__pcard-image {% unless settings.show_second_img %} spc__img-only{% endunless %}">
         <div class="overflow-hidden cursor-pointer relative sf__image-box">
           {% liquid
@@ -80,6 +81,7 @@
             assign image_attributes = 'alt="' | append: product.title | append: '"'
           %}
           <div class="flex justify-center items-center">
+           <div id="product-price-selector sf-afterpay"> {% render 'afterpay' %} </div>
             <a href="{{ product.url }}" class="block w-full">
                 {% if preview_image != blank %}
                   <div class="spc__main-img{% if product.images.size < 2 %} spc__img-only{% endif %}">
@@ -577,6 +579,6 @@
         </div>
       </div>
     {%- if card_style == '2' or card_style == '3' -%}<div class='background-color-expand'></div>{%- endif -%}
-   <div id="product-price-selector sf-afterpay"> {% render 'afterpay' %} </div>
+  
   </div> <!-- .sf__pcard -->
 {%- if column_wrapper -%}</div><!-- .sf-column -->{%- endif -%}
