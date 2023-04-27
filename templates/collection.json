@@ -176,7 +176,7 @@
         "sidebar_title": "Filter Products",
         "limit_height_widget": true,
         "limit_height": 300,
-        "change_product_variant_on_fitlering": false,
+        "change_product_variant_on_fitlering": true,
         "show_product_count": true,
         "collapsed_groups": "Brand, Vendor, Size, Availability, Product Type, Filter By Category",
         "color_swatches": "color,colour,couleur,farbe"
