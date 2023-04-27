@@ -172,11 +172,11 @@
         "show_sorting": true,
         "show_filter": true,
         "filters_type": "tags_filter",
-        "sidebar": "fixed",
+        "sidebar": "leftColumn",
         "sidebar_title": "Filter Products",
         "limit_height_widget": true,
         "limit_height": 300,
-        "change_product_variant_on_fitlering": true,
+        "change_product_variant_on_fitlering": false,
         "show_product_count": true,
         "collapsed_groups": "Brand, Vendor, Size, Availability, Product Type, Filter By Category",
         "color_swatches": "color,colour,couleur,farbe"
