@@ -1,4 +1,4 @@
-<!-- Begin Shopify-Afterpay JavaScript Snippet (v1.1.5) -->
+<!-- Begin Shopify-Afterpay JavaScript Snippet (v1.1.6) -->
 {% if cart.currency.iso_code == shop.currency %}
 <script type="text/javascript">
 // Overrides:
@@ -45,10 +45,10 @@ var afterpay_theme_name = {{ theme.name | json }};
 var afterpay_product = {{ product | json }};
 var afterpay_current_variant = {{ product.selected_or_first_available_variant | json }};
 var afterpay_cart_total_price = {{ cart.total_price | json }};
-var afterpay_js_snippet_version = '1.1.5';
+var afterpay_js_snippet_version = '1.1.6';
 </script>
 <script type="text/javascript" src="https://static.afterpay.com/shopify-afterpay-javascript.js"></script>
 {% else %}
 <!-- Afterpay disabled: {{ cart.currency.iso_code }} != {{ shop.currency }} -->
 {% endif %}
-<!-- End Shopify-Afterpay JavaScript Snippet (v1.1.5) -->
+<!-- End Shopify-Afterpay JavaScript Snippet (v1.1.6) -->
