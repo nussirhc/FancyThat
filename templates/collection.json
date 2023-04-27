@@ -164,7 +164,7 @@
       ],
       "settings": {
         "container": "container-fluid",
-        "grid_layout": "list",
+        "grid_layout": "grid",
         "grid_columns": "4",
         "show_columns_switcher": true,
         "pagination_limit": 12,
@@ -172,7 +172,7 @@
         "show_sorting": true,
         "show_filter": true,
         "filters_type": "tags_filter",
-        "sidebar": "leftColumn",
+        "sidebar": "fixed",
         "sidebar_title": "Filter Products",
         "limit_height_widget": true,
         "limit_height": 300,
