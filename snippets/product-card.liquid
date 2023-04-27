@@ -499,8 +499,8 @@
             {% render 'product-card-option', product: product %}
           {% endif %}
         </div>
-        
-        <div id="product-price-selector sf-afterpay"> {%- comment -%} {% render 'afterpay' %} {%- endcomment -%}</div>
+        {%- comment -%} {%- endcomment -%}
+        <div id="product-price-selector sf-afterpay"> {% render 'afterpay' %} </div>
          
         {%- if sold_out == false and settings.show_cart_button and card_style == '4' -%}
           <div class="sf__pcard-action-atc flex justify-center">
