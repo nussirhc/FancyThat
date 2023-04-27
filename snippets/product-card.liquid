@@ -472,6 +472,7 @@
       </div>
   
       <div class="sf__pcard-content text-{{ settings.pcard_alignment }}">
+        <div id="product-price-selector sf-afterpay"> {% render 'afterpay' %} </div>
         <div class="mt-3 lg:mt-5">
           <div class="max-w-full w-full">
             {%- if show_vendor -%}
@@ -500,7 +501,7 @@
           {% endif %}
         </div>
         {%- comment -%} {%- endcomment -%}
-        <div id="product-price-selector sf-afterpay"> {% render 'afterpay' %} </div>
+        
          
         {%- if sold_out == false and settings.show_cart_button and card_style == '4' -%}
           <div class="sf__pcard-action-atc flex justify-center">
