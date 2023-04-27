@@ -81,7 +81,25 @@
             assign image_attributes = 'alt="' | append: product.title | append: '"'
           %}
           <div class="flex justify-center items-center">
-           <div id="product-price-selector sf-afterpay"> {% render 'afterpay' %} </div>
+           <div id="product-price-selector sf-afterpay"> 
+           <img
+ src="https://static.afterpay.com/integration/product-page/logo-afterpay-
+{{logo_color}}.png"
+ alt="Afterpay" style="vertical-align: middle; width: 86px; height: auto;"
+ srcset="https://static.afterpay.com/integration/product-page/logo-afterpay-
+{{logo_color}}.png 1x,
+ https://static.afterpay.com/integration/product-page/logo-afterpay-
+{{logo_color}}@2x.png 2x,
+ https://static.afterpay.com/integration/product-page/logo-afterpay-
+{{logo_color}}@3x.png"
+ >
+ is here! Shop now, pay later in 4 easy installments
+ <a href="javascript:void(0);" style="text-decoration: none" data-afterpaymodal="{{ request.locale.iso_code }}_{{ shop.address.country_code }}" style="color:
+{{ section.settings.afterpay_banner_text_color }};"> </a> ⓘ
+ </p>
+ </div>
+ <script src="https://js.afterpay.com/afterpay-1.x.js" defer></scrip
+           </div>
             <a href="{{ product.url }}" class="block w-full">
                 {% if preview_image != blank %}
                   <div class="spc__main-img{% if product.images.size < 2 %} spc__img-only{% endif %}">
