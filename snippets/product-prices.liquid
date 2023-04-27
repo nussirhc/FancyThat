@@ -11,13 +11,6 @@
   {{- compare_price_class -}} prod__compare_price ml-2 line-through text-color-secondary
 {%- endcapture -%}
 
-<style>
-.afterpay-paragraph {
-    font-size: 15px;
-    font-weight: 500;
-}
-</style>
-
 <div class="product-prices inline-flex items-center flex-wrap">
   <span class="{{ price_class }} prod__price text-color-regular-price">
     {%- assign price_text = price | money -%}
@@ -94,7 +87,7 @@
   endif
 -%}
 
-<div class="f-price inline-flex items-center flex-wrap
+<div class="f-price inline-flex items-center flex-wrap justify-content
   {%- if alignment %} f-price--{{ alignment }}{% endif -%}
   {%- if price_class %} {{ price_class }}{% endif -%}
   {%- if available == false %} f-price--sold-out {% endif -%}
