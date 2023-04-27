@@ -162,6 +162,9 @@
         "7ff03c02-3678-41fb-b9e1-dd0f3e774da2",
         "00b3badd-1613-4230-85d8-f87f04306aaa"
       ],
+      "custom_css": [
+        ".afterpay-modal-wrapper {background: #fff !important;}"
+      ],
       "settings": {
         "container": "container-fluid",
         "grid_layout": "grid",
