@@ -472,7 +472,7 @@
       </div>
   
       <div class="sf__pcard-content text-{{ settings.pcard_alignment }}">
-        <div id="product-price-selector sf-afterpay"> {% render 'afterpay' %} </div>
+     
         <div class="mt-3 lg:mt-5">
           <div class="max-w-full w-full">
             {%- if show_vendor -%}
@@ -577,6 +577,6 @@
         </div>
       </div>
     {%- if card_style == '2' or card_style == '3' -%}<div class='background-color-expand'></div>{%- endif -%}
-
+   <div id="product-price-selector sf-afterpay"> {% render 'afterpay' %} </div>
   </div> <!-- .sf__pcard -->
 {%- if column_wrapper -%}</div><!-- .sf-column -->{%- endif -%}
