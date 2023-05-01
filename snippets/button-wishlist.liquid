@@ -16,22 +16,22 @@
       data-product-handle="{{ product.handle }}"
     >
       <style scoped>
-                .icon {
-                    display: inline-block;
-                    width: 20px;
-                    height: 20px;
-                    vertical-align: middle;
-                    fill: currentColor;
-                }
-        /*         .icon {
-                  fill: transparent;
-                  stroke: #fff;
-                  transition: fill 0.3s ease;
-                }
-                .active .icon {
-                  fill: red;
-                  stroke: #fff;
-                } */
+        .icon-heart {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            fill: currentColor;
+        }
+        .icon-heart {
+          fill: transparent;
+          stroke: #fff;
+          transition: fill 0.3s ease;
+        }
+        .active .icon-heart {
+          fill: red;
+          stroke: #fff;
+        }
       </style>
       {%- render 'icon-heart' -%}
     </button>
