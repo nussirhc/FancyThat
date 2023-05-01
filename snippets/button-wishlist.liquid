@@ -6,6 +6,7 @@
   Parameters:
     - product: <Shopify product> (required)
 {% endcomment %}
+<div class="product-wishlist">
 {%- if product.handle != blank -%}
   <button type="button" aria-label="Add to wishlist" class="" button-wishlist data-product-handle="{{ product.handle }}">
     <style scoped>
@@ -29,3 +30,4 @@
     {%- render 'icon-heart' -%}
   </button>
 {%- endif -%}
+</div>
