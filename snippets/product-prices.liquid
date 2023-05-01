@@ -1,63 +1,62 @@
 {% comment %}
-{%- assign price = variant.price -%}
-{%- assign compare_at_price = variant.compare_at_price -%}
+  {%- assign price = variant.price -%}
+  {%- assign compare_at_price = variant.compare_at_price -%}
 
-{%- if is_product_card and settings.pcard_show_lowest_prices %}
-  {%- assign price = product.price -%}
-  {%- assign compare_at_price = product.compare_at_price -%}
-{%- endif -%}
+  {%- if is_product_card and settings.pcard_show_lowest_prices %}
+    {%- assign price = product.price -%}
+    {%- assign compare_at_price = product.compare_at_price -%}
+  {%- endif -%}
 
-{%- capture cp_classes -%}
-  {{- compare_price_class -}} prod__compare_price ml-2 line-through text-color-secondary
-{%- endcapture -%}
+  {%- capture cp_classes -%}
+    {{- compare_price_class -}} prod__compare_price ml-2 line-through text-color-secondary
+  {%- endcapture -%}
 
-<div class="product-prices inline-flex items-center flex-wrap">
-  <span class="{{ price_class }} prod__price text-color-regular-price">
-    {%- assign price_text = price | money -%}
-    {%- if is_product_card and settings.pcard_show_lowest_prices and product.price_varies -%}
-      {{- 'products.product.from_text_html' | t: price: price_text -}}
-    {%- else -%}
-      {{- price_text -}}
-    {%- endif -%}
-  </span>
-  <span class="{{ cp_classes }} {% unless compare_at_price > price %}hidden{% endunless %}">
-    {{- compare_at_price | money -}}
-  </span>
-  <div class="text-sm product-prices__unit w-full{% unless variant.unit_price_measurement %} hidden{% endunless %}">
-    <span class="visually-hidden visually-hidden--inline">{{ 'products.product.unit_price_label' | t }}</span>
-    <div class="price-unit-price">
-      {%- capture unit_price_separator -%}
-        <span aria-hidden="true">/</span><span class="visually-hidden">{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
-      {%- endcapture -%}
-      {%- capture unit_price_base_unit -%}
-        <span data-unit-price-base-unit>
-          {%- if variant.unit_price_measurement -%}
-            {%- if variant.unit_price_measurement.reference_value != 1 -%}
-              {{- variant.unit_price_measurement.reference_value -}}
+  <div class="product-prices inline-flex items-center flex-wrap">
+    <span class="{{ price_class }} prod__price text-color-regular-price">
+      {%- assign price_text = price | money -%}
+      {%- if is_product_card and settings.pcard_show_lowest_prices and product.price_varies -%}
+        {{- 'products.product.from_text_html' | t: price: price_text -}}
+      {%- else -%}
+        {{- price_text -}}
+      {%- endif -%}
+    </span>
+    <span class="{{ cp_classes }} {% unless compare_at_price > price %}hidden{% endunless %}">
+      {{- compare_at_price | money -}}
+    </span>
+    <div class="text-sm product-prices__unit w-full{% unless variant.unit_price_measurement %} hidden{% endunless %}">
+      <span class="visually-hidden visually-hidden--inline">{{ 'products.product.unit_price_label' | t }}</span>
+      <div class="price-unit-price">
+        {%- capture unit_price_separator -%}
+          <span aria-hidden="true">/</span><span class="visually-hidden">{{ 'general.accessibility.unit_price_separator' | t }}&nbsp;</span>
+        {%- endcapture -%}
+        {%- capture unit_price_base_unit -%}
+          <span data-unit-price-base-unit>
+            {%- if variant.unit_price_measurement -%}
+              {%- if variant.unit_price_measurement.reference_value != 1 -%}
+                {{- variant.unit_price_measurement.reference_value -}}
+              {%- endif -%}
+              {{ variant.unit_price_measurement.reference_unit }}
             {%- endif -%}
-            {{ variant.unit_price_measurement.reference_unit }}
-          {%- endif -%}
-        </span>
-      {%- endcapture -%}
-      <span data-unit-price>{{ variant.unit_price | money }}</span>{{- unit_price_separator -}}{{- unit_price_base_unit -}}
+          </span>
+        {%- endcapture -%}
+        <span data-unit-price>{{ variant.unit_price | money }}</span>{{- unit_price_separator -}}{{- unit_price_base_unit -}}
+      </div>
     </div>
   </div>
-</div>
 {% endcomment %}
 
 {% comment %}
-    Renders a list of product's price (regular, sale)
+  Renders a list of product's price (regular, sale)
 
-    Accepts:
-    - product: {Object} Product Liquid object (optional)
-    - use_variant: {Boolean} Renders selected or first variant price instead of overall product pricing (optional)
-    - show_badges: {Boolean} Renders 'Sale' and 'Sold Out' tags if the product matches the condition (optional)
-    - price_class: {String} Adds a price class to the price element (optional)
+  Accepts:
+  - product: {Object} Product Liquid object (optional)
+  - use_variant: {Boolean} Renders selected or first variant price instead of overall product pricing (optional)
+  - show_badges: {Boolean} Renders 'Sale' and 'Sold Out' tags if the product matches the condition (optional)
+  - price_class: {String} Adds a price class to the price element (optional)
 
-    Usage:
-    {% render 'price', product: product %}
+  Usage:
+  {% render 'price', product: product %}
 {% endcomment %}
-
 
 {%- liquid
   assign selected_variant = product.selected_or_first_available_variant
@@ -87,28 +86,32 @@
   endif
 -%}
 
-<div class="f-price inline-flex items-center flex-wrap justify-content
-  {%- if alignment %} f-price--{{ alignment }}{% endif -%}
-  {%- if price_class %} {{ price_class }}{% endif -%}
-  {%- if available == false %} f-price--sold-out {% endif -%}
-  {%- if compare_at_price > price %} f-price--on-sale {% endif -%}
-  {%- if product.price_varies == false and product.compare_at_price_varies %} f-price--no-compare{% endif -%}">
+<div
+  class="
+    f-price inline-flex items-center flex-wrap justify-content
+    {%- if alignment %} f-price--{{ alignment }}{% endif -%}
+    {%- if price_class %} {{ price_class }}{% endif -%}
+    {%- if available == false %} f-price--sold-out {% endif -%}
+    {%- if compare_at_price > price %} f-price--on-sale {% endif -%}
+    {%- if product.price_varies == false and product.compare_at_price_varies %} f-price--no-compare{% endif -%}
+  "
+>
   {%- comment -%}
-      Explanation of description list:
-        - div.price__regular: Displayed when there are no variants on sale
-        - div.price__sale: Displayed when a variant is a sale
-    {%- endcomment -%}
+    Explanation of description list:
+      - div.price__regular: Displayed when there are no variants on sale
+      - div.price__sale: Displayed when a variant is a sale
+  {%- endcomment -%}
   <div class="f-price__regular">
     <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
     <span class="f-price-item f-price-item--regular {{ price_text_size }}">
-        {{ money_price }}
-      </span>
+      {{ money_price }}
+    </span>
   </div>
   <div class="f-price__sale">
     <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
     <span class="f-price-item f-price-item--sale {{ price_text_size }} prod__price text-color-regular-price">
-        {{ money_price }}
-      </span>
+      {{ money_price }}
+    </span>
     {%- unless product.price_varies == false and product.compare_at_price_varies %}
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       <s class="f-price-item f-price-item--regular prod__compare_price ml-2 line-through text-color-secondary flex items-center">
@@ -136,7 +139,9 @@
             {%- endif -%}
           </span>
       {%- endcapture -%}
-      <span data-unit-price>{{ selected_variant.unit_price | money }}</span>{{- unit_price_separator -}}{{- unit_price_base_unit -}}
+      <span data-unit-price>{{ selected_variant.unit_price | money }}</span>
+      {{- unit_price_separator -}}
+      {{- unit_price_base_unit -}}
     </div>
   </div>
 
@@ -147,20 +152,20 @@
           assign sale_badge = ''
           assign amount = 0
           comment
-          case sale_badge_type
-            when 'percentage'
-              if compare_at_price > price
-                assign amount = compare_at_price | minus: price | times: 100 | divided_by: compare_at_price | append: '%'
-              endif
-              assign sale_badge = 'products.product.price.save_price_html' | t: amount: amount
-            when 'fixed_amount'
-              if compare_at_price > price
-                assign amount = compare_at_price | minus: price | money
-              endif
-              assign sale_badge = 'products.product.price.save_price_html' | t: amount: amount
-            else
-              assign sale_badge = 'products.product.on_sale' | t
-          endcase
+            case sale_badge_type
+              when 'percentage'
+                if compare_at_price > price
+                  assign amount = compare_at_price | minus: price | times: 100 | divided_by: compare_at_price | append: '%'
+                endif
+                assign sale_badge = 'products.product.price.save_price_html' | t: amount: amount
+              when 'fixed_amount'
+                if compare_at_price > price
+                  assign amount = compare_at_price | minus: price | money
+                endif
+                assign sale_badge = 'products.product.price.save_price_html' | t: amount: amount
+              else
+                assign sale_badge = 'products.product.on_sale' | t
+            endcase
           endcomment
           if compare_at_price > price
             assign amount = compare_at_price | minus: price | times: 100 | divided_by: compare_at_price | append: '%'
@@ -168,7 +173,9 @@
           assign sale_badge = 'products.product.price.save_price_html' | t: amount: amount
         %}
         <div class="f-price__badge-sale" data-type="{{ sale_badge_type }}">
-          <span class="f-badge f-badge--sale py-0.5 px-2 ml-3 font-medium rounded-xl prod__tag prod__tag-saving prod__tag-discounted">{{ sale_badge }}</span>
+          <span class="f-badge f-badge--sale py-0.5 px-2 ml-3 font-medium rounded-xl prod__tag prod__tag-saving prod__tag-discounted">
+            {{- sale_badge -}}
+          </span>
         </div>
       {% endif %}
       {% if show_soldout_badge %}
@@ -178,6 +185,6 @@
       {% endif %}
     </div>
   {% endif %}
-{% render "afterpaybanner" %}
+  {% render 'afterpaybanner' %}
+  {%- render 'button-wishlist', product: product -%}
 </div>
-
