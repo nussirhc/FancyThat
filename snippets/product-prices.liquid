@@ -179,21 +179,6 @@
     </div>
   {% endif %}
 {% render "afterpaybanner" %}
-{% if customer %}
-  {% assign wishlist = customer.metafields.wishlist | split: ',' %}
-{% endif %}
 
-{% for product in collection.products %}
-  <div class="product">
-    {% if wishlist contains product.id %}
-      <p>This product is on your wishlist.</p>
-    {% else %}
-      <form action="/cart/add" method="post">
-        <input type="hidden" name="attributes[wishlist]" value="{{ product.id }}">
-        <input type="submit" value="Add to wishlist">
-      </form>
-    {% endif %}
-  </div>
-{% endfor %}
 </div>
 
