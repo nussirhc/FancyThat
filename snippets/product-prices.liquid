@@ -88,7 +88,7 @@
 
 <div
   class="
-    f-price inline-flex items-center flex-wrap
+    f-price
     {%- if alignment %} f-price--{{ alignment }}{% endif -%}
     {%- if price_class %} {{ price_class }}{% endif -%}
     {%- if available == false %} f-price--sold-out {% endif -%}
@@ -103,7 +103,7 @@
   {%- endcomment -%}
   <div class="f-price__regular">
     <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-    <span class="f-price-item f-price-item--regular text-center {{ price_text_size }}">
+    <span class="f-price-item f-price-item--regular {{ price_text_size }}">
       {{ money_price }}
     </span>
   </div>
