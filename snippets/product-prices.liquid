@@ -185,6 +185,8 @@
       {% endif %}
     </div>
   {% endif %}
-  {% render 'afterpaybanner' %}
-  {%- render 'button-wishlist', product: product -%}
+  <div class="afterwishlist">
+    {% render 'afterpaybanner' %}
+    {%- render 'button-wishlist', product: product -%}
+  </div>
 </div>
