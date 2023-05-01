@@ -1,1 +1,13 @@
-<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-heart" viewBox="0 0 24 21"><path d="M16.663.004a6.5 6.5 0 00-4.31 1.9L12 2.254l-.353-.352a6.501 6.501 0 00-9.194 9.194l8.84 8.84a1 1 0 001.414 0l8.84-8.84A6.5 6.5 0 0016.95-.002l-.287.006zm.287 1.994A4.5 4.5 0 0121.452 6.5l-.006.238a4.5 4.5 0 01-1.313 2.945L12 17.815 3.867 9.683a4.501 4.501 0 016.366-6.366l1.06 1.06a1 1 0 001.414 0l1.06-1.06a4.5 4.5 0 013.183-1.319z"/></svg>
+{% comment %} <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-heart" viewBox="0 0 24 21"><path d="M16.663.004a6.5 6.5 0 00-4.31 1.9L12 2.254l-.353-.352a6.501 6.501 0 00-9.194 9.194l8.84 8.84a1 1 0 001.414 0l8.84-8.84A6.5 6.5 0 0016.95-.002l-.287.006zm.287 1.994A4.5 4.5 0 0121.452 6.5l-.006.238a4.5 4.5 0 01-1.313 2.945L12 17.815 3.867 9.683a4.501 4.501 0 016.366-6.366l1.06 1.06a1 1 0 001.414 0l1.06-1.06a4.5 4.5 0 013.183-1.319z"/></svg> {% endcomment %}
+
+
+
+{% comment %}
+  Shopify Wishlist
+  Usage:
+    - Markup: {%- render 'icon-heart', class: product -%}
+    - Place this snippet inside your existing product card snippet
+  Parameters:
+    - class: Add a css class for custom styling (optional)
+{% endcomment %}
+<svg class="icon icon-heart {{ class -}}" viewBox="0 0 290 256" xmlns="http://www.w3.org/2000/svg"><path d="M258.844192 127.790368L145 241.63456 31.1558082 127.790368c-26.9461761-26.946176-26.9461761-70.6345598 0-97.5807359 26.9461762-26.94617613 70.6345598-26.94617613 97.5807358 0L145 46.4730881l16.263456-16.263456c26.946176-26.94617613 70.63456-26.94617613 97.580736 0 26.946176 26.9461761 26.946176 70.6345599 0 97.5807359z" stroke="#000" stroke-width="20" fill="red" fill-rule="evenodd"/></svg>
