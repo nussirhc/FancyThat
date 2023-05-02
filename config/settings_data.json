@@ -22,6 +22,7 @@
     "button_style": "pill",
     "show_scroll_to_top": false,
     "products_per_row_on_desktop": 4,
+    "image_size": "cover",
     "enable_color_swatches_collection": true,
     "product_grid_hover_swatches": true,
     "show_rating": true,
