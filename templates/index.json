@@ -212,14 +212,22 @@
     "b12d545f-e4cd-4f8a-9e48-e5886c14cbe7": {
       "type": "section-collection",
       "settings": {
-        "collection": "costume-themes",
-        "title": "Featured products",
-        "products_rows": 12,
+        "collection": "100-days-of-school",
         "products_layout": "carousel",
-        "show_collection_button": true,
+        "number_of_products": 4,
+        "text_alignment": "text-left",
+        "title": "Featured products",
+        "heading_size": 300,
+        "text": "",
+        "text_size": 125,
+        "button_text": "",
         "button_style": "primary",
-        "bg_color": "rgba(0,0,0,0)",
-        "enable_slider_mobile": true
+        "bg_color_secondary": false,
+        "enable_slider_mobile": true,
+        "columns_mobile": "2",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "06c7abdb-38e3-41db-aa9b-5ec8ba4f5f92": {
