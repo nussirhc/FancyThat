@@ -519,8 +519,8 @@
             "title": "",
             "heading_size": 110,
             "text": "",
-            "button_text": "",
-            "button_link": "",
+            "button_text": "Learn More",
+            "button_link": "http:\/\/www.ginonaliniphotography.com\/",
             "button_style": "primary"
           }
         }
