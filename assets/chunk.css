@@ -465,7 +465,7 @@ button.sf__btn.sf__btn-white:hover {
   left: 0;
   -o-object-fit: cover;
   object-fit: cover;
-  position: relative;
+/*position: relative; */
   right: 0;
   top: 0;
   width: 100%;
