@@ -212,7 +212,7 @@
     "b12d545f-e4cd-4f8a-9e48-e5886c14cbe7": {
       "type": "section-collection",
       "settings": {
-        "collection": "100-days-of-school",
+        "collection": "costume-themes",
         "products_layout": "carousel",
         "number_of_products": 24,
         "text_alignment": "text-left",
@@ -222,7 +222,7 @@
         "text_size": 125,
         "button_text": "View Collection",
         "button_style": "btn--primary",
-        "bg_color_secondary": false,
+        "bg_color_secondary": true,
         "enable_slider_mobile": true,
         "columns_mobile": "2",
         "width": "wrapper--full-padded",
