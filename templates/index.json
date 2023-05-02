@@ -215,7 +215,7 @@
         "collection": "costume-themes",
         "title": "Featured products",
         "products_rows": 12,
-        "products_layout": "grid",
+        "products_layout": "carousel",
         "show_collection_button": true,
         "button_style": "primary",
         "bg_color": "rgba(0,0,0,0)",
