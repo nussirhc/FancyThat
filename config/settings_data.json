@@ -18,7 +18,7 @@
     "show_rounded_corners": true,
     "show_text_shadow": false,
     "enable_infinity_scroll": true,
-    "animations_enabled": true,
+    "animations_enabled": false,
     "button_style": "pill",
     "show_scroll_to_top": false,
     "products_per_row_on_desktop": 4,
