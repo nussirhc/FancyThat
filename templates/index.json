@@ -459,6 +459,29 @@
         "bg_color": "#ffffff"
       }
     },
+    "bb59c432-eecf-4351-8083-a604625b480f": {
+      "type": "section-image-with-text",
+      "settings": {
+        "section_height": "six-fifty-height",
+        "text_position": "right",
+        "wrapper": "normal",
+        "image": "shopify:\/\/shop_images\/New_Project.jpg",
+        "image_background": false,
+        "bg_position": "left-center",
+        "text_alignment": "left",
+        "subheading": "",
+        "heading": "Fancy that Costumes & Balloons",
+        "heading_size": 100,
+        "text": "<p><strong>SERVICE <\/strong>- we’re bringing it back, baby! Welcome to your fancy new favourite one-stop shop for costumes & balloons – Fancy That! Costumes (& balloons)! We’re more than just a costume shop – we’re driven by a mission to encourage people (particularly adults) to <\/p><p><strong>PLAY MORE<\/strong> – to better connect with themselves & each other, to shave the spikey edges off adulthood & make the world a happier place! Our goal is to get you having fun from the get-go, whether you’re shopping online or visiting our pink & purple palace in Crows Nest, Sydney. <\/p><p>We want your Halloween Costumes, Celebrity Costumes, Disney Costumes, Superhero Costumes, 1920s Costumes, 1980s Costumes & everything in between, to do their job of putting you in disguise so that you can – ironically – drop your own, let loose & remember the freedom of childhood. <\/p><p>We also believe that every milestone should be celebrated & have Helium Balloons for every occasion to help you do just that. Gender Reveal balloons, 1st Birthday balloons, Graduation balloons, Valentines Day balloons, Engagement balloons, Hens Party Balloons, Wedding Balloons, Welcome Baby balloons, Anniversary balloons – & if you crack a century we’ve got balloons for that too! From basic bouquets to custom event décor to elevate your celebrations. <\/p><p>Qualatex latex balloons source from Rainforest Alliance Certified rubber plantations, with no service provided for balloon releases – <\/p><p><strong>EVER<\/strong>. Pin it & bin it when the fun is done, peeps. SO: life deserves to be celebrated. Quite possibly, we only get to be here once. Let’s make the most of it, shall we? We can’t wait to serve you online or instore, soon!<\/p>",
+        "button_text": "",
+        "button_link": "",
+        "secondary_button_text": "",
+        "secondary_button_link": "",
+        "button_style": "primary",
+        "bg_color": "",
+        "section_css_class": ""
+      }
+    },
     "166354779528c086f8": {
       "type": "apps",
       "settings": {
@@ -592,6 +615,7 @@
     "a9e3c144-0da3-48eb-b90d-09eb70362043",
     "testimonials",
     "3531a624-520b-411c-bf38-02af159fef9d",
+    "bb59c432-eecf-4351-8083-a604625b480f",
     "166354779528c086f8",
     "e984f758-5aef-4501-90eb-d506f06f1962",
     "c446ee42-6d1a-492e-b248-c35097d157d2",
