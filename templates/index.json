@@ -462,9 +462,9 @@
     "bb59c432-eecf-4351-8083-a604625b480f": {
       "type": "section-image-with-text",
       "settings": {
-        "section_height": "six-fifty-height",
+        "section_height": "full-height",
         "text_position": "right",
-        "wrapper": "normal",
+        "wrapper": "full",
         "image": "shopify:\/\/shop_images\/New_Project.jpg",
         "image_background": false,
         "bg_position": "left-center",
