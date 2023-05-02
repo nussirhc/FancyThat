@@ -214,7 +214,7 @@
       "settings": {
         "collection": "100-days-of-school",
         "products_layout": "carousel",
-        "number_of_products": 4,
+        "number_of_products": 24,
         "text_alignment": "text-left",
         "title": "Featured products",
         "heading_size": 300,
@@ -225,7 +225,7 @@
         "bg_color_secondary": false,
         "enable_slider_mobile": true,
         "columns_mobile": "2",
-        "width": "wrapper",
+        "width": "wrapper--full-padded",
         "padding_top": 60,
         "padding_bottom": 60
       }
