@@ -8528,9 +8528,9 @@ button.mfp-close {
   border: 0;
   background: #efefef;
   text-align: left;
-  padding: 15px;
+  padding: 15px !important;
   border-radius: 0;
-  font-size: 20px !important;
+  font-size: 20px;
 }
 .accordion__item__title .icon {
   top: 0;
