@@ -529,37 +529,6 @@
         "text_color": "text-dark"
       }
     },
-    "c446ee42-6d1a-492e-b248-c35097d157d2": {
-      "type": "section-custom-content",
-      "blocks": {
-        "template--17308545843499__c446ee42-6d1a-492e-b248-c35097d157d2-167409077921db23db-0": {
-          "type": "image",
-          "settings": {
-            "text_position": "middle-center",
-            "image": "shopify:\/\/shop_images\/profesional-photo-studio.jpg",
-            "image_link": "http:\/\/www.ginonaliniphotography.com\/",
-            "image_position": "center-center",
-            "overlay_opacity": 0,
-            "text_color": "text-dark",
-            "title": "",
-            "heading_size": 100,
-            "text": "",
-            "button_text": "",
-            "button_link": "",
-            "button_style": "primary"
-          }
-        }
-      },
-      "block_order": [
-        "template--17308545843499__c446ee42-6d1a-492e-b248-c35097d157d2-167409077921db23db-0"
-      ],
-      "settings": {
-        "height": "two-sixty-height",
-        "add_spacing": true,
-        "wrapper": "normal",
-        "bg_color": "rgba(0,0,0,0)"
-      }
-    },
     "d14bea23-6878-481f-ae8b-50a0faa56a6c": {
       "type": "section-liquid",
       "settings": {
@@ -597,6 +566,38 @@
         "button_style": "primary"
       }
     },
+    "c446ee42-6d1a-492e-b248-c35097d157d2": {
+      "type": "section-custom-content",
+      "disabled": true,
+      "blocks": {
+        "template--17308545843499__c446ee42-6d1a-492e-b248-c35097d157d2-167409077921db23db-0": {
+          "type": "image",
+          "settings": {
+            "text_position": "middle-center",
+            "image": "shopify:\/\/shop_images\/profesional-photo-studio.jpg",
+            "image_link": "http:\/\/www.ginonaliniphotography.com\/",
+            "image_position": "center-center",
+            "overlay_opacity": 0,
+            "text_color": "text-dark",
+            "title": "",
+            "heading_size": 100,
+            "text": "",
+            "button_text": "",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "template--17308545843499__c446ee42-6d1a-492e-b248-c35097d157d2-167409077921db23db-0"
+      ],
+      "settings": {
+        "height": "two-sixty-height",
+        "add_spacing": true,
+        "wrapper": "normal",
+        "bg_color": "rgba(0,0,0,0)"
+      }
+    },
     "3db54228-b4df-45b1-bb19-bab8bf0d8f2c": {
       "type": "section-newsletter",
       "settings": {
@@ -626,9 +627,9 @@
     "bb59c432-eecf-4351-8083-a604625b480f",
     "166354779528c086f8",
     "e984f758-5aef-4501-90eb-d506f06f1962",
-    "c446ee42-6d1a-492e-b248-c35097d157d2",
     "d14bea23-6878-481f-ae8b-50a0faa56a6c",
     "7059d9af-dc91-4589-862c-290d90ff56fe",
+    "c446ee42-6d1a-492e-b248-c35097d157d2",
     "3db54228-b4df-45b1-bb19-bab8bf0d8f2c"
   ]
 }
