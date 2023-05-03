@@ -465,7 +465,7 @@
       "settings": {
         "section_height": "full-height",
         "text_position": "right",
-        "wrapper": "full",
+        "wrapper": "normal",
         "image": "shopify:\/\/shop_images\/Fancy-That-Crows-Nest-CP-Trent-Van-der-jagt-1--1920x1080.jpg",
         "image_background": false,
         "bg_position": "left-center",
