@@ -532,39 +532,6 @@
     "f491140b-daab-461e-a6e2-e9f04f6e049f": {
       "type": "section-text",
       "blocks": {
-        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-0": {
-          "type": "subheading",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Subheading<\/p>",
-            "size": 100
-          }
-        },
-        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-1": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Our Story<\/p>",
-            "size": 100
-          }
-        },
-        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-2": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "size": 100
-          }
-        },
-        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-3": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "btn_text": "Read More",
-            "btn_link": "",
-            "btn_style": "primary btn--small"
-          }
-        },
         "021c3631-0419-4c82-bc2d-99b07b10b957": {
           "type": "image",
           "settings": {
@@ -575,16 +542,12 @@
         }
       },
       "block_order": [
-        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-0",
-        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-1",
-        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-2",
-        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-3",
         "021c3631-0419-4c82-bc2d-99b07b10b957"
       ],
       "settings": {
         "text_position": "center",
-        "wrapper": "narrow",
-        "padding": "standard-padding",
+        "wrapper": "full",
+        "padding": "extra-padding",
         "bg_color": "",
         "text_color": "text-dark"
       }
