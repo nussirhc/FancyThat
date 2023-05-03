@@ -119,9 +119,11 @@
     
       <div class="text__image__wrapper">
         {%- if image_link != blank -%}
-          <a href="{{ image_link }}" aria-label="{{ image_alt }}" target = "_blank"> {{ image_markup }}</a>
+          <a href="{{ image_link }}"  data-sizes="auto" data-parent-fit="cover" aria-label="{{ image_alt }}" target = "_blank"> 
+          {% render 'bgset', image: image %}
+          </a>
         {%- else -%}
-          {{- image_markup -}}
+          {% render 'bgset', image: image %}
         {%- endif -%}
       </div>         
 <!--     <div class="overlay"></div> -->
