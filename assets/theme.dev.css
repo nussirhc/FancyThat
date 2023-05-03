@@ -8534,7 +8534,7 @@ button.mfp-close {
 }
 .accordion__item__title .icon {
   top: 0;
-  right: 0;
+  right: 15;
   height: 100%;
   width: 14px;
 }
