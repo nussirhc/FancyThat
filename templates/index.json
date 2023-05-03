@@ -583,6 +583,12 @@
         "bg_color": "rgba(0,0,0,0)"
       }
     },
+    "d14bea23-6878-481f-ae8b-50a0faa56a6c": {
+      "type": "section-liquid",
+      "settings": {
+        "custom_liquid": ""
+      }
+    },
     "7059d9af-dc91-4589-862c-290d90ff56fe": {
       "type": "section-split-images",
       "disabled": true,
@@ -645,6 +651,7 @@
     "e984f758-5aef-4501-90eb-d506f06f1962",
     "f491140b-daab-461e-a6e2-e9f04f6e049f",
     "c446ee42-6d1a-492e-b248-c35097d157d2",
+    "d14bea23-6878-481f-ae8b-50a0faa56a6c",
     "7059d9af-dc91-4589-862c-290d90ff56fe",
     "3db54228-b4df-45b1-bb19-bab8bf0d8f2c"
   ]
