@@ -214,7 +214,7 @@
       "settings": {
         "collection": "costume-themes",
         "products_layout": "carousel",
-        "number_of_products": 24,
+        "number_of_products": 10,
         "text_alignment": "text-center",
         "title": "Featured Products",
         "heading_size": 300,
