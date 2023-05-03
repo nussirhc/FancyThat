@@ -8502,6 +8502,7 @@ button.mfp-close {
   overflow: hidden;
   margin-bottom: 10px;
   background: var(--bg);
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
 
 .accordion__item:last-child {
@@ -8532,6 +8533,7 @@ button.mfp-close {
     padding: 15px !important;
     border-radius: 0;
     font-size: 20px;
+  
 }
 .accordion__item__title .icon {
   top: 0;
