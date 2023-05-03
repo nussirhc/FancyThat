@@ -8529,6 +8529,7 @@ button.mfp-close {
   background: #efefef;
   text-align: left;
   border-radius: 0;
+  font-size: 20px;
 }
 .accordion__item__title .icon {
   top: 0;
