@@ -599,13 +599,13 @@
             "image": "shopify:\/\/shop_images\/profesional-photo-studio.jpg",
             "image_link": "http:\/\/www.ginonaliniphotography.com\/",
             "image_position": "center-center",
-            "overlay_opacity": 10,
+            "overlay_opacity": 0,
             "text_color": "text-dark",
             "title": "",
-            "heading_size": 110,
+            "heading_size": 100,
             "text": "",
-            "button_text": "Learn More",
-            "button_link": "http:\/\/www.ginonaliniphotography.com\/",
+            "button_text": "",
+            "button_link": "",
             "button_style": "primary"
           }
         }
