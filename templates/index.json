@@ -479,6 +479,7 @@
         "secondary_button_text": "",
         "secondary_button_link": "",
         "button_style": "primary",
+        "video_url": "",
         "bg_color": "",
         "section_css_class": ""
       }
@@ -523,6 +524,66 @@
       "settings": {
         "text_position": "center",
         "wrapper": "normal",
+        "padding": "standard-padding",
+        "bg_color": "",
+        "text_color": "text-dark"
+      }
+    },
+    "f491140b-daab-461e-a6e2-e9f04f6e049f": {
+      "type": "section-text",
+      "blocks": {
+        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-0": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Subheading<\/p>",
+            "size": 100
+          }
+        },
+        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Our Story<\/p>",
+            "size": 100
+          }
+        },
+        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-2": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "size": 100
+          }
+        },
+        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-3": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "btn_text": "Read More",
+            "btn_link": "",
+            "btn_style": "primary btn--small"
+          }
+        },
+        "021c3631-0419-4c82-bc2d-99b07b10b957": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/profesional-photo-studio.jpg",
+            "image_width": 500,
+            "image_link": "http:\/\/www.ginonaliniphotography.com\/"
+          }
+        }
+      },
+      "block_order": [
+        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-0",
+        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-1",
+        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-2",
+        "template--18628009165099__f491140b-daab-461e-a6e2-e9f04f6e049f-16830833507aad0e90-3",
+        "021c3631-0419-4c82-bc2d-99b07b10b957"
+      ],
+      "settings": {
+        "text_position": "center",
+        "wrapper": "narrow",
         "padding": "standard-padding",
         "bg_color": "",
         "text_color": "text-dark"
@@ -619,6 +680,7 @@
     "bb59c432-eecf-4351-8083-a604625b480f",
     "166354779528c086f8",
     "e984f758-5aef-4501-90eb-d506f06f1962",
+    "f491140b-daab-461e-a6e2-e9f04f6e049f",
     "c446ee42-6d1a-492e-b248-c35097d157d2",
     "7059d9af-dc91-4589-862c-290d90ff56fe",
     "3db54228-b4df-45b1-bb19-bab8bf0d8f2c"
