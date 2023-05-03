@@ -554,7 +554,6 @@
     },
     "c446ee42-6d1a-492e-b248-c35097d157d2": {
       "type": "section-custom-content",
-      "disabled": true,
       "blocks": {
         "template--17308545843499__c446ee42-6d1a-492e-b248-c35097d157d2-167409077921db23db-0": {
           "type": "image",
