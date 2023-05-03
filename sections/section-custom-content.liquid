@@ -103,8 +103,7 @@
       data-parallax-img
     {% endif %}>
 
-
-                  {% comment %}  <a class="" href="{{ image_link }}" target = "_blank"> 
+     <a class="" href="{{ image_link }}" target = "_blank"> 
              {%- unless image == blank -%}
               <div class="featured-image__bg {{ image_bg_pos }} lazyload" data-bgset="{% render 'bgset', image: image %}" data-sizes="auto" data-parent-fit="cover"></div>
               <noscript>
@@ -115,17 +114,7 @@
                 {{- 'image' | placeholder_svg_tag: 'placeholder-svg-filled' -}}
               </div>
             {%- endunless -%}
-    </a> {% endcomment %}
-    
-      <div class="text__image__wrapper">
-        {%- if image_link != blank -%}
-          <a href="{{ image_link }}"  data-sizes="auto" data-parent-fit="cover" aria-label="{{ image_alt }}" target = "_blank"> 
-          {% render 'bgset', image: image %}
-          </a>
-        {%- else -%}
-          {% render 'bgset', image: image %}
-        {%- endif -%}
-      </div>         
+    </a>
 <!--     <div class="overlay"></div> -->
   </div>
 </div>
