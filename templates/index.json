@@ -563,7 +563,7 @@
     "d14bea23-6878-481f-ae8b-50a0faa56a6c": {
       "type": "section-liquid",
       "settings": {
-        "custom_liquid": ""
+        "custom_liquid": "<div class=\"text__image__wrapper\">\n      <a href=\"http:\/\/www.ginonaliniphotography.com\/\" aria-label=\"\" target=\"_blank\"> \n      <img class=\"text__image lazyautosizes lazyloaded\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0694\/8860\/7531\/files\/profesional-photo-studio_1512x.jpg\">\n      <\/a>\n      <\/div>"
       }
     },
     "7059d9af-dc91-4589-862c-290d90ff56fe": {
