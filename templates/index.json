@@ -225,7 +225,7 @@
         "bg_color_secondary": true,
         "enable_slider_mobile": true,
         "columns_mobile": "2",
-        "width": "wrapper",
+        "width": "wrapper--full-padded",
         "padding_top": 60,
         "padding_bottom": 60
       }
