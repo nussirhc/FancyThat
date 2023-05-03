@@ -207,7 +207,7 @@
 
               <div class="text__image__wrapper"{% if animations_enabled %} data-aos="fade-up" data-aos-anchor="{{ animation_anchor }}" data-aos-delay="{{ animation_delay }}"{% endif %}>
                 {%- if image_link != blank -%}
-                  <a href="{{ image_link }}" aria-label="{{ image_alt }}">{{ image_markup }}</a>
+                  <a href="{{ image_link }}" aria-label="{{ image_alt }}" target = "_blank"> {{ image_markup }}</a>
                 {%- else -%}
                   {{- image_markup -}}
                 {%- endif -%}
