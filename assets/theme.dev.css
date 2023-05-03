@@ -8575,6 +8575,7 @@ button.mfp-close {
   padding: 0 0 var(--inner);
   overflow: hidden;
   padding: 15px;
+  text-align: left;
 }
 .accordion__item__text p {
   margin: 0 0 15px;
