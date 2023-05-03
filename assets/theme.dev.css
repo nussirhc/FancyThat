@@ -8524,11 +8524,11 @@ button.mfp-close {
   display: block;
   position: relative;
   width: 100%;
-  padding: 10px var(--icon-space) 10px 0;
   margin: 0;
   border: 0;
-  background: none;
+  background: #efefef;
   text-align: left;
+  border-radius: 0;
 }
 .accordion__item__title .icon {
   top: 0;
@@ -8538,7 +8538,7 @@ button.mfp-close {
 }
 @media only screen and (min-width: 768px) {
   .accordion__item__title {
-    padding: 15px var(--icon-space) 15px 0;
+    padding: 20px var(--icon-space) 15px 0;
   }
 }
 
