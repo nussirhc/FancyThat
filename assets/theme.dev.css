@@ -8559,7 +8559,7 @@ button.mfp-close {
   right: 0;
   bottom: -5px;
   background: currentColor;
-  height: 2px;
+  height: 0;
   will-change: transform;
   transform: scaleY(0);
   transform-origin: top;
