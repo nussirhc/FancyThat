@@ -166,6 +166,8 @@
   {{- 'theme.dev.css' | asset_url | stylesheet_tag -}}
   {{ 'chunk.css' | asset_url | stylesheet_tag }}
 
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
   {%- comment -%}
     Uncomment the row above that contains 'theme.dev.css' if you need to do edit the styles
     Comment out {{- 'theme.css' | asset_url | stylesheet_tag -}} row to avoid styles being overridden

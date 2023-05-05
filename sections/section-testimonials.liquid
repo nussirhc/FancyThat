@@ -1,4 +1,24 @@
 <!-- /sections/testimonials.liquid -->
+
+{{ 'testimonials.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+
+{%- endstyle -%}
+
+{% javascript %}
+  var flkty = new Flickity( '.testimonial__item', {
+  cellAlign: 'center',
+  contain: true,
+  wrapAround: true,
+  freeScroll: true,
+  prevNextButtons: true,
+  pageDots: false,
+  autoPlay: true,
+  autoPlay: 5000,
+});
+{% endjavascript %}
+
 {%- liquid
   assign total_blocks = section.blocks.size
   assign bg_color = section.settings.bg_color
