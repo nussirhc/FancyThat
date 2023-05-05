@@ -1,22 +1,17 @@
 <!-- /sections/testimonials.liquid -->
 
-{{ 'testimonials.css' | asset_url | stylesheet_tag }}
-
 {%- style -%}
 
 {%- endstyle -%}
 
 {% javascript %}
-  var flkty = new Flickity( '.testimonials__slider', {
-  cellAlign: 'center',
+
+var flkty = new Flickity( '.testimonials__slider', {
+  cellAlign: 'left',
   contain: true,
   wrapAround: true,
-  freeScroll: true,
-  draggable: true,
   prevNextButtons: true,
-  pageDots: true,
-  autoPlay: true,
-  autoPlay: 5000,
+  autoPlay: 5000
 });
 {% endjavascript %}
 
