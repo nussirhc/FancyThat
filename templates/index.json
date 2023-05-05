@@ -386,6 +386,33 @@
             "customer_name": "David",
             "subheading": "<p>Loyal Customer<\/p>"
           }
+        },
+        "a260655f-2021-4656-b52c-a3923596163c": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "text": "<p>Excellent customer service. I love their products!<\/p>",
+            "customer_name": "John Edmonson",
+            "subheading": "<p>Loyal Customer<\/p>"
+          }
+        },
+        "0c00e238-032d-4974-a61f-167ed02d8ad2": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "text": "<p>Excellent customer service. I love their products!<\/p>",
+            "customer_name": "John Edmonson",
+            "subheading": "<p>Loyal Customer<\/p>"
+          }
+        },
+        "e74d5797-5bb5-4680-9a8e-022fe3d879a3": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "text": "<p>Excellent customer service. I love their products!<\/p>",
+            "customer_name": "John Edmonson",
+            "subheading": "<p>Loyal Customer<\/p>"
+          }
         }
       },
       "block_order": [
@@ -395,7 +422,10 @@
         "testimonial-3",
         "testimonial-4",
         "testimonial-5",
-        "10f451c4-b57e-4c14-bbb7-023dc2ca9585"
+        "10f451c4-b57e-4c14-bbb7-023dc2ca9585",
+        "a260655f-2021-4656-b52c-a3923596163c",
+        "0c00e238-032d-4974-a61f-167ed02d8ad2",
+        "e74d5797-5bb5-4680-9a8e-022fe3d879a3"
       ],
       "settings": {
         "title": "Customer Love",
