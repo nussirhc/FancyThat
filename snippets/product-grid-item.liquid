@@ -130,7 +130,7 @@
 {%- endcapture -%}
 
 {%- capture product_info_price -%}
-  <a class="product-grid-item__price price" href="{{ product.url | within: collection }}"{% if index > 1 %} tabindex="-1"{% endif %} data-grid-link>
+  <a class="product-grid-item__price price 1343" href="{{ product.url | within: collection }}"{% if index > 1 %} tabindex="-1"{% endif %} data-grid-link>
     {%- liquid
       if product.price == 0 and product.price_varies == false
         assign product_price = 'products.product.free' | t
