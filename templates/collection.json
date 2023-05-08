@@ -74,7 +74,7 @@
           "settings": {
             "design_filtergroup": "default",
             "title": "Availability",
-            "filtergroup": "In stock,Out of stock",
+            "filtergroup": "In stock,Out of stock, Hurry! Low inventory,  Item is unavailable",
             "show_label": false,
             "use_accordion": true,
             "open_filtergroup": true
