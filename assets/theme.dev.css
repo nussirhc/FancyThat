@@ -8037,6 +8037,7 @@ button.mfp-close {
   text-align: center;
   padding: 10px 3px;
   border: 1px solid #ccc;
+  font-weight: 400;
 }
 
 .variant__countdown--in {
