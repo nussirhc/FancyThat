@@ -484,7 +484,7 @@
       "buy_it_now": "Buy it now",
       "in_stock": "Available Instore + Online",
       "out_of_stock": "Item is Out of Stock",
-      "item_unavailable": "Item is Unavailable",
+      "item_unavailable": "Available Instore",
       "remaining_html": "Only {{ inventory }} left in stock",
       "on_sale": "Sale",
       "save_badge_html": "Save {{ discount }}",
