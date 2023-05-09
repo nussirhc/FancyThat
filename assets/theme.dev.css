@@ -8034,6 +8034,9 @@ button.mfp-close {
   line-height: var(--line-height);
   padding: 0;
   margin: 0;
+  text-align: center;
+  padding: 10px 3px;
+  border: 1px solid #ccc;
 }
 
 .variant__countdown--in {
