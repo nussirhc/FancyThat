@@ -8033,7 +8033,7 @@ button.mfp-close {
   font-size: calc(0.9375rem * var(--adjust-body));
   line-height: var(--line-height);
   padding: 0;
-  margin: 0;
+  margin: 10px 0;
   text-align: center;
   padding: 10px 3px;
   border: 1px solid #ccc;
