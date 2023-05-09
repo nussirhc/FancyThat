@@ -8085,7 +8085,8 @@ button.mfp-close {
   width: var(--dot-size);
   height: var(--dot-size);
   background-color: var(--dot-color);
-  border-radius: 50%;
+  border-radius: 50
+  display:none;
 }
 .variant__countdown--in::after,
 .variant__countdown--low::after,
