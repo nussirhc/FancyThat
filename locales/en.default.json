@@ -482,7 +482,7 @@
       "quantity": "Quantity",
       "add_to_cart": "Add to Cart",
       "buy_it_now": "Buy it now",
-      "in_stock": "Item is Instore + Online",
+      "in_stock": "Available Instore + Online",
       "out_of_stock": "Item is out of stock",
       "item_unavailable": "Item is unavailable",
       "remaining_html": "Only {{ inventory }} left in stock",
