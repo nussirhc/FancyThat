@@ -187,9 +187,7 @@
   {% endif %}
   <div id="wishlist-product-buttons" class="afterwishlist product-buttons">
     {% render 'afterpaybanner' %}
-  </div>
-  {%- render 'inventory-countdown', current_variant: current_variant -%}
-  <!-- some code -->
+    <!-- some code -->
 
 {% assign availabilities_array = product.selected_or_first_available_variant.store_availabilities %}
 {% for availability in availabilities_array %}
@@ -198,5 +196,8 @@
 {% endfor %}
 
 <!-- more code --
+  </div>
+  {%- render 'inventory-countdown', current_variant: current_variant -%}
+  
    {% comment %} {%- render 'inventory-countdown', current_variant: current_variant -%}{% endcomment %}
 </div>
