@@ -185,10 +185,8 @@
       {% endif %}
     </div>
   {% endif %}
-  <div class="afterwishlist">
+  <div id="wishlist-product-buttons" class="afterwishlist product-buttons">
     {% render 'afterpaybanner' %}
-  </div>
-  <div id="wishlist-product-buttons" class="product-buttons"> 
   </div>
   {%- render 'inventory-countdown', current_variant: current_variant -%}
    {% comment %} {%- render 'inventory-countdown', current_variant: current_variant -%}{% endcomment %}
