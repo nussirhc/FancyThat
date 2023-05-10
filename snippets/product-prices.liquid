@@ -189,6 +189,13 @@
     {% render 'afterpaybanner' %}
   </div>
   {%- render 'inventory-countdown', current_variant: current_variant -%}
-  
+  {% assign current_variant = product.selected_or_first_available_variant %}
+  <div class="inventoryNote form__label">
+  {% if current_variant.available %}
+    {% if current_variant.inventory_quantity > 0 and current_variant.inventory_quantity <= 10 %}We have {{ current_variant.inventory_quantity }} in stock
+{% elsif current_variant.inventory_quantity > 10 %}We have more than 10 in stock
+    {% endif %}
+  {% endif %}
+</div>
    {% comment %} {%- render 'inventory-countdown', current_variant: current_variant -%}{% endcomment %}
 </div>
