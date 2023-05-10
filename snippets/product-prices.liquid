@@ -187,15 +187,6 @@
   {% endif %}
   <div id="wishlist-product-buttons" class="afterwishlist product-buttons">
     {% render 'afterpaybanner' %}
-    <!-- some code -->
-
-{% assign availabilities_array = product.selected_or_first_available_variant.store_availabilities %}
-{% for availability in availabilities_array %}
-   {% assign location = availability.location %}
-   <p>{{location.name}}</p>
-{% endfor %}
-
-<!-- more code --
   </div>
   {%- render 'inventory-countdown', current_variant: current_variant -%}
   
