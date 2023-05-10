@@ -189,25 +189,6 @@
     {% render 'afterpaybanner' %}
   </div>
   {%- render 'inventory-countdown', current_variant: current_variant -%}
-  {% assign loc = shop.metafields.custom_fields["locations"] | split: "|" %}
-{% if loc != blank %}
-  <h3>Available at the following locations</h3>
-  <table>
-    {% for info in loc %}
-      {% assign table_item = info | split: '='%}
-      {% assign location_id = table_item[0] %}
-      {% assign location_name = table_item[1] %}
-      <td colspan="2"><strong>{{ location_name }}</strong></td>
-      {% for variant in product.variants %}
-        {% if variant.metafields.inventory_levels[location_id] != blank %}
-          <tr>
-            <td>{{variant.title}}</td>
-            <td>{{ variant.metafields.inventory_levels[location_id] }} in stock</td>
-    	  </tr>
-      	{% endif %}
-    {% endfor %}
-   {% endfor %}
-  </table>  
-{% endif %}
+  
    {% comment %} {%- render 'inventory-countdown', current_variant: current_variant -%}{% endcomment %}
 </div>
