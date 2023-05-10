@@ -3950,6 +3950,7 @@ responsive-image img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .f-price--on-sale .f-price__badge-sale,
 .f-price--on-sale .f-price__badges,
