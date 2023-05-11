@@ -108,3 +108,35 @@
     </script>
   {% endif %}
 {% endif %}
+
+
+{% assign variant = product.selected_or_first_available_variant %}
+{% if variant.inventory_management == 'shopify' %}
+  {% assign inventory_levels = variant.inventory_levels %}
+  {% assign online_levels = inventory_levels | where: 'location_type', 'online' %}
+  {% assign in_store_levels = inventory_levels | where: 'location_type', 'physical' %}
+  {% assign online_available = online_levels | map: 'available' | reduce: '+' %}
+  {% assign in_store_available = in_store_levels | map: 'available' | reduce: '+' %}
+  {% assign online_total = online_levels | map: 'inventory_quantity' | reduce: '+' %}
+  {% assign in_store_total = in_store_levels | map: 'inventory_quantity' | reduce: '+' %}
+  {% if online_available > 0 or in_store_available > 0 %}
+    <div class="inventory-countdown">
+      {% if online_available > 0 %}
+        <div class="online-countdown">
+          <span class="countdown-label">{{ 'Online' | t }}:</span>
+          <span class="countdown-number">{{ online_available }}</span>
+          <span class="countdown-total">{{ 'out of' | t }} {{ online_total }}</span>
+        </div>
+      {% endif %}
+      {% if in_store_available > 0 %}
+        <div class="in-store-countdown">
+          <span class="countdown-label">{{ 'In-store' | t }}:</span>
+          <span class="countdown-number">{{ in_store_available }}</span>
+          <span class="countdown-total">{{ 'out of' | t }} {{ in_store_total }}</span>
+        </div>
+      {% endif %}
+    </div>
+  {% else %}
+    <div class="out-of-stock-message">{{ 'Out of stock' | t }}</div>
+  {% endif %}
+{% endif %}
