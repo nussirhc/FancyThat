@@ -189,13 +189,20 @@
     {% render 'afterpaybanner' %}
   </div>
   {%- render 'inventory-countdown', current_variant: current_variant -%}
-  {% assign current_variant = product.selected_or_first_available_variant %}
-  <div class="inventoryNote form__label">
-  {% if current_variant.available %}
-    {% if current_variant.inventory_quantity > 0 and current_variant.inventory_quantity <= 10 %}We have {{ current_variant.inventory_quantity }} in stock
-{% elsif current_variant.inventory_quantity > 10 %}We have more than 10 in stock
-    {% endif %}
+  {% assign variant = product.selected_or_first_available_variant %}
+{% if variant.inventory_management == 'shopify' %}
+  {% assign locations = variant.inventory_quantity_by_location %}
+  {% if locations %}
+    <ul>
+      {% for location in locations %}
+        <li>{{ location.name }}: {{ location.quantity }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    Out of stock
   {% endif %}
-</div>
+{% else %}
+  Inventory tracking not enabled
+{% endif %}
    {% comment %} {%- render 'inventory-countdown', current_variant: current_variant -%}{% endcomment %}
 </div>
