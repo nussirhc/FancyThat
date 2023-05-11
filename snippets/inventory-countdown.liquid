@@ -53,3 +53,46 @@
     </div>
   {% endif %}
 {% endif %}
+
+
+{% assign variant = product.selected_or_first_available_variant %}
+{% if variant.inventory_management == 'shopify' %}
+  {% assign inventory_levels = variant.inventory_levels %}
+  {% assign online_levels = inventory_levels | where: 'location_id', shop.location_id %}
+  {% assign online_available = online_levels | map: 'available' | reduce: '+' %}
+  {% assign instore_levels = inventory_levels | where: 'location_id', '!=', shop.location_id %}
+  {% assign instore_available = instore_levels | map: 'available' | reduce: '+' %}
+  {% if online_available > 0 or instore_available > 0 %}
+    <div class="inventory-countdown">
+      {% if online_available > 0 %}
+        <div class="online-countdown">
+          Online: <span class="countdown-number" data-countdown="{{ online_available }}"></span> left
+        </div>
+      {% endif %}
+      {% if instore_available > 0 %}
+        <div class="instore-countdown">
+          In store: <span class="countdown-number" data-countdown="{{ instore_available }}"></span> left
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+{% endif %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var countdowns = document.querySelectorAll('.countdown-number');
+    countdowns.forEach(function(countdown) {
+      var remaining = parseInt(countdown.getAttribute('data-countdown'));
+      var interval = setInterval(function() {
+        if (remaining <= 0) {
+          clearInterval(interval);
+          countdown.innerHTML = "Out of stock";
+        } else {
+          remaining--;
+          countdown.innerHTML = remaining;
+        }
+      }, 1000);
+    });
+  });
+</script>
+
