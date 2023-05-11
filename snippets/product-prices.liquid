@@ -190,26 +190,33 @@
   </div>
   {%- render 'inventory-countdown', current_variant: current_variant -%}
   
-
-  {% assign variant = product.selected_or_first_available_variant %}
+{% assign variant = product.selected_or_first_available_variant %}
 {% if variant.inventory_management == 'shopify' %}
   {% assign inventory_levels = variant.inventory_levels %}
-  {% assign available_levels = inventory_levels | where: 'available', '>', 0 %}
-  {% assign total_available = available_levels | map: 'available' | reduce: '+' %}
-  {% assign total_inventory = inventory_levels | map: 'inventory_quantity' | reduce: '+' %}
-  {% if total_available > 0 %}
-    <div class="remaining-products">
-      {% if template contains 'product' %}
-        {{ total_available }} {{ 'product' | pluralize: total_available }}
-      {% else %}
-        {{ total_available }} {{ 'item' | pluralize: total_available }}
+  {% assign online_levels = inventory_levels | where: 'location_type', 'online' %}
+  {% assign instore_levels = inventory_levels | where: 'location_type', 'physical' %}
+  {% assign online_available = online_levels | map: 'available' | reduce: '+' %}
+  {% assign instore_available = instore_levels | map: 'available' | reduce: '+' %}
+  {% if online_available > 0 or instore_available > 0 %}
+    <div class="variant-countdown">
+      {% if online_available > 0 %}
+        <div class="online-countdown">
+          <span>{{ 'Online' | t }}:</span>
+          <span class="countdown-value">{{ online_available }}</span>
+        </div>
       {% endif %}
-      {% if total_available < total_inventory %}
-        {{ 'only' | t }} {{ total_available }} {{ 'left' | t }}
+      {% if instore_available > 0 %}
+        <div class="instore-countdown">
+          <span>{{ 'In store' | t }}:</span>
+          <span class="countdown-value">{{ instore_available }}</span>
+        </div>
       {% endif %}
     </div>
   {% endif %}
 {% endif %}
+
+
+
 
 
 
