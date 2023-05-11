@@ -60,6 +60,7 @@
   <span class="variant__countdown--unavailable">{{ 'products.product.item_unavailable' | t }}</span>
 </div>
 
+
 {% assign variant = product.selected_or_first_available_variant %}
 {% if variant.inventory_management == 'shopify' %}
   {% assign inventory_levels = variant.inventory_levels %}
@@ -76,6 +77,7 @@
           <span class="countdown-label">{{ 'Online' | t }}:</span>
           <span class="countdown-number">{{ online_available }}</span>
           <span class="countdown-total">{{ 'out of' | t }} {{ online_total }}</span>
+          <span class="countdown-timer" data-remaining="{{ variant.online_store_availability.expires_at | date: "%s" }}"></span>
         </div>
       {% endif %}
       {% if in_store_available > 0 %}
@@ -83,19 +85,26 @@
           <span class="countdown-label">{{ 'In-store' | t }}:</span>
           <span class="countdown-number">{{ in_store_available }}</span>
           <span class="countdown-total">{{ 'out of' | t }} {{ in_store_total }}</span>
+          <span class="countdown-timer" data-remaining="{{ variant.physical_store_availability.expires_at | date: "%s" }}"></span>
         </div>
       {% endif %}
     </div>
-  {% else %}
-    <div class="inventory-out">
-      {{ 'Out of stock' | t }}
-    </div>
+    <script>
+      var countdownTimers = document.querySelectorAll('.countdown-timer');
+      for (var i = 0; i < countdownTimers.length; i++) {
+        var remaining = parseInt(countdownTimers[i].dataset.remaining);
+        setInterval(function() {
+          remaining--;
+          if (remaining <= 0) {
+            countdownTimers[i].innerHTML = '{{ "Sold out" | t }}';
+            countdownTimers[i].parentNode.classList.add('sold-out');
+          } else {
+            var minutes = Math.floor(remaining / 60);
+            var seconds = remaining % 60;
+            countdownTimers[i].innerHTML = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
+          }
+        }, 1000);
+      }
+    </script>
   {% endif %}
-{% else %}
-  <div class="inventory-untracked">
-    {{ 'Inventory tracking unavailable' | t }}
-  </div>
 {% endif %}
-
-
-
