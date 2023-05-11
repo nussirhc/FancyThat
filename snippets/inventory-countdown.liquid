@@ -19,52 +19,6 @@
   }
 </style>
 
-{%- liquid
-  assign max_inventory = 10
-  assign show_remaining_class = 'count-is-unavailable'
-  assign current_inventory = 0
-
-  if current_variant.inventory_policy == 'deny' and current_variant.inventory_management
-    if current_variant.inventory_quantity > 0 and current_variant.inventory_quantity <= max_inventory
-      assign show_remaining_class = 'count-is-low'
-      assign current_inventory = current_variant.inventory_quantity
-    elsif current_variant.inventory_quantity > 0 and current_variant.inventory_quantity > max_inventory
-      assign show_remaining_class = 'count-is-in'
-    else
-      assign show_remaining_class = 'count-is-out'
-    endif
-  endif
--%}
-
-<script data-product-remaining-json type="application/json">
-  {
-    {%- for variant in product.variants -%}
-      {%- assign maximum = 11 -%}
-      {%- assign quant = maximum | plus: 10 -%}
-      {%- if variant.inventory_policy == 'deny' and variant.inventory_management -%}
-        {%- assign quant = variant.inventory_quantity | at_most: maximum -%}
-      {%- endif -%}
-      "{{ variant.id | json }}": "{{ quant | json }}"{%- unless forloop.last -%},{%- endunless -%}
-    {%- endfor -%}
-  }
-</script>
-
-{%- capture inventory -%}
-  <span data-remaining-max="{{ max_inventory }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
-{%- endcapture -%}
-
-<div class="variant__countdown {{ show_remaining_class }}" data-remaining-wrapper>
-  <span class="variant__countdown--in">{{ 'products.product.in_stock' | t }}</span>
-  <span class="variant__countdown--low">{{ 'products.product.remaining_html' | t: inventory: inventory }}</span>
-  <span class="variant__countdown--out">{{ 'products.product.out_of_stock' | t }}</span>
-  <span class="variant__countdown--unavailable">{{ 'products.product.item_unavailable' | t }}</span>
-  
-<!--   <span class="variant__countdown--instore_online">{{ 'products.product.available_instore_online' | t }}</span>
-  <span class="variant__countdown--instore_only">{{ 'products.product.available_instore_only' | t }}</span>
-  <span class="variant__countdown--online_only">{{ 'products.product.available_online_only' | t }}</span> -->
-</div>
-
-
 {% assign variant = product.selected_or_first_available_variant %}
 {% if variant.inventory_management == 'shopify' %}
   {% assign inventory_levels = variant.inventory_levels %}
