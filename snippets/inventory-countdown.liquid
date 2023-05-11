@@ -49,6 +49,7 @@
   }
 </script>
 
+
 {%- capture inventory -%}
   <span data-remaining-max="{{ max_inventory }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
 {%- endcapture -%}
@@ -59,84 +60,3 @@
   <span class="variant__countdown--out">{{ 'products.product.out_of_stock' | t }}</span>
   <span class="variant__countdown--unavailable">{{ 'products.product.item_unavailable' | t }}</span>
 </div>
-
-
-{% assign variant = product.selected_or_first_available_variant %}
-{% if variant.inventory_management == 'shopify' %}
-  {% assign inventory_levels = variant.inventory_levels %}
-  {% assign online_levels = inventory_levels | where: 'location_type', 'online' %}
-  {% assign in_store_levels = inventory_levels | where: 'location_type', 'physical' %}
-  {% assign online_available = online_levels | map: 'available' | reduce: '+' %}
-  {% assign in_store_available = in_store_levels | map: 'available' | reduce: '+' %}
-  {% assign online_total = online_levels | map: 'inventory_quantity' | reduce: '+' %}
-  {% assign in_store_total = in_store_levels | map: 'inventory_quantity' | reduce: '+' %}
-  {% if online_available > 0 or in_store_available > 0 %}
-    <div class="inventory-countdown">
-      {% if online_available > 0 %}
-        <div class="online-countdown">
-          <span class="countdown-label">{{ 'Online' | t }}:</span>
-          <span class="countdown-number">{{ online_available }}</span>
-          <span class="countdown-total">{{ 'out of' | t }} {{ online_total }}</span>
-          <span class="countdown-timer" data-remaining="{{ variant.online_store_availability.expires_at | date: "%s" }}"></span>
-        </div>
-      {% endif %}
-      {% if in_store_available > 0 %}
-        <div class="in-store-countdown">
-          <span class="countdown-label">{{ 'In-store' | t }}:</span>
-          <span class="countdown-number">{{ in_store_available }}</span>
-          <span class="countdown-total">{{ 'out of' | t }} {{ in_store_total }}</span>
-          <span class="countdown-timer" data-remaining="{{ variant.physical_store_availability.expires_at | date: "%s" }}"></span>
-        </div>
-      {% endif %}
-    </div>
-    <script>
-      var countdownTimers = document.querySelectorAll('.countdown-timer');
-      for (var i = 0; i < countdownTimers.length; i++) {
-        var remaining = parseInt(countdownTimers[i].dataset.remaining);
-        setInterval(function() {
-          remaining--;
-          if (remaining <= 0) {
-            countdownTimers[i].innerHTML = '{{ "Sold out" | t }}';
-            countdownTimers[i].parentNode.classList.add('sold-out');
-          } else {
-            var minutes = Math.floor(remaining / 60);
-            var seconds = remaining % 60;
-            countdownTimers[i].innerHTML = minutes + ':' + (seconds < 10 ? '0' : '') + seconds;
-          }
-        }, 1000);
-      }
-    </script>
-  {% endif %}
-{% endif %}
-
-
-{% assign variant = product.selected_or_first_available_variant %}
-{% if variant.inventory_management == 'shopify' %}
-  {% assign inventory_levels = variant.inventory_levels %}
-  {% assign online_levels = inventory_levels | where: 'location_type', 'online' %}
-  {% assign in_store_levels = inventory_levels | where: 'location_type', 'physical' %}
-  {% assign online_available = online_levels | map: 'available' | reduce: '+' %}
-  {% assign in_store_available = in_store_levels | map: 'available' | reduce: '+' %}
-  {% assign online_total = online_levels | map: 'inventory_quantity' | reduce: '+' %}
-  {% assign in_store_total = in_store_levels | map: 'inventory_quantity' | reduce: '+' %}
-  {% if online_available > 0 or in_store_available > 0 %}
-    <div class="inventory-countdown">
-      {% if online_available > 0 %}
-        <div class="online-countdown">
-          <span class="countdown-label">{{ 'Online' | t }}:</span>
-          <span class="countdown-number">{{ online_available }}</span>
-          <span class="countdown-total">{{ 'out of' | t }} {{ online_total }}</span>
-        </div>
-      {% endif %}
-      {% if in_store_available > 0 %}
-        <div class="in-store-countdown">
-          <span class="countdown-label">{{ 'In-store' | t }}:</span>
-          <span class="countdown-number">{{ in_store_available }}</span>
-          <span class="countdown-total">{{ 'out of' | t }} {{ in_store_total }}</span>
-        </div>
-      {% endif %}
-    </div>
-  {% else %}
-    <div class="out-of-stock-message">{{ 'Out of stock' | t }}</div>
-  {% endif %}
-{% endif %}
