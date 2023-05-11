@@ -189,7 +189,8 @@
     {% render 'afterpaybanner' %}
   </div>
   {%- render 'inventory-countdown', current_variant: current_variant -%}
-  {% assign variant = product.selected_or_first_available_variant %}
+  
+{% assign variant = product.selected_or_first_available_variant %}
 {% if variant.inventory_management == 'shopify' %}
   {% assign locations = variant.inventory_quantity_by_location %}
   {% if locations %}
@@ -204,5 +205,23 @@
 {% else %}
   Inventory tracking not enabled
 {% endif %}
-   {% comment %} {%- render 'inventory-countdown', current_variant: current_variant -%}{% endcomment %}
+
+
+
+  {% assign variant = product.selected_or_first_available_variant %}
+{% if variant.inventory_management == 'shopify' %}
+  {% assign locations = variant.inventory_levels | where: 'available', '>', 0 | sort: 'available', 'desc' %}
+  {% if locations.size > 0 %}
+    <ul>
+      {% for location in locations %}
+        <li>{{ location.location.name }}: {{ location.available }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    Out of stock
+  {% endif %}
+{% else %}
+  Inventory tracking not enabled
+{% endif %}
+
 </div>
