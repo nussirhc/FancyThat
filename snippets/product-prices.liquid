@@ -224,4 +224,23 @@
   Inventory tracking not enabled
 {% endif %}
 
+
+  {% assign variant = product.selected_or_first_available_variant %}
+{% if variant.inventory_management == 'shopify' %}
+  {% assign inventory_levels = variant.inventory_levels %}
+  {% assign available_levels = inventory_levels | where: 'available', '>', 0 %}
+  {% if available_levels.size > 0 %}
+    <ul>
+      {% for level in available_levels %}
+        <li>{{ level.location.name }}: {{ level.available }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    Out of stock fdaf
+  {% endif %}
+{% else %}
+  Inventory tracking not enabled
+{% endif %}
+
+
 </div>
