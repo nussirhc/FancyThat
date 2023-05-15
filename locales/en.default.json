@@ -487,7 +487,7 @@
       "available_online_only": "Available Online Only",
       "in_stock": "Available Online Only",
       "out_of_stock": "Item is Out of Stock",
-      "item_unavailable": "Item is Unavailable",
+      "item_unavailable": "Available Instore + Online",
       "remaining_html": "Only {{ inventory }} left in stock",
       "on_sale": "Sale",
       "save_badge_html": "Save {{ discount }}",
