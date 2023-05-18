@@ -33,11 +33,11 @@
       assign current_inventory = current_variant.inventory_quantity
     elsif current_variant.inventory_quantity > 0 and current_variant.inventory_quantity > max_inventory
       assign show_remaining_class = 'count-is-in'
-    elsif current_variant.inventory_quantity < 0 and current_variant.inventory_quantity => max_inventory
+    elsif current_variant.inventory_quantity > 0 and current_variant.inventory_quantity <= max_inventory
       assign show_remaining_class = 'count-is-instore_only'
-    elsif current_variant.inventory_quantity < 0 and current_variant.inventory_quantity => max_inventory
+    elsif current_variant.inventory_quantity > 0 and current_variant.inventory_quantity <= max_inventory
       assign show_remaining_class = 'count-is-online_only'
-    elsif current_variant.inventory_quantity < 0 and current_variant.inventory_quantity => max_inventory
+    elsif current_variant.inventory_quantity > 0 and current_variant.inventory_quantity <= max_inventory
       assign show_remaining_class = 'count-is-instore_online'
     else
       assign show_remaining_class = 'count-is-out'
