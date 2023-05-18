@@ -21,6 +21,9 @@
 
 {%- liquid
   assign max_inventory = 10
+  assign instore_only = 10
+  assign online_only = 10
+  assign instore_online = 10
   assign show_remaining_class = 'count-is-unavailable'
   assign current_inventory = 0
 
@@ -30,6 +33,12 @@
       assign current_inventory = current_variant.inventory_quantity
     elsif current_variant.inventory_quantity > 0 and current_variant.inventory_quantity > max_inventory
       assign show_remaining_class = 'count-is-in'
+    elsif current_variant.inventory_quantity > 0 and current_variant.inventory_quantity > max_inventory
+      assign show_remaining_class = 'count-is-instore_only'
+    elsif current_variant.inventory_quantity > 0 and current_variant.inventory_quantity > max_inventory
+      assign show_remaining_class = 'count-is-online_only'
+    elsif current_variant.inventory_quantity > 0 and current_variant.inventory_quantity > max_inventory
+      assign show_remaining_class = 'count-is-instore_online'
     else
       assign show_remaining_class = 'count-is-out'
     endif
@@ -57,5 +66,7 @@
   <span class="variant__countdown--in">{{ 'products.product.in_stock' | t }}</span>
   <span class="variant__countdown--low">{{ 'products.product.remaining_html' | t: inventory: inventory }}</span>
   <span class="variant__countdown--out">{{ 'products.product.out_of_stock' | t }}</span>
-  <span class="variant__countdown--unavailable">{{ 'products.product.item_unavailable' | t }}</span>
+  <span class="variant__countdown--instore_online">{{ 'products.product.instore_online' | t }}</span>
+  <span class="variant__countdown--instore_only">{{ 'products.product.instore_only' | t }}</span>
+  <span class="variant__countdown--online_only">{{ 'products.product.online_only' | t }}</span>
 </div>

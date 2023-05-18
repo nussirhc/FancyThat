@@ -6137,6 +6137,9 @@ PaloAlto.ProductAddForm = (function() {
     remainingIn: 'count-is-in',
     remainingOut: 'count-is-out',
     remainingUnavailable: 'count-is-unavailable',
+    remainingInstoreOnly: 'count-is-instore_only',
+    remainingOnlineOnly: 'count-is-online_only',
+    remainingInstoreOnline: 'count-is-instore_online',
   };
 
   function ProductAddForm(container) {
@@ -6359,19 +6362,19 @@ PaloAlto.ProductAddForm = (function() {
       if (variant && this.remainingWrapper && this.remainingJSON && this.remainingCount) {
         const newQuantity = this.remainingJSON[variant.id];
         if (newQuantity && newQuantity <= this.remainingMaxInt && newQuantity > 0) {
-          this.remainingWrapper.classList.remove(classes.remainingIn, classes.remainingOut, classes.remainingUnavailable);
+          this.remainingWrapper.classList.remove(classes.remainingIn, classes.remainingOut, classes.remainingUnavailable, classes.remainingInstoreOnly, classes.remainingOnlineOnly, classes.remainingInstoreOnline);
           this.remainingWrapper.classList.add(classes.remainingLow);
           this.remainingCount.innerHTML = newQuantity;
         } else if (this.productState.soldOut) {
-          this.remainingWrapper.classList.remove(classes.remainingLow, classes.remainingIn, classes.remainingUnavailable);
+          this.remainingWrapper.classList.remove(classes.remainingLow, classes.remainingIn, classes.remainingUnavailable, classes.remainingInstoreOnly, classes.remainingOnlineOnly, classes.remainingInstoreOnline);
           this.remainingWrapper.classList.add(classes.remainingOut);
         } else if (this.productState.available) {
-          this.remainingWrapper.classList.remove(classes.remainingLow, classes.remainingOut, classes.remainingUnavailable);
+          this.remainingWrapper.classList.remove(classes.remainingLow, classes.remainingOut, classes.remainingUnavailable, classes.remainingInstoreOnly, classes.remainingOnlineOnly, classes.remainingInstoreOnline);
           this.remainingWrapper.classList.add(classes.remainingIn);
         }
       } else if (this.remainingWrapper) {
         this.remainingWrapper.classList.remove(classes.remainingIn, classes.remainingOut, classes.remainingLow);
-        this.remainingWrapper.classList.add(classes.remainingUnavailable);
+        this.remainingWrapper.classList.add(classes.remainingUnavailable, classes.remainingInstoreOnly, classes.remainingOnlineOnly, classes.remainingInstoreOnline);
       }
     },
 
