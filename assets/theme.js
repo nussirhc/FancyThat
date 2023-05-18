@@ -6373,8 +6373,8 @@ PaloAlto.ProductAddForm = (function() {
           this.remainingWrapper.classList.add(classes.remainingIn);
         }
       } else if (this.remainingWrapper) {
-        this.remainingWrapper.classList.remove(classes.remainingIn, classes.remainingOut, classes.remainingLow);
-        this.remainingWrapper.classList.add(classes.remainingUnavailable, classes.remainingInstoreOnly, classes.remainingOnlineOnly, classes.remainingInstoreOnline);
+        this.remainingWrapper.classList.remove(classes.remainingIn, classes.remainingOut, classes.remainingLow, classes.remainingInstoreOnly, classes.remainingOnlineOnly, classes.remainingInstoreOnline);
+        this.remainingWrapper.classList.add(classes.remainingUnavailable);
       }
     },
 
