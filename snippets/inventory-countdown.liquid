@@ -82,7 +82,7 @@ assign test = current_variant
         {{ variant.id }}
     </div>       
 
-      <input id="QuickShopModal-{{product.id}}-{{ variant.id }}" type="button" value="Quick" class="quick-product__btn" style="margin-top:7px;" />
+      <input id="QuickShopModal{{product.id}}-{{ variant.id }}" type="button" value="Quick" class="quick-product__btn" style="margin-top:7px;" />
       
     <script type="text/javascript"> 
 
@@ -93,7 +93,7 @@ assign test = current_variant
           
           const id = button.dataset.productId;
           const handle = button.dataset.handle;
-          const productPopUpContainerSelector = `#QuickShopModal-{{product.id}}-{{ variant.id }}`;
+          const productPopUpContainerSelector = `#QuickShopModal{{product.id}}-{{ variant.id }}`;
           const variant = window.inventoryInfo.api.getSelectedvariant(productPopUpContainerSelector);
           
           window.inventoryInfo.api.showOnQuickView({
