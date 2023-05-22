@@ -65,11 +65,7 @@
 <div class="variant__countdown {{ show_remaining_class }}" data-remaining-wrapper>
 Hi
   {{ 'products.product.instore_only' | t }}
-{%- for variant in products.variants -%}
-  Here
-     {{ 'variant.inventory_quantity' }}
-     
-    {%- endfor -%}
+
   
   <span class="variant__countdown--in">{{ 'products.product.in_stock' | t }}</span>
   <span class="variant__countdown--low">{{ 'products.product.remaining_html' | t: inventory: inventory }}</span>
