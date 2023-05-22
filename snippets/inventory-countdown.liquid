@@ -69,9 +69,9 @@ assign test = current_variant
 
 <div class="nyree">
 <script type="text/javascript">  
-document.addEventListener('inventoryInfo.appLoaded', function() {
+(function(){
 
-  // Fired when app's JavaScript has loaded
+    const loadApp = function(){
 var productIdentifier = {
 
                           handle:"st-patricks-day-triangle-bunting-plastic-56403", 
@@ -81,8 +81,25 @@ var productIdentifier = {
                       };
 
       		window.inventoryInfo.api.loadApp(productIdentifier, '#product-8101996233003');
-});
-  
+}
+
+  	if(window.inventoryInfo){
+
+  		loadApp();
+
+    }else{
+
+      
+
+      document.addEventListener('inventoryInfo.appLoaded', function(){
+
+   		 	loadApp();   
+
+ 	  });
+
+}
+
+ })();
  
 
 </script>
