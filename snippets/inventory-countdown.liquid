@@ -59,10 +59,10 @@
 </script>
 
 {%- capture inventory -%}
-  nyree {{ 'inventory' | t }}
+ 
   <span data-remaining-max="{{ max_inventory }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
 {%- endcapture -%}
-
+ <span data-remaining-max="{{ max_inventory }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
 <div class="variant__countdown {{ show_remaining_class }}" data-remaining-wrapper>
 Hi
   {{ 'products.product.instore_only' | t }}
