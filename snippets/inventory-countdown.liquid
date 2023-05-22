@@ -63,7 +63,12 @@
 {%- endcapture -%}
 
 <div class="variant__countdown {{ show_remaining_class }}" data-remaining-wrapper>
-   {{ products.variants | json }}
+
+{%- for variant in product.variants -%}
+     {{ 'variant.inventory_quantity' }}
+     
+    {%- endfor -%}
+  
   <span class="variant__countdown--in">{{ 'products.product.in_stock' | t }}</span>
   <span class="variant__countdown--low">{{ 'products.product.remaining_html' | t: inventory: inventory }}</span>
   <span class="variant__countdown--out">{{ 'products.product.out_of_stock' | t }}</span>
