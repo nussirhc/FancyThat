@@ -72,7 +72,15 @@ assign test = current_variant
 //document.addEventListener('inventoryInfo.appLoaded', function() {
 
   // Fired when app's JavaScript has loaded
+//var productIdentifier = {
 
+//                          handle:"st-patricks-day-triangle-bunting-plastic-56403", 
+
+ //                         variant:{{product.selected_or_first_available_variant.id}}
+
+  //                    };
+
+ //     		window.inventoryInfo.api.loadApp(productIdentifier, '#product-{{product.id}}');
 //});
   
   function test(){
@@ -99,7 +107,7 @@ Hi
    {{ current_variant | json }}
 
   {% for product in products %} 
-  <div InventoryManagmentProduct>start{{product.handle}}stop
+  <div InventoryManagmentProduct>start{{product.id}}stop
   {% for variant in product.variants %} 
    
                 <!-- <div InventoryManagment data-id="{{variant.title}}" data-inventory="{{variant.inventory_quantity}}" style="display:none;">{{variant.inventory_quantity}}</div> 
