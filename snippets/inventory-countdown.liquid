@@ -72,13 +72,13 @@ assign test = current_variant
 
 {% for product in products %} 
 
-<form method="post" action="/cart/add" class="ContactForm center">
-  <input type="hidden" name="id" value="{{product.id}}" />
+  {% for variant in product.variants %} 
+    <form method="post" action="/cart/add" class="ContactForm center">
+  <input type="hidden" name="id" value="{{variant.id}}" />
   <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
   <input type="submit" value="Add to cart" class="button" style="margin-top:7px;" />
 </form>
 
-  {% for variant in product.variants %} 
     <div id="product-{{product.id}}"  class="product-{{product.id}}-{{ variant.id }}">
         {{ variant.id }}
     </div>       
