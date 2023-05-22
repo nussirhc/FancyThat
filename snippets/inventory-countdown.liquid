@@ -99,7 +99,7 @@ Hi
    {{ current_variant | json }}
 
   {% for product in products %} 
-  <div InventoryManagmentProduct>  {{product.handle}}
+  <div InventoryManagmentProduct>start{{product.handle}}stop
   {% for variant in product.variants %} 
    
                 <!-- <div InventoryManagment data-id="{{variant.title}}" data-inventory="{{variant.inventory_quantity}}" style="display:none;">{{variant.inventory_quantity}}</div> 
