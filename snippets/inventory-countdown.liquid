@@ -139,7 +139,9 @@ Hi
      data-variant-inventory-qty="{{ variant.inventory_quantity }}">
     <!-- snip variant HTML -->
 </div>
-
+ 
+ </div>
+ <script>
 <!-- Javascript -->
 const variantElms = document.querySelectorAll('.product-variant');
 let variantsObj = [];
@@ -151,8 +153,10 @@ variantElms.forEach(function(variantElm) {
       inventory_qty: variantElm.dataset.variantInventoryQty
     })
 });
+   </script>
 
-   {% endfor %}
+    {% endfor %}
 
   {% endfor %}
- </div>
+
+ 
