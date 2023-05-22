@@ -322,7 +322,7 @@
             {%- unless product == blank -%}
               <div class="product__block product__form__wrapper{{ hide_labels_class }}" {{ block.shopify_attributes }} data-form-wrapper>
                 {%- comment -%} Product Form Partial {%- endcomment -%}
-                <!-- /partials/product-form.liquid -->
+                <!-- /partials/product-form.liquid 1-->
 
 {%- liquid
   assign current_variant = product.selected_or_first_available_variant
@@ -1356,7 +1356,7 @@
 
       <div class="product__block product__form__wrapper{{ hide_labels_class }}">
         {%- comment -%} Product Form partial {%- endcomment -%}
-        <!-- /partials/product-form.liquid -->
+        <!-- /partials/product-form.liquid 2-->
 
 {%- liquid
   assign current_variant = product.selected_or_first_available_variant
