@@ -78,7 +78,11 @@ assign test = current_variant
   function test(){
 alert('here');
      
-      		//window.inventoryInfo.api.loadApp(productIdentifier, '#product-8101996233003');
+      		document.addEventListener('inventoryInfo.appLoaded', function() {
+
+   //Fired when app's JavaScript has loaded
+
+});
 
     }
 
