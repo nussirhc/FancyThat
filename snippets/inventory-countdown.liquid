@@ -118,7 +118,9 @@ Hi
   <div InventoryManagmentProduct>start{{product.id}}stop
   {% for variant in product.variants %} 
    
-                 <div InventoryManagment data-id="{{variant.title}}" data-inventory="{{variant.inventory_quantity}}">{{variant.inventory_quantity}}{{variant.store_availabilities}}</div> 
+                 <div InventoryManagment data-id="{{variant.title}}" data-inventory="{{variant.inventory_quantity}}">{{variant.inventory_quantity}}
+    {{var_dump(variant.store_availabilities)}}
+                 </div> 
   
                  {% endfor %} 
   </div>
