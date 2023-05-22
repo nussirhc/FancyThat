@@ -72,15 +72,7 @@ assign test = current_variant
  
   function test(){
 alert('here');
-      var productIdentifier = {
-
-                          handle:"{{product.handle}}", 
-
-                          variant:{{product.selected_or_first_available_variant.id}}
-
-                      };
-
-      		window.inventoryInfo.api.loadApp(productIdentifier, '#product-8101996233003');
+     
 
     }
 
