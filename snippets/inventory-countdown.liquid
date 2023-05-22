@@ -27,7 +27,8 @@
   assign show_remaining_class = 'count-is-unavailable'
   assign current_inventory = 0
 assign test = 'start'
-
+assign test = current_variant
+   
   if current_variant.inventory_policy == 'deny' and current_variant.inventory_management
     if current_variant.inventory_quantity > 0 and current_variant.inventory_quantity <= max_inventory
       assign show_remaining_class = 'count-is-low'
