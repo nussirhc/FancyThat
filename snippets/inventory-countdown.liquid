@@ -119,7 +119,10 @@ Hi
   {% for variant in product.variants %} 
    
                  <div InventoryManagment data-id="{{variant.title}}" data-inventory="{{variant.inventory_quantity}}">{{variant.inventory_quantity}}
-    {{var_dump(variant.store_availabilities)}}
+
+                   {% for avail in variant.store_availabilities %} 
+                     here
+                    {% endfor %} 
                  </div> 
   
                  {% endfor %} 
