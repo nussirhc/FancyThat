@@ -97,8 +97,8 @@ assign test = current_variant
           const variant = window.inventoryInfo.api.getSelectedvariant(productPopUpContainerSelector);
           
           window.inventoryInfo.api.showOnQuickView({
-                                                      handle:handle,
-                                                      variant:variant
+                                                      handle:"{{product.handle}}",
+                                                      variant:{{ variant.id }}
                                                    }, 
                                                    productPopUpContainerSelector);
         });
