@@ -67,7 +67,6 @@ assign test = current_variant
 
 <span data-remaining-max="{{ test }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
 
-Hello - {{current_variant.inventory_quantity}}
 {% for product in products %} 
   {% for variant in product.variants %} 
     <div id="product-{{product.id}}"  class="product-{{product.id}}-{{ variant.id }}">
