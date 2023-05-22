@@ -73,11 +73,13 @@ Hi
    {{ current_variant | json }}
 
   {% for product in products %} 
+  <div InventoryManagmentProduct>{{product.id}}
   {% for variant in product.variants %} 
    
                  <div InventoryManagment data-id="{{variant.id}}" data-inventory="{{variant.inventory_quantity}}" style="display:none;"></div> 
    
                  {% endfor %} 
+  </div>
       {% endfor %}
   
 
