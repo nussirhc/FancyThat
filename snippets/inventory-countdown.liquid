@@ -66,8 +66,11 @@ assign test = current_variant
 {%- endcapture -%}
 
 <span data-remaining-max="{{ test }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
+{% for product in products %} 
+   <div id="{{product.handle}}"></div>
+{% endfor %}
 
-<div id="nyree">
+      
 <script type="text/javascript">  
 (function(){
 
@@ -81,7 +84,7 @@ var productIdentifier = {
 
                       };
 
-      		window.inventoryInfo.api.loadApp(productIdentifier, '#nyree');
+      		window.inventoryInfo.api.loadApp(productIdentifier, '#st-patricks-day-triangle-bunting-plastic-56403');
 }
 
   	if(window.inventoryInfo){
@@ -105,7 +108,7 @@ var productIdentifier = {
 
 
 </script>
-</div>
+
 <div id="test">test end</div>
 {% for product in products %} 
 <div id="inventory-info-app" class="iia-container"></div>
