@@ -69,7 +69,7 @@ assign test = current_variant
 
 
 {% for product in products %} 
-  {% for variant in product.variants %} 
+  {% for variants in product.variants %} 
     <div id="product-{{product.id}}"  class="product-{{product.id}}-{{ current_variant.id }}">
         {{ variant.id }}
     </div>       
@@ -77,10 +77,10 @@ assign test = current_variant
     <script type="text/javascript">  
        var productIdentifier = {
           handle:"{{product.handle}}", 
-          variant:{{ variant.id }}
+          variant:{{ variants.id }}
       };
 
-      window.inventoryInfo.api.loadApp(productIdentifier, '#product-{{product.id}}-{{ variant.id }}');
+      window.inventoryInfo.api.loadApp(productIdentifier, '#product-{{product.id}}-{{ variants.id }}');
     </script>
   {% endfor %} 
 {% endfor %}
