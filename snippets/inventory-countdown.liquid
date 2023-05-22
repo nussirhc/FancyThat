@@ -48,6 +48,7 @@
 <script data-product-remaining-json type="application/json">
   {
     {%- for variant in product.variants -%}
+      {{ 'current_variant.inventory_management' | t }}
       {%- assign maximum = 11 -%}
       {%- assign quant = maximum | plus: 10 -%}
       {%- if variant.inventory_policy == 'deny' and variant.inventory_management -%}
@@ -65,7 +66,7 @@
 <div class="variant__countdown {{ show_remaining_class }}" data-remaining-wrapper>
 Hi
   {{ 'products.product.instore_only' | t }}
-  {{ 'current_variant.inventory_management' | t }}
+  
 
   
  
