@@ -26,6 +26,7 @@
   assign instore_online = 10
   assign show_remaining_class = 'count-is-unavailable'
   assign current_inventory = 0
+assign test = current_variant.inventory_management
 
   if current_variant.inventory_policy == 'deny' and current_variant.inventory_management
     if current_variant.inventory_quantity > 0 and current_variant.inventory_quantity <= max_inventory
@@ -62,7 +63,9 @@
  
   <span data-remaining-max="{{ max_inventory }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
 {%- endcapture -%}
- <span data-remaining-max="{{ max_inventory }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
+
+<span data-remaining-max="{{ test }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
+ 
 <div class="variant__countdown {{ show_remaining_class }}" data-remaining-wrapper>
 Hi
   {{ 'products.product.instore_only' | t }}
