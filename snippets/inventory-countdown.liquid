@@ -67,7 +67,7 @@ assign test = current_variant
 
 <span data-remaining-max="{{ test }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
 
-
+<button type="submit" name="add" id="AddToCart--template--18628010297211_main" class="btn btn--submit product__submit__add" data-add-to-cart data-focus-elements>Add to cart</button>
 <div id="inventory-info-app" class="iia-container"></div>
 {% for product in products %} 
    <div id="product-{{product.id}}"  class="product-{{product.id}}">
