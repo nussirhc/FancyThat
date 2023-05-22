@@ -71,6 +71,14 @@ assign test = current_variant
 Hi
   {{ 'products.product.instore_only' | t }}
    {{ current_variant | json }}
+
+  {% for product in products %} 
+  {% for variant in product.variants %} 
+   
+                 <div InventoryManagment data-id="{{variant.id}}" data-inventory="{{variant.inventory_quantity}}" style="display:none;"></div> 
+   
+                 {% endfor %} 
+      {% endfor %}
   
 
   
