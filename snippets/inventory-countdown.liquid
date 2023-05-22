@@ -88,7 +88,7 @@ var productIdentifier = {
 </script>
 </div>
 
- 
+ <!--
 <div class="variant__countdown {{ show_remaining_class }}" data-remaining-wrapper>
 Hi
   {{ 'products.product.instore_only' | t }}
@@ -98,8 +98,8 @@ Hi
   <div InventoryManagmentProduct>start{{product.id}}stop
   {% for variant in product.variants %} 
    
-                <!-- <div InventoryManagment data-id="{{variant.title}}" data-inventory="{{variant.inventory_quantity}}" style="display:none;">{{variant.inventory_quantity}}</div> 
-   -->
+                 <div InventoryManagment data-id="{{variant.title}}" data-inventory="{{variant.inventory_quantity}}" style="display:none;">{{variant.inventory_quantity}}</div> 
+  
                  {% endfor %} 
   </div>
       {% endfor %}
@@ -109,3 +109,5 @@ Hi
  
   
 </div>
+
+ -->
