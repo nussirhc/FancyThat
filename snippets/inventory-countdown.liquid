@@ -67,6 +67,13 @@ assign test = current_variant
 
 <span data-remaining-max="{{ test }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
 
+<form method="post" action="/cart/add" class="ContactForm center">
+  <input type="hidden" name="id" value="{{ product_card_product.variants.first.id }}" />
+  <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
+  <input type="submit" value="Add to cart" class="button" style="margin-top:7px;" />
+</form>
+
+
 {% for product in products %} 
   {% for variant in product.variants %} 
     <div id="product-{{product.id}}"  class="product-{{product.id}}-{{ variant.id }}">
