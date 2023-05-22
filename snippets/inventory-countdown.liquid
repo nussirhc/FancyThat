@@ -97,29 +97,12 @@ assign test = current_variant
     {% endfor %} 
  
 <div class="variant__countdown {{ show_remaining_class }}" data-remaining-wrapper>
-Hi
-  {{ 'products.product.instore_only' | t }}
-   {{ current_variant | json }}
-
-  {% for product in products %} 
-  <div InventoryManagmentProduct>start{{product.id}}stop
-  {% for variant in product.variants %} 
-   
-                 <div InventoryManagment data-id="{{variant.title}}" data-inventory="{{variant.inventory_quantity}}">{{variant.store_availabilities}}
-
-                   {% for avail in variant.store_availabilities %} 
-                     here
-                    {% endfor %} 
-                 </div> 
-  
-                 {% endfor %} 
-  </div>
-      {% endfor %}
-  
-
-  
- 
-  
+ <span class="variant__countdown--in">{{ 'products.product.in_stock' | t }}</span>
+  <span class="variant__countdown--low">{{ 'products.product.remaining_html' | t: inventory: inventory }}</span>
+  <span class="variant__countdown--out">{{ 'products.product.out_of_stock' | t }}</span>
+  <span class="variant__countdown--instore_online">{{ 'products.product.instore_online' | t }}</span>
+  <span class="variant__countdown--instore_only">{{ 'products.product.instore_only' | t }}</span>
+  <span class="variant__countdown--online_only">{{ 'products.product.online_only' | t }}</span>
 </div>
 
  
