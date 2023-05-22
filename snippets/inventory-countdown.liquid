@@ -76,7 +76,7 @@ Hi
   <div InventoryManagmentProduct>{{product.title}}
   {% for variant in product.variants %} 
    
-                 <div InventoryManagment data-id="{{variant.title}}" data-inventory="{{variant.inventory_quantity}}" style="display:none;"></div> 
+                 <div InventoryManagment data-id="{{variant.title}}" data-inventory="{{variant.inventory_quantity}}" style="display:none;">{{variant.inventory_management}}</div> 
    
                  {% endfor %} 
   </div>
