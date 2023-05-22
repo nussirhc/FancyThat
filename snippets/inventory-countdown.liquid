@@ -68,7 +68,31 @@ assign test = current_variant
 <span data-remaining-max="{{ test }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
 
 <div class="nyree">
+<script type="text/javascript">  
+document.addEventListener('inventoryInfo.appLoaded', function() {
 
+  // Fired when app's JavaScript has loaded
+
+});
+  
+  function test(){
+alert('here');
+      var productIdentifier = {
+
+                          handle:"{{product.handle}}", 
+
+                          variant:{{product.selected_or_first_available_variant.id}}
+
+                      };
+
+      		//window.inventoryInfo.api.loadApp(productIdentifier, '#product-8101996233003');
+
+    }
+
+  	
+  test();  
+
+</script>
 </div>
 
  
