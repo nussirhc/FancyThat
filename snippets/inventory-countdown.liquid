@@ -108,7 +108,7 @@ var productIdentifier = {
 {% for product in products %} 
 <div id="inventory-info-app" class="iia-container"></div>
     {% endfor %} 
- <!--
+ 
 <div class="variant__countdown {{ show_remaining_class }}" data-remaining-wrapper>
 Hi
   {{ 'products.product.instore_only' | t }}
@@ -130,20 +130,5 @@ Hi
   
 </div>
 
- -->
- <div class="nyree-product-variant">
-{% for product in products %} 
- {% for variant in product %}
-<div class="product-variant">
-    {{ variant.id }}
-   {{ variant.inventory_quantity }}
-</div>
  
- </div>
-
-
-    {% endfor %}
-
-  {% endfor %}
-
  
