@@ -68,7 +68,15 @@ assign test = current_variant
 <span data-remaining-max="{{ test }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
 
 
+<script>
+  document.addEventListener('inventoryInfo.appData', function(e) {
 
+        const {variantLocations} = e.detail;
+
+        console.log(variantLocations);
+
+      });
+</script>
 
 {% for product in products %} 
 
