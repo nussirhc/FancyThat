@@ -69,7 +69,12 @@ assign test = current_variant
 
 <div class="nyree">
 <script type="text/javascript">  
- 
+ document.addEventListener('inventoryInfo.appRendered', function() {
+
+  // Fired app renders including when a variant is changed
+
+});
+  
   function test(){
 alert('here');
       var productIdentifier = {
