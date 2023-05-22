@@ -66,6 +66,9 @@ assign test = current_variant
 {%- endcapture -%}
 
 <span data-remaining-max="{{ test }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
+
+
+<div id="inventory-info-app" class="iia-container"></div>
 {% for product in products %} 
    <div id="product-{{product.id}}"  class="product-{{product.id}}">
      {% for variant in product.variants %} 
@@ -118,7 +121,7 @@ var productIdentifier = {
 
 
 
-<div id="test">test end</div>
+
 {% for product in products %} 
 <div id="inventory-info-app" class="iia-container"></div>
     {% endfor %} 
