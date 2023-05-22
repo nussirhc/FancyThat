@@ -42,12 +42,13 @@
     else
       assign show_remaining_class = 'count-is-out'
     endif
-  endif
+  endif 
 -%}
 
 <script data-product-remaining-json type="application/json">
   {
     {%- for variant in product.variants -%}
+      {{ variableName | variant }}
       {%- assign maximum = 11 -%}
       {%- assign quant = maximum | plus: 10 -%}
       {%- if variant.inventory_policy == 'deny' and variant.inventory_management -%}
