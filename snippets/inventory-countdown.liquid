@@ -59,7 +59,7 @@
 </script>
 
 {%- capture inventory -%}
-  h1 {{ 'inventory' | t }}
+  nyree {{ 'inventory' | t }}
   <span data-remaining-max="{{ max_inventory }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
 {%- endcapture -%}
 
