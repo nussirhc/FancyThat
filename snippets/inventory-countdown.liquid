@@ -94,7 +94,6 @@ assign test = current_variant
           const id = button.dataset.productId;
           const handle = button.dataset.handle;
           const productPopUpContainerSelector = `#QuickShopModal-{{product.id}}-{{ variant.id }}`;
-          alert(productPopUpContainerSelector);
           const variant = window.inventoryInfo.api.getSelectedvariant(productPopUpContainerSelector);
           
           window.inventoryInfo.api.showOnQuickView({
