@@ -66,6 +66,47 @@ assign test = current_variant
 {%- endcapture -%}
 
 <span data-remaining-max="{{ test }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
+
+
+<script type="text/javascript">  
+
+ (function(){
+
+    const loadApp = function(){
+
+      var productIdentifier = {
+
+                          handle:"{{product.handle}}", 
+
+                          variant:{{product.selected_or_first_available_variant.id}}
+
+                      };
+
+      		window.inventoryInfo.api.loadApp(productIdentifier, '#product-{{product.id}}');
+
+    }
+
+  	if(window.inventoryInfo){
+
+  		loadApp();
+
+    }else{
+
+      
+
+      document.addEventListener('inventoryInfo.appLoaded', function(){
+
+   		 	loadApp();   
+
+ 	  });
+
+}
+
+ })();
+
+</script>
+
+
  
 <div class="variant__countdown {{ show_remaining_class }}" data-remaining-wrapper>
 Hi
