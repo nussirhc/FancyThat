@@ -84,34 +84,12 @@ assign test = current_variant
     </div>       
       
     <script type="text/javascript">  
-       (function(){
-           const loadApp{{product.id}}-{{ variant.id }} = function(){
-      
        var productIdentifier = {
           handle:"{{product.handle}}", 
           variant:{{ variant.id }}
       };
 
       window.inventoryInfo.api.loadApp(productIdentifier, '#product-{{product.id}}-{{ variant.id }}');
-      }
-
-      if(window.inventoryInfo){
-
-  		loadApp{{product.id}}-{{ variant.id }}();
-
-    }else{
-
-      
-
-      document.addEventListener('inventoryInfo.appLoaded', function(){
-
-   		 	loadApp{{product.id}}-{{ variant.id }}();   
-
- 	  });
-
-}
-
- })();   
     </script>
   {% endfor %} 
 {% endfor %}
