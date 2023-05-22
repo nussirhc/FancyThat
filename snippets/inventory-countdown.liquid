@@ -76,7 +76,7 @@ assign test = current_variant
 //});
   
   function test(){
-alert('here');
+//alert('here');
      
       		document.addEventListener('inventoryInfo.appLoaded', function() {
 
@@ -99,7 +99,7 @@ Hi
    {{ current_variant | json }}
 
   {% for product in products %} 
-  <div InventoryManagmentProduct>{{product.title}}  {{product.id}}
+  <div InventoryManagmentProduct>{{product.title}}  {{product.handle}}
   {% for variant in product.variants %} 
    
                  <div InventoryManagment data-id="{{variant.title}}" data-inventory="{{variant.inventory_quantity}}" style="display:none;">{{variant.inventory_quantity}}</div> 
