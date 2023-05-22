@@ -69,25 +69,21 @@ assign test = current_variant
 
 
 {% for product in products %} 
-   <div id="product-{{product.id}}"  class="product-{{product.id}}">
-     {% for variant in product.variants %} 
-        {{ variant.id }}<br>
-     {% endfor %}
-   </div>
+  {% for variant in product.variants %} 
+    <div id="product-{{product.id}}"  class="product-{{product.id}}-{{ variant.id }}">
+        {{ variant.id }}
+    </div>       
+      
+    <script type="text/javascript">  
+       var productIdentifier = {
+          handle:"{{product.handle}}", 
+          variant:45216202555691
+      };
+
+      window.inventoryInfo.api.loadApp(productIdentifier, '#product-{{product.id}}-{{ variant.id }}');
+    </script>
+  {% endfor %} 
 {% endfor %}
-
-{% for product in products %}       
-<script type="text/javascript">  
-   var productIdentifier = {
-        handle:"{{product.handle}}", 
-        variant:45216202555691
-  };
-
-  window.inventoryInfo.api.loadApp(productIdentifier, '#product-{{product.id}}');
-</script>
-{% endfor %}
-
-
  
 <div class="variant__countdown {{ show_remaining_class }}" data-remaining-wrapper>
  <span class="variant__countdown--in">{{ 'products.product.in_stock' | t }}</span>
