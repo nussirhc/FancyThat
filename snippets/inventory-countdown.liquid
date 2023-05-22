@@ -67,7 +67,7 @@ assign test = current_variant
 
 <span data-remaining-max="{{ test }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
 {% for product in products %} 
-   <div id="{{product.handle}}"></div>
+   <div id="PRODID={{product.handle}}"></div>
 {% endfor %}
 
       
@@ -84,7 +84,7 @@ var productIdentifier = {
 
                       };
 
-      		window.inventoryInfo.api.loadApp(productIdentifier, '#st-patricks-day-triangle-bunting-plastic-56403');
+      		window.inventoryInfo.api.loadApp(productIdentifier, '#PRODID=st-patricks-day-triangle-bunting-plastic-56403');
 }
 
   	if(window.inventoryInfo){
