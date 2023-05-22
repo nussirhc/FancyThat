@@ -68,7 +68,7 @@ assign test = current_variant
 <span data-remaining-max="{{ test }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
 
 
-{% for product in products %} 
+
   {% for variant in product.variants %} 
     <div id="product-{{product.id}}"  class="product-{{product.id}}-{{ variant.id }}">
         {{ variant.id }}
@@ -83,7 +83,7 @@ assign test = current_variant
       window.inventoryInfo.api.loadApp(productIdentifier, '#product-{{product.id}}-{{ variant.id }}');
     </script>
   {% endfor %} 
-{% endfor %}
+
  
 <div class="variant__countdown {{ show_remaining_class }}" data-remaining-wrapper>
  <span class="variant__countdown--in">{{ 'products.product.in_stock' | t }}</span>
