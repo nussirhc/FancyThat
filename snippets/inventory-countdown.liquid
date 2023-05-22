@@ -82,14 +82,15 @@ assign test = current_variant
         {{ variant.id }}
     </div>       
 
-      <input id="product-{{product.id}}-{{ variant.id }}" type="submit" value="Quick" class="quick-product__btn" style="margin-top:7px;" />
+      <input id="product-{{product.id}}-{{ variant.id }}" type="button" value="Quick" class="quick-product__btn" style="margin-top:7px;" />
       
     <script type="text/javascript"> 
 
    (function(){
       function setUpQuickView(button){
 
-        button.addEventListener('click', function(){         
+        button.addEventListener('click', function(){     
+          alert('here');
           const id = button.dataset.productId;
           const handle = button.dataset.handle;
           const productPopUpContainerSelector = `#QuickShopModal-${id}`;
