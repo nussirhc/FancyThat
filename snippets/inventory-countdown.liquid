@@ -76,9 +76,9 @@ assign test = current_variant
 
 {% for product in products %}       
 <script type="text/javascript">  
-(function(){
+//(function(){
 
-    const loadApp = function(){
+  //  const loadApp = function(){
     // alert("here");
 var productIdentifier = {
 
@@ -89,26 +89,26 @@ var productIdentifier = {
                       };
 
       		window.inventoryInfo.api.loadApp(productIdentifier, '#product-{{product.id}}');
-}
+//}
 
-  	if(window.inventoryInfo){
+  //	if(window.inventoryInfo){
 
-  		loadApp();
+  //		loadApp();
 
-    }else{
+ //   }else{
 
       
 
-      document.addEventListener('inventoryInfo.appLoaded', function(){
+   //   document.addEventListener('inventoryInfo.appLoaded', function(){
 //alert("here");
-   		 	loadApp();   
+   	//	 	loadApp();   
 
- 	  });
+ 	//  });
 
 }
 
- })();
- loadApp();
+// })();
+ //loadApp();
 
 
 </script>
