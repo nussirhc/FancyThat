@@ -83,6 +83,37 @@ assign test = current_variant
     </div>       
       
     <script type="text/javascript"> 
+
+   (function(){
+      function setUpQuickView(button){
+
+        button.addEventListener('click', function(){         
+          const id = button.dataset.productId;
+          const handle = button.dataset.handle;
+          const productPopUpContainerSelector = `#QuickShopModal-${id}`;
+          const variant = window.inventoryInfo.api.getSelectedvariant(productPopUpContainerSelector);
+          
+          window.inventoryInfo.api.showOnQuickView({
+                                                      handle:handle,
+                                                      variant:variant
+                                                   }, 
+                                                   productPopUpContainerSelector);
+        });
+      }
+
+      window.addEventListener("DOMContentLoaded", function() {
+
+        const quickViewBtns = document.querySelectorAll('.quick-product__btn');
+
+        for(let i=0;i<quickViewBtns.length;i++){
+            setUpQuickView(quickViewBtns[i]);
+        }
+      });
+    })();
+
+
+      
+      /*
        (function(){
 
     const loadApp{{product.id}} = function(){
@@ -116,6 +147,7 @@ assign test = current_variant
 }
 
  })();
+      */
     </script>
   {% endfor %} 
 
