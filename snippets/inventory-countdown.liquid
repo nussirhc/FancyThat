@@ -72,7 +72,7 @@ assign test = current_variant
  
   (function(){
 
-    const loadApp = function(){
+    const loadApp(){
 alert('here');
       var productIdentifier = {
 
@@ -86,23 +86,7 @@ alert('here');
 
     }
 
-  	if(window.inventoryInfo){
-
-  		loadApp();
-
-    }else{
-
-      
-
-      document.addEventListener('inventoryInfo.appLoaded', function(){
-
-   		 	loadApp();   
-
- 	  });
-
-}
-
- })();
+  	
   loadApp();  
 
 </script>
