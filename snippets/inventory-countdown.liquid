@@ -81,7 +81,7 @@ var productIdentifier = {
 
                       };
 
-      		window.inventoryInfo.api.loadApp(productIdentifier, '#product-8101996233003');
+      		window.inventoryInfo.api.loadApp(productIdentifier, '#test');
 }
 
   	if(window.inventoryInfo){
@@ -103,11 +103,10 @@ var productIdentifier = {
  })();
  //loadApp();
 
-productIdentifier: {handle:'clay-plant-pot',variant:37638571393216}	;
-  window.inventoryInfo.api.loadApp(productIdentifier, parentContainerSelector);
-  
+
 </script>
 </div>
+<div id="test"></div>
 {% for product in products %} 
 <div id="inventory-info-app" class="iia-container"></div>
     {% endfor %} 
