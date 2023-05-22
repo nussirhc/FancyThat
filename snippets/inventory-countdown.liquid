@@ -77,7 +77,7 @@ assign test = current_variant
     <script type="text/javascript">  
        var productIdentifier = {
           handle:"{{product.handle}}", 
-          variant:45216202555691
+          variant:{{ variant.id }}
       };
 
       window.inventoryInfo.api.loadApp(productIdentifier, '#product-{{product.id}}-{{ variant.id }}');
