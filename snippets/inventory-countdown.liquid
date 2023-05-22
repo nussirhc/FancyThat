@@ -67,7 +67,7 @@ assign test = current_variant
 
 <span data-remaining-max="{{ test }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
 
-<div class="nyree">
+<div id="nyree">
 <script type="text/javascript">  
 (function(){
 
@@ -81,7 +81,7 @@ var productIdentifier = {
 
                       };
 
-      		window.inventoryInfo.api.loadApp(productIdentifier, '#test');
+      		window.inventoryInfo.api.loadApp(productIdentifier, '#nyree');
 }
 
   	if(window.inventoryInfo){
