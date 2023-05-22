@@ -48,7 +48,7 @@
 
 <script data-product-remaining-json type="application/json">
   {
-    {%- for variant in product.variants -%} 
+    {%- for variant in products.variants -%} 
   assign test = variant
       {%- assign maximum = 11 -%}
       {%- assign quant = maximum | plus: 10 -%}
