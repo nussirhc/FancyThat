@@ -69,40 +69,7 @@ assign test = current_variant
 
 
 <script type="text/javascript">  
-
- (function(){
-
-    const loadApp = function(){
-
-      var productIdentifier = {
-
-                          handle:"{{product.handle}}", 
-
-                          variant:{{product.selected_or_first_available_variant.id}}
-
-                      };
-
-      		window.inventoryInfo.api.loadApp(productIdentifier, '#product-{{product.id}}');
-
-    }
-
-  	if(window.inventoryInfo){
-
-  		loadApp();
-
-    }else{
-
-      
-
-      document.addEventListener('inventoryInfo.appLoaded', function(){
-
-   		 	loadApp();   
-
- 	  });
-
-}
-
- })();
+   //window.inventoryInfo.api.loadApp(productIdentifier, '#product-{{product.id}}');
 
 </script>
 
