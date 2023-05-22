@@ -69,6 +69,39 @@ assign test = current_variant
 
 <div class="nyree">
 <script type="text/javascript">  
+  (function(){
+
+    const loadApp = function(){
+
+      var productIdentifier = {
+
+                          handle:"{{product.handle}}", 
+
+                          variant:{{product.selected_or_first_available_variant.id}}
+
+                      };
+
+      		window.inventoryInfo.api.loadApp(productIdentifier, '#product-8101996233003');
+
+    }
+
+  	if(window.inventoryInfo){
+
+  		loadApp();
+
+    }else{
+
+      
+
+      document.addEventListener('inventoryInfo.appLoaded', function(){
+
+   		 	loadApp();   
+
+ 	  });
+
+}
+
+ })();
    window.inventoryInfo.api.loadApp(productIdentifier, '#product-8101996233003');
 
 </script>
