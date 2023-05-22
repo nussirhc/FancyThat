@@ -26,7 +26,7 @@
   assign instore_online = 10
   assign show_remaining_class = 'count-is-unavailable'
   assign current_inventory = 0
-
+assign test = 'start'
 
   if current_variant.inventory_policy == 'deny' and current_variant.inventory_management
     if current_variant.inventory_quantity > 0 and current_variant.inventory_quantity <= max_inventory
@@ -48,8 +48,7 @@
 
 <script data-product-remaining-json type="application/json">
   {
-    {%- for variant in products.variants -%} 
-  assign test = variant
+    {%- for variant in product.variants -%}      
       {%- assign maximum = 11 -%}
       {%- assign quant = maximum | plus: 10 -%}
       {%- if variant.inventory_policy == 'deny' and variant.inventory_management -%}
