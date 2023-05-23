@@ -798,6 +798,7 @@
   </div>
 {%- endform -%}
 
+  <div class="product__block">
   <button id="QuickShopModal{{product.id}}-{{ variant.id }}" value="Quick" class="quick-product__btn-{{product.id}}-{{ variant.id }}" data-productId="{{product.id}}" data-handle="myProdutHandle">Quick view </button>
    <script>
 
@@ -882,6 +883,7 @@
     })();
 
   </script>
+  </div>
 
                 {%- if settings.show_newsletter -%}
                   {%- render 'notification-form', sold_out: sold_out, product_title: product.title, product_id: product.id -%}
