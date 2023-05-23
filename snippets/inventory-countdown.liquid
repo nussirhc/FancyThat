@@ -82,7 +82,7 @@ assign test = current_variant
         {{ variant.id }}
     </div>       
 
-    <input id="QuickShopModal{{product.id}}-{{ variant.id }}" type="button" value="Quick" class="quick-product__btn-{{product.id}}-{{ variant.id }}" style="margin-top:7px;" />
+    <input id="QuickShopModal{{product.id}}-{{ variant.id }}" type="button" value="Quick" class="quick-product__btn-{{product.id}}-{{ variant.id }}" data-productId="{{product.id}}" data-handle="myProdutHandle" />
     <script type="text/javascript"> 
 
    (function(){
@@ -90,8 +90,11 @@ assign test = current_variant
 
         button.addEventListener('click', function(){     
           alert('here-{{product.id}}-{{ variant.id }}');
-          const id = button.dataset.productId;
-          const handle = button.dataset.handle;
+          //const id = button.dataset.productId;
+          const id = {{product.id}};
+          //const handle = button.dataset.handle;
+          const handle = {{ variant.id }};
+          
           const productPopUpContainerSelector = `#QuickShopModal{{product.id}}-{{ variant.id }}`;
           const variant = window.inventoryInfo.api.getSelectedvariant(productPopUpContainerSelector);
           
