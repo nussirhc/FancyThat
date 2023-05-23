@@ -82,78 +82,93 @@ assign test = current_variant
     <div id="product-{{product.id}}"  class="product-{{product.id}}-{{ variant.id }}">
         {{ variant.id }}
     </div>
-    
+
+  <button id="QuickShopModal{{product.id}}-{{ variant.id }}" value="Quick" class="quick-product__btn-{{product.id}}-{{ variant.id }}" data-productId="{{product.id}}" data-handle="myProdutHandle">Quick view </button>
    <input id="QuickShopModal{{product.id}}-{{ variant.id }}" type="button" value="Quick" class="quick-product__btn-{{product.id}}-{{ variant.id }}" data-productId="{{product.id}}" data-handle="myProdutHandle" /> 
     
-    <script type="text/javascript"> 
+ <script>
 
-   (function(){
+    (function(){
+
       function setUpQuickView(button){
 
-        button.addEventListener('click', function(){     
-          //alert('here-{{product.id}}-{{ variant.id }}');
-          const id = button.dataset.productId;                    
-          const handle = {{ variant.id }};
-          
-          const productPopUpContainerSelector = `#QuickShopModal{{product.id}}-{{ variant.id }}`;
+        button.addEventListener('click', function(){
+
+          /*
+
+          * For this example the QuickView Button is expected to have following attribiutes 
+
+          * Example:
+
+          * <button data-productId="6777ffff" data-handle="myProdutHandle">Quick view </button>
+
+          *
+
+          */
+
+          const id = button.dataset.productId;
+
+          const handle = button.dataset.handle;
+
+          /* Some themes put each product into its own container when the Pop-up is open
+
+          *  Typically appending productId to the Id of the div which shows QuickView Modal
+
+          *  If your theme does not use the concept of One Div per product and dynamically 
+
+          *  inserts product detials into a Single Div then selector could be simpler wihtout needing
+
+          *  product id
+
+          */
+
+          const productPopUpContainerSelector = `#QuickShopModal-${id}`;
+
+          /*
+
+          *  Themes which use one div per product to show Quicview will also remember the variantId 
+
+          *  this is a helper method to get selected variantId for the quickview product
+
+          * 
+
+          */
+
           const variant = window.inventoryInfo.api.getSelectedvariant(productPopUpContainerSelector);
-          
+
           window.inventoryInfo.api.showOnQuickView({
-                                                      handle:"{{product.handle}}",
-                                                      variant:{{ variant.id }}
+
+                                                      handle:handle,
+
+                                                      variant:variant
+
                                                    }, 
+
                                                    productPopUpContainerSelector);
+
+  
+
         });
+
       }
 
       window.addEventListener("DOMContentLoaded", function() {
 
-        const quickViewBtns = document.querySelectorAll('.quick-product__btn-{{product.id}}-{{ variant.id }}');
+        //Get all Quickview buttons on the page and hook up click event
+
+        const quickViewBtns = document.querySelectorAll('.quick-product__btn');
+
         for(let i=0;i<quickViewBtns.length;i++){
+
             setUpQuickView(quickViewBtns[i]);
+
         }
+
       });
+
     })();
 
-
-
-      
-      /*
-       (function(){
-
-    const loadApp{{product.id}} = function(){
-      
-       //document.addEventListener('DOMContentLoaded', function() {
-       //  alert("{{product.handle}} {{ variant.id }}");
-       var productIdentifier = {
-          handle:"{{product.handle}}", 
-          variant:{{ variant.id }}
-      };
-
-      window.inventoryInfo.api.loadApp(productIdentifier, '#product-{{product.id}}-{{ variant.id }}');
-      //}, false); 
-
-      }
-
-  	if(window.inventoryInfo){
-
-  		loadApp{{product.id}}();
-
-    }else{
-
-      
-
-      document.addEventListener('inventoryInfo.appLoaded', function(){
-
-   		 	loadApp{{product.id}}();   
-
- 	  });
-
-}
-
- })();
-      */
-    </script>
+  </script>
   {% endfor %} 
 
  
