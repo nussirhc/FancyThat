@@ -68,9 +68,6 @@ assign test = current_variant
 <span data-remaining-max="{{ test }}" data-remaining-count>{{ current_inventory | default: 0 }}</span>
 
 
-
-
-
   {% for variant in product.variants %} 
   
 <form method="post" action="/cart/add" class="product__form" data-product-form id="AddToCartForm--template--{{product.id}}-{{ variant.id }}__main">
