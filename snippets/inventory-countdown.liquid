@@ -75,7 +75,7 @@ assign test = current_variant
     <form method="post" action="/cart/add" class="product__form" data-product-form id="AddToCartForm--template--{{product.id}}-{{ variant.id }}__main">
       <input type="hidden" name="id" value="{{variant.id}}" />
       <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
-      <button type="submit" name="add" value="Add to cart" class="btn btn--submit product__submit__add" data-add-to-cart data-focus-element >Add to cart</button>
+      <button type="submit" name="add" value="Add to cart" class="btn btn--submit product__submit__add btn-addtocart" data-add-to-cart data-focus-element >Add to cart</button>
     </form>
 
     <div id="product-{{product.id}}"  class="product-{{product.id}}-{{ variant.id }}">
