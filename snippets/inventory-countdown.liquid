@@ -82,7 +82,7 @@ assign test = current_variant
         {{ variant.id }}
     </div>       
 
-    <input id="QuickShopModal{{product.id}}-{{ variant.id }}" type="button" value="Quick" class="quick-product__btn" style="margin-top:7px;" />
+    <input id="QuickShopModal{{product.id}}-{{ variant.id }}" type="button" value="Quick" class="quick-product__btn-{{product.id}}-{{ variant.id }}" style="margin-top:7px;" />
     <script type="text/javascript"> 
 
    (function(){
@@ -105,7 +105,7 @@ assign test = current_variant
 
       window.addEventListener("DOMContentLoaded", function() {
 
-        const quickViewBtns = document.querySelectorAll('.quick-product__btn');
+        const quickViewBtns = document.querySelectorAll('.quick-product__btn-{{product.id}}-{{ variant.id }}');
         for(let i=0;i<quickViewBtns.length;i++){
             setUpQuickView(quickViewBtns[i]);
         }
