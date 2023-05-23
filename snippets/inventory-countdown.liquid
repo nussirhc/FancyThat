@@ -89,10 +89,8 @@ assign test = current_variant
       function setUpQuickView(button){
 
         button.addEventListener('click', function(){     
-          alert('here-{{product.id}}-{{ variant.id }}');
-          //const id = button.dataset.productId;
-          const id = {{product.id}};
-          //const handle = button.dataset.handle;
+          //alert('here-{{product.id}}-{{ variant.id }}');
+          const id = button.dataset.productId;                    
           const handle = {{ variant.id }};
           
           const productPopUpContainerSelector = `#QuickShopModal{{product.id}}-{{ variant.id }}`;
