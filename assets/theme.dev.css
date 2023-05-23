@@ -908,7 +908,7 @@ input[disabled] {
 }
 
 .show-buttons-animation .btn, .show-buttons-animation .shopify-payment-button__button--unbranded {
-  color: var(--button-primary-bg);
+  color: #fff;
   background-color: var(--button-primary-bg);
   border-color: var(--button-primary-bg);
   transition: color 0.3s ease, border 0.3s ease, background 0s linear 0.3s;
