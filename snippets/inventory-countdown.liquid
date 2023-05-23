@@ -72,7 +72,8 @@ assign test = current_variant
 
 
   {% for variant in product.variants %} 
-    <form method="post" action="/cart/add" class="product__form" data-product-form id="AddToCartForm--template--{{product.id}}-{{ variant.id }}__main">
+  
+    <form method="post" action="/cart/add" class="add-to-cart-form product__form" data-product-form id="AddToCartForm--template--{{product.id}}-{{ variant.id }}__main">
       <input type="hidden" name="id" value="{{variant.id}}" />
       <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
       <button type="submit" name="add" value="Add to cart" class="btn btn--submit product__submit__add btn-addtocart" data-add-to-cart data-focus-element >Add to cart</button>
@@ -87,6 +88,7 @@ assign test = current_variant
     </div>
 
     <button id="QuickShopModal{{product.id}}-{{ variant.id }}" value="Quick" class="quick-product__btn-{{product.id}}-{{ variant.id }}" data-productId="{{product.id}}" data-handle="myProdutHandle">Quick view </button>
+    
 <!--     <input id="QuickShopModal{{product.id}}-{{ variant.id }}" type="button" value="Quick" class="quick-product__btn-{{product.id}}-{{ variant.id }}" data-productId="{{product.id}}" data-handle="myProdutHandle" /> -->
     
     <script type="text/javascript"> 
