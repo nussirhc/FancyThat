@@ -72,50 +72,17 @@ assign test = current_variant
 
 
   {% for variant in product.variants %} 
-    <form method="post" action="/cart/add" class="product__form" data-product-form>
-      <input type="hidden" name="id" value="{{variant.id}}" data-product-select />
+    <form method="post" action="/cart/add" class="ContactForm center">
+      <input type="hidden" name="id" value="{{variant.id}}" />
       <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
-      <button type="submit" name="add" id="AddToCart--template--{{variant.id}}__main" value="Add to cart" class="btn btn--submit product__submit__add btn-addtocart" data-add-to-cart data-focus-element style="margin-top:7px;">Add to cart</button>
+      <input type="submit" value="Add to cart" class="button" style="margin-top:7px;" />
     </form>
 
-    <div id="product-{{product.id}}-{{ variant.id }}" >
+    <div id="product-{{product.id}}"  class="product-{{product.id}}-{{ variant.id }}">
         {{ variant.id }}
     </div>       
-
-      <input id="QuickShopModal{{product.id}}-{{ variant.id }}" type="button" value="Quick" class="quick-product__btn" style="margin-top:7px;" />
       
     <script type="text/javascript"> 
-
-   (function(){
-      function setUpQuickView(button){
-
-        button.addEventListener('click', function(){     
-          
-          const id = button.dataset.productId;
-          const handle = button.dataset.handle;
-          const productPopUpContainerSelector = `#QuickShopModal{{product.id}}-{{ variant.id }}`;
-          const variant = window.inventoryInfo.api.getSelectedvariant(productPopUpContainerSelector);
-          
-          window.inventoryInfo.api.showOnQuickView({
-                                                      handle:"{{product.handle}}",
-                                                      variant:{{ variant.id }}
-                                                   }, 
-                                                   productPopUpContainerSelector);
-        });
-      }
-
-      window.addEventListener("DOMContentLoaded", function() {
-
-        const quickViewBtns = document.querySelectorAll('.quick-product__btn');
-        for(let i=0;i<quickViewBtns.length;i++){
-            setUpQuickView(quickViewBtns[i]);
-        }
-      });
-    })();
-
-
-      
-      /*
        (function(){
 
     const loadApp{{product.id}} = function(){
@@ -149,7 +116,6 @@ assign test = current_variant
 }
 
  })();
-      */
     </script>
   {% endfor %} 
 
