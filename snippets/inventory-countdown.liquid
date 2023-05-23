@@ -81,8 +81,41 @@ assign test = current_variant
     <div id="product-{{product.id}}"  class="product-{{product.id}}-{{ variant.id }}">
         {{ variant.id }}
     </div>       
-      
+
+    <input id="QuickShopModal{{product.id}}-{{ variant.id }}" type="button" value="Quick" class="quick-product__btn" style="margin-top:7px;" />
     <script type="text/javascript"> 
+
+   (function(){
+      function setUpQuickView(button){
+
+        button.addEventListener('click', function(){     
+          
+          const id = button.dataset.productId;
+          const handle = button.dataset.handle;
+          const productPopUpContainerSelector = `#QuickShopModal{{product.id}}-{{ variant.id }}`;
+          const variant = window.inventoryInfo.api.getSelectedvariant(productPopUpContainerSelector);
+          
+          window.inventoryInfo.api.showOnQuickView({
+                                                      handle:"{{product.handle}}",
+                                                      variant:{{ variant.id }}
+                                                   }, 
+                                                   productPopUpContainerSelector);
+        });
+      }
+
+      window.addEventListener("DOMContentLoaded", function() {
+
+        const quickViewBtns = document.querySelectorAll('.quick-product__btn');
+        for(let i=0;i<quickViewBtns.length;i++){
+            setUpQuickView(quickViewBtns[i]);
+        }
+      });
+    })();
+
+
+
+      
+      /*
        (function(){
 
     const loadApp{{product.id}} = function(){
@@ -116,6 +149,7 @@ assign test = current_variant
 }
 
  })();
+      */
     </script>
   {% endfor %} 
 
