@@ -77,6 +77,8 @@ assign test = current_variant
     </form>
 
     <input id="QuickShopModal{{product.id}}-{{ variant.id }}" type="button" value="Quick" class="quick-product__btn-{{product.id}}-{{ variant.id }}" data-productId="{{product.id}}" data-handle="myProdutHandle" /> 
+
+    <button data-productId="{{product.id}}" data-handle="myProdutHandle">Quick view </button>
   
     <div id="product-{{product.id}}"  class="product-{{product.id}}-{{ variant.id }}">
         {{ variant.id }}
