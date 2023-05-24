@@ -199,6 +199,8 @@
       <input min="1" type="hidden" id="quantity" name="quantity" value="1"/>
       <button type="submit" name="add" value="Add to cart" class="btn btn--submit product__submit__add btn-addtocart" data-add-to-cart data-focus-element >Add to cart</button>
     </form>
+  
+  {% endfor %} 
 
     <input id="QuickShopModal{{product.id}}-{{ variant.id }}" type="button" value="Quick" class="quick-product__btn-{{product.id}}-{{ variant.id }}" data-productId="{{product.id}}" data-handle="myProdutHandle" /> 
 
@@ -256,7 +258,6 @@
       });
     })();
   </script>
-  {% endfor %} 
 
 
 </div>
