@@ -250,6 +250,7 @@
           },
           "61715c93-3582-4dad-84f6-233fdae291f5": {
             "type": "text",
+            "disabled": true,
             "settings": {
               "icon_name": "",
               "title": "",
@@ -262,7 +263,7 @@
             "settings": {
               "icon_name": "",
               "title": "",
-              "text": "<p>Balloons Sydney Only<\/p>",
+              "text": "<p>Hire & Balloons Sydney Only<\/p>",
               "icon_popup_page": ""
             }
           }
