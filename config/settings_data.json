@@ -248,16 +248,6 @@
               "icon_popup_page": ""
             }
           },
-          "61715c93-3582-4dad-84f6-233fdae291f5": {
-            "type": "text",
-            "disabled": true,
-            "settings": {
-              "icon_name": "",
-              "title": "",
-              "text": "<p>Hire Sydney Only<\/p>",
-              "icon_popup_page": ""
-            }
-          },
           "03555882-838c-40d1-a590-837459889f71": {
             "type": "text",
             "settings": {
@@ -273,7 +263,6 @@
           "2e656f9e-15f6-445b-a4d9-41e6f8a8a6df",
           "094ada09-83ff-4e44-9851-07d9b099f3d4",
           "2ad8c9b5-a141-4bb0-9b05-397e48a462eb",
-          "61715c93-3582-4dad-84f6-233fdae291f5",
           "03555882-838c-40d1-a590-837459889f71"
         ],
         "custom_css": [
