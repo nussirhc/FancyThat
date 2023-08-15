@@ -181,10 +181,10 @@
           "announcement-0": {
             "type": "text",
             "settings": {
-              "text": "<p><strong>VISIT OUR CROWS NEST, SYDNEY STORE <br\/><\/strong>(Hiring a costume? Hire floor closed Mon\/Tue - returns only)<\/p>",
+              "text": "<p><strong>VISIT OUR CROWS NEST, SYDNEY STORE <br\/><\/strong>Click Here for location & opening hours<\/p>",
               "icon_name": "none",
               "icon_color": "#e20d66",
-              "icon_width": 15,
+              "icon_width": 28,
               "target_url_enabled": false,
               "target_url": "",
               "target_referrer_enabled": false,
