@@ -181,7 +181,7 @@
           "announcement-0": {
             "type": "text",
             "settings": {
-              "text": "<p><strong>VISIT OUR CROWS NEST, SYDNEY STORE <br\/><\/strong>Click Here for location & opening hours<\/p>",
+              "text": "<p><strong>VISIT OUR CROWS NEST, SYDNEY STORE <br\/><\/strong><a href=\"https:\/\/fancy-that-costumes-balloons.myshopify.com\/pages\/faq\" title=\"https:\/\/fancy-that-costumes-balloons.myshopify.com\/pages\/faq\">Click Here for location & opening hours<\/a><\/p>",
               "icon_name": "star",
               "icon_color": "#ffffff",
               "icon_width": 15,
