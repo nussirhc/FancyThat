@@ -182,9 +182,9 @@
             "type": "text",
             "settings": {
               "text": "<p><strong>VISIT OUR CROWS NEST, SYDNEY STORE <br\/><\/strong>Click Here for location & opening hours<\/p>",
-              "icon_name": "none",
-              "icon_color": "#e20d66",
-              "icon_width": 28,
+              "icon_name": "star",
+              "icon_color": "#ffffff",
+              "icon_width": 15,
               "target_url_enabled": false,
               "target_url": "",
               "target_referrer_enabled": false,
