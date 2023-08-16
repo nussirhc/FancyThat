@@ -437,7 +437,6 @@
     },
     "3531a624-520b-411c-bf38-02af159fef9d": {
       "type": "section-custom-content",
-      "disabled": true,
       "blocks": {
         "template--17308545843499__3531a624-520b-411c-bf38-02af159fef9d-1672377302548d2d9e-0": {
           "type": "image",
@@ -479,6 +478,7 @@
         "template--17308545843499__3531a624-520b-411c-bf38-02af159fef9d-1672377302548d2d9e-0",
         "template--17308545843499__3531a624-520b-411c-bf38-02af159fef9d-1672377302548d2d9e-1"
       ],
+      "disabled": true,
       "custom_css": [
         ".brick__block__inner {padding-left: 30px;}",
         "@media only screen and (max-width: 767px) {.rich-text--no-image {padding-top: 10px; }}"
@@ -561,13 +561,13 @@
     },
     "d14bea23-6878-481f-ae8b-50a0faa56a6c": {
       "type": "section-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div class=\"text__image__wrapper\" style=\"padding-bottom: 60px;\">\n      <a href=\"http:\/\/www.ginonaliniphotography.com\/\" aria-label=\"\" target=\"_blank\"> \n      <img class=\"text__image lazyautosizes lazyloaded\" src=\"\/\/cdn.shopify.com\/s\/files\/1\/0694\/8860\/7531\/files\/profesional-photo-studio_1512x.jpg\">\n      <\/a>\n      <\/div>"
       }
     },
     "7059d9af-dc91-4589-862c-290d90ff56fe": {
       "type": "section-split-images",
-      "disabled": true,
       "blocks": {
         "template--17308545843499__7059d9af-dc91-4589-862c-290d90ff56fe-167401972347f170c9-0": {
           "type": "image",
@@ -582,6 +582,7 @@
       "block_order": [
         "template--17308545843499__7059d9af-dc91-4589-862c-290d90ff56fe-167401972347f170c9-0"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "two-sixty-height",
         "mobile_layout": "inline",
@@ -598,7 +599,6 @@
     },
     "c446ee42-6d1a-492e-b248-c35097d157d2": {
       "type": "section-custom-content",
-      "disabled": true,
       "blocks": {
         "template--17308545843499__c446ee42-6d1a-492e-b248-c35097d157d2-167409077921db23db-0": {
           "type": "image",
@@ -621,6 +621,7 @@
       "block_order": [
         "template--17308545843499__c446ee42-6d1a-492e-b248-c35097d157d2-167409077921db23db-0"
       ],
+      "disabled": true,
       "settings": {
         "height": "two-sixty-height",
         "add_spacing": true,
