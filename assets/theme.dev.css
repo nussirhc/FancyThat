@@ -17695,7 +17695,7 @@ button.collection__filters__toggle {
   }
 
   .slide__text__wrapper--normal {
-    width: calc(50% + var(--gutter) * 2);
+    width: calc(30% + var(--gutter) * 2);
   }
 
   .slide__text__wrapper--wide {
