@@ -81,6 +81,14 @@
     "6d1b6803-d28b-4494-9b2c-75d43defa168": {
       "type": "section-text",
       "blocks": {
+        "60269965-2dac-488d-973a-0e828476e4d6": {
+          "type": "button",
+          "settings": {
+            "btn_text": "Location & Opening FAQ",
+            "btn_link": "shopify:\/\/pages\/location-opening-faqs",
+            "btn_style": "primary btn--small"
+          }
+        },
         "template--17682212127019__6d1b6803-d28b-4494-9b2c-75d43defa168-167443184642146f9f-3": {
           "type": "button",
           "settings": {
@@ -107,6 +115,7 @@
         }
       },
       "block_order": [
+        "60269965-2dac-488d-973a-0e828476e4d6",
         "template--17682212127019__6d1b6803-d28b-4494-9b2c-75d43defa168-167443184642146f9f-3",
         "bd386892-24ee-4c41-9df3-3dd5123a8eb7",
         "6e8caf72-16e7-4f51-b075-63a78993c800"
