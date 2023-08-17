@@ -92,32 +92,14 @@
         "09c1e309-0de8-4f15-81bd-1bef65306ede": {
           "type": "button",
           "settings": {
-            "btn_text": "FAQs",
+            "btn_text": "All FAQs",
             "btn_link": "shopify:\/\/pages\/faq",
-            "btn_style": "primary btn--small"
-          }
-        },
-        "4b4446d6-87ee-42f7-9854-3b2123ff16a8": {
-          "type": "button",
-          "settings": {
-            "btn_text": "Costume Hire FAQ",
-            "btn_link": "shopify:\/\/pages\/costume-hire-faq",
-            "btn_style": "primary btn--small"
-          }
-        },
-        "template--17720314757419__ff4bc0f6-77b0-4f3c-a6a8-b88f8e445638-1674445552d932dd7f-3": {
-          "type": "button",
-          "settings": {
-            "btn_text": "Costume Purchase FAQ",
-            "btn_link": "shopify:\/\/pages\/costume-purchase-faq",
             "btn_style": "primary btn--small"
           }
         }
       },
       "block_order": [
-        "09c1e309-0de8-4f15-81bd-1bef65306ede",
-        "4b4446d6-87ee-42f7-9854-3b2123ff16a8",
-        "template--17720314757419__ff4bc0f6-77b0-4f3c-a6a8-b88f8e445638-1674445552d932dd7f-3"
+        "09c1e309-0de8-4f15-81bd-1bef65306ede"
       ],
       "settings": {
         "text_position": "center",
