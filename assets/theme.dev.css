@@ -6363,6 +6363,9 @@ button.mfp-close {
   align-items: center;
   padding: var(--inner);
   transition: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 13px;  
 }
 
 .navlink--toplevel::after,
