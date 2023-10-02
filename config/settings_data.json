@@ -70,7 +70,7 @@
         "settings": {
           "sticky_header": true,
           "logo_not_home": "shopify:\/\/shop_images\/website_logo.png",
-          "logo_max_width": 250,
+          "logo_max_width": 150,
           "main-menu": "collection-menu",
           "show_images": false,
           "image_aspect_ratio": 0.6,
