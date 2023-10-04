@@ -51,6 +51,13 @@
             "title": "Can I bus or train it to you?",
             "text": "<p>We're only 5 mins walk from St Leonards train station & buses run regularly along the highway.<\/p>"
           }
+        },
+        "f5f097c5-e2ea-406f-a3d9-50416234d98c": {
+          "type": "text",
+          "settings": {
+            "title": "How much is Shipping?",
+            "text": "<ul><li>Standard shipping:  FREE for orders over $99, otherwise $9.95 flat-rate Australia wide<\/li><li>Express shipping:  $16.95 <\/li><\/ul><p>Note, all Online Only stock shipped directly from our suppliers ships Express.  If your order includes both Instore & Online Only items, your order will ship Express.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -59,7 +66,8 @@
         "c6b8d4b0-6952-4825-86f9-7373722e6225",
         "e81f3857-f6fc-4759-9f73-6d201a78eeb4",
         "2e373a76-dd49-4c01-a405-facd32ec559c",
-        "4ee630f0-6f6e-445e-9c57-ca487d6d8256"
+        "4ee630f0-6f6e-445e-9c57-ca487d6d8256",
+        "f5f097c5-e2ea-406f-a3d9-50416234d98c"
       ],
       "settings": {
         "text_position": "left",
