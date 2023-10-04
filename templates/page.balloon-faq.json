@@ -58,13 +58,6 @@
             "title": "Will you supply helium balloons for a balloon release?",
             "text": "<p>That's a hard NO.<\/p><p>Releasing any type of lantern or balloon product into the air is littering, plain & simple.  Latex balloons are a natural product, not plastic & they will compost eventually however this takes time.  There are so many ways to enjoy balloons that are environmentally responsible.  We are a member of PEBA - the Pro Environment Balloon Alliance. We will not supply helium balloons for balloon releases.  Ever.  Nor will any other professional, responsible, ethical balloon business.<\/p>"
           }
-        },
-        "f9d1e126-0db3-4281-af06-fb557d7035c8": {
-          "type": "text",
-          "settings": {
-            "title": "How much is Shipping?",
-            "text": "<ul><li>Standard shipping:  FREE for orders over $99, otherwise $9.95 flat-rate Australia wide<\/li><li>Express shipping:  $16.95 <\/li><\/ul><p>Note, all Online Only stock shipped directly from our suppliers ships Express.  If your order includes both Instore & Online Only items, your order will ship Express<\/p>"
-          }
         }
       },
       "block_order": [
@@ -74,8 +67,7 @@
         "17caf7bb-822a-4855-8610-2a08fbce6b47",
         "c7c941a2-4ab1-4218-84f4-b10172ec52cd",
         "38cf3178-b2be-44d3-876f-25fd75ef40c8",
-        "9af2df05-6a5e-4b50-bdb9-97fae1c644a4",
-        "f9d1e126-0db3-4281-af06-fb557d7035c8"
+        "9af2df05-6a5e-4b50-bdb9-97fae1c644a4"
       ],
       "settings": {
         "text_position": "left",
