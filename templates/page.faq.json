@@ -58,6 +58,13 @@
             "title": "How much is Shipping?",
             "text": "<ul><li>Standard shipping:  FREE for orders over $99, otherwise $9.95 flat-rate Australia wide<\/li><li>Express shipping:  $16.95 <\/li><\/ul><p>Note, all Online Only stock shipped directly from our suppliers ships Express.  If your order includes both Instore & Online Only items, your order will ship Express.<\/p>"
           }
+        },
+        "b919ddbb-a328-429a-857b-a2df57649b40": {
+          "type": "text",
+          "settings": {
+            "title": "What is your Returns Policy?",
+            "text": "<p>We’re happy to offer a “no questions asked” return refund for sales items notified & returned to us within 30 days of purchase, with the exception of the following:<\/p><ul><li>hats (easily wearable with a tag on)<\/li><li>masks (most are on display instore with no tags)<\/li><li>any unpackaged products where prior use is unable to be disproved<\/li><\/ul><p>Refund is conditional on items being returned in their original, undamaged packaging, having not been used or altered in any way & with purchase receipt.<\/p><p>Returns process:<\/p><ul><li>For your protection, we recommend returns be forwarded via a traceable postage method such as Registered Post, as we cannot exchange or credit items that never arrive back to us. <\/li><li>Include a copy of your receipt & forward returns to:<\/li><li>Fancy That! Costumes - 388 Pacific Highway - Crows Nest NSW 2065<\/li><li>Attn:  Returns Department<\/li><\/ul><p>Returns are generally processed within 1 week of receiving the goods. Please allow additional time during the busy periods of Halloween & Christmas.<\/p>"
+          }
         }
       },
       "block_order": [
@@ -67,7 +74,8 @@
         "e81f3857-f6fc-4759-9f73-6d201a78eeb4",
         "2e373a76-dd49-4c01-a405-facd32ec559c",
         "4ee630f0-6f6e-445e-9c57-ca487d6d8256",
-        "f5f097c5-e2ea-406f-a3d9-50416234d98c"
+        "f5f097c5-e2ea-406f-a3d9-50416234d98c",
+        "b919ddbb-a328-429a-857b-a2df57649b40"
       ],
       "settings": {
         "text_position": "left",
