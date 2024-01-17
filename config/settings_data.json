@@ -119,7 +119,7 @@
             "type": "text",
             "settings": {
               "title": "Visit our Store",
-              "footer_text": "<ul>\n    <li>\n<i class=\"fas fa-location-dot\"><\/i> <a href=\"https:\/\/goo.gl\/maps\/RB1nbNcDyuxcArKv7\" target=\"_blank\">388 Pacific Hwy CROWS NEST NSW 2065 AU<\/a>\n<\/li>\n    <li>\n<i class=\"fas fa-diamond-turn-right\"><\/i><a href=\"https:\/\/www.fancythatcostumes.com.au\/faqs\" target=\"_blank\">Click for directions & parking<\/a>\n<\/li>\n    <li><strong>Hiring a costume? HIRE FLOOR CLOSED<\/strong><\/li>\n<\/ul>",
+              "footer_text": "<ul>\n    <li>\n<i class=\"fas fa-location-dot\"><\/i> <a href=\"https:\/\/goo.gl\/maps\/RB1nbNcDyuxcArKv7\" target=\"_blank\">Level 1\/28 Willoughby Rd CROWS NEST NSW 2065 AU (opposite Burlington St) <\/a>\n<\/li>\n    <li>\n<i class=\"fas fa-diamond-turn-right\"><\/i><a href=\"https:\/\/www.fancythatcostumes.com.au\/faqs\" target=\"_blank\">Click for directions & parking<\/a>\n<\/li>\n    <li><strong>Hiring a costume? HIRE FLOOR CLOSED<\/strong><\/li>\n<\/ul>",
               "secondary_title": "",
               "secondary_footer_text": ""
             }
@@ -322,9 +322,9 @@
         "settings": {
           "button_color": "#000000",
           "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
-          "button_text": "chat_with_us",
           "greeting_message": "👋 Hi, message us with any questions. We're happy to help!"
         }
       }
